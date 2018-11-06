@@ -23,6 +23,12 @@ a {
   line-height: 1.2em;
   margin: 0;
   margin-bottom: .4em;
+  &-hero {
+    @include font-size(xxxl);
+    @include only-phone {
+      @include font-size(xl);
+    }
+  }
   &-main {
     @include font-size(xxxxl);
     @include only-phone {

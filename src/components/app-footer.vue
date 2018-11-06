@@ -36,6 +36,7 @@ export default {
   .app-footer {
     background-color: $darkblue;
     padding: $spacer-l;
+    padding-bottom: 8rem;
     color: $white;
     &__details {
       display: flex;
@@ -48,13 +49,19 @@ export default {
 .footer-nav{
   display: flex;
   width: 100%;
+  @include only-phone {
+    flex-direction: column;
+  }
   &__link{
      color: $white;
      display: inline-block;
      margin-right: $spacer-l;
+
      &_last {
       margin-right: 0;
-      margin-left: auto;
+      @include tablet-and-desktop {
+        margin-left: auto;
+      }
      }
   }
 }

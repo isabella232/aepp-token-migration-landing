@@ -2,9 +2,10 @@
   <li class="step-list-item"
       :class="{ 'is-active': isActive }"
   >
-    <div class="step-list-item__number">
+    <div class="step-list-item__index">
       <div class="step-list-item__inner-wrapper">
-        <div class="step-list-item__number__text">{{ name }}</div>
+        <div class="step-list-item__index__text">{{ name }}</div>
+        <div class="step-list-item__index__number">{{ number }}</div>
         <slot name="number"/>
       </div>
     </div>
@@ -19,7 +20,8 @@ export default {
   name: 'step-list-item',
   props: {
     isActive: Boolean,
-    name: String
+    name: String,
+    number: String
   }
 }
 </script>
@@ -28,6 +30,7 @@ export default {
   display: flex;
   box-shadow: $shadow_wide;
   margin-bottom: $spacer-xl;
+  position: relative;
   width: 100%;
   @include tablet-and-desktop {
     margin-bottom: $spacer-xl;
@@ -37,7 +40,7 @@ export default {
     margin: auto;
   }
 
-  &__number {
+  &__index {
     display: flex;
     padding: $spacer-m;
     @include tablet-and-desktop {
@@ -54,18 +57,16 @@ export default {
       @include tablet-and-desktop {
         font-weight: normal;
       }
-      &:after {
-        counter-increment: count-steps;
-        content: counter(count-steps);
-        font-weight: bold;
-        line-height: .9em;
-        margin-left: .4em;
-        @include tablet-and-desktop {
-          margin: 0;
-          padding: $spacer-m;
-          font-size: 8.5rem;
-          display: block;
-        }
+    }
+    &__number {
+      font-weight: bold;
+      line-height: .9em;
+      margin-left: .4em;
+      @include tablet-and-desktop {
+        margin: 0;
+        padding: $spacer-m;
+        font-size: 8.5rem;
+        display: block;
       }
     }
   }
@@ -81,17 +82,30 @@ export default {
 .is-primary {
   .step-list-item {
     flex-direction: column;
+    background-color: $white;
     @include tablet-and-desktop {
       flex-direction: row;
     }
-    &__number {
-      background-color: $magenta;
-      color: $white;
+    &__index {
+      //background-color: $magenta;
+      color: $darkgrey;
       @include tablet-and-desktop {
         text-align: center;
         position: relative;
         width: 100%;
         max-width: 18rem;
+        position: relative;
+        &:after {
+          content: '';
+          width: 1px;
+          height: 85%;
+          position: absolute;
+          right: 0;
+          top: 50%;
+          transform: translateY(-50%);
+          background-color: $grey;
+          display: block;
+        }
       }
     }
   }
@@ -113,27 +127,65 @@ export default {
       }
     }
 
-    &__number {
-      background-color: $bg-color;
-      color: $dark-grey;
+    &__index {
+      background-size: cover;
+      color: $white;
       margin-bottom: $spacer-l;
+      position: relative;
+      &:after {
+        content: '';
+        display: block;
+        width: 100%;
+        position: absolute;
+        top: 0;
+        left: 0;
+        height: 100%;
+      }
+      &__number {
+        opacity: .3;
+      }
+      &__text {
+        opacity: .3;
+      }
+
     }
   }
+
+
+
   .is-active .step-list-item {
-    &__number {
-      background-color: $dark-grey;
-      color: $white;
+    &__index {
+
+      &__number {
+        opacity: 1;
+      }
+      &__text {
+        opacity: 1;
+      }
     }
   }
 }
 
+.phase-one .step-list-item__index{
+  background-image: url('../assets/graphics/phase-1.png');
+}
+.phase-two .step-list-item__index{
+  background-image: url('../assets/graphics/phase-2.png');
+}
+.phase-three .step-list-item__index{
+  background-image: url('../assets/graphics/phase-3.png');
+}
+.phase-four .step-list-item__index{
+  background-image: url('../assets/graphics/phase-4.png');
+}
+
 @include tablet-and-desktop {
-  .is-primary .step-list-item:not(:last-child) .step-list-item__number:after {
+  .is-primary .step-list-item:not(:last-child):after {
     content: '';
     height: $spacer-xl;
     width: 2px;
     display: block;
-    background-color: $black;
+    background-color: $magenta;
     position: absolute;
     bottom: -$spacer-xl;
     left: 50%;

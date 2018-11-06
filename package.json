@@ -9,6 +9,7 @@
   },
   "dependencies": {
     "@aeternity/aepp-components": "github:aeternity/aepp-components#develop",
+    "in-viewport": "^3.6.0",
     "vue": "^2.5.17",
     "vue-router": "^3.0.1",
     "web3": "^1.0.0-beta.36"
