@@ -151,8 +151,6 @@ export default {
     }
   }
 
-
-
   .is-active .step-list-item {
     &__index {
 

@@ -7,13 +7,13 @@
   </li>
 </template>
 <script>
-  export default {
-    name: 'app-contact-item',
-    props: {
-      url: String,
-      src: String,
-      alt: String,
-      text: String
-    }
+export default {
+  name: 'app-contact-item',
+  props: {
+    url: String,
+    src: String,
+    alt: String,
+    text: String
   }
+}
 </script>

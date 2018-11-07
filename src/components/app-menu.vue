@@ -20,13 +20,14 @@
   </nav>
 </template>
 <script>
+import AeIcon from '@aeternity/aepp-components/dist/ae-icon'
 
-  export default {
-    name: 'app-menu'
-    components: {
-      AeIcon
-    }
+export default {
+  name: 'app-menu',
+  components: {
+    AeIcon
   }
+}
 </script>
 <style lang="scss">
 .app-menu{
@@ -88,7 +89,6 @@
     }
   }
 }
-
 
 .is-open.app-menu-nav {
   transform: translateX(0);

@@ -5,13 +5,13 @@
     </article>
 </template>
 <script>
-  export default {
-    name: 'text-body',
-    props:{
-      title: String
-    }
-
+export default {
+  name: 'text-body',
+  props: {
+    title: String
   }
+
+}
 </script>
 <style lang="scss">
   .text-body {

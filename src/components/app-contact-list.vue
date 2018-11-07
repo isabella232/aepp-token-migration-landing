@@ -4,7 +4,7 @@
   </ul>
 </template>
 <script>
-  export default {
-    name: 'app-contact-list'
-  }
+export default {
+  name: 'app-contact-list'
+}
 </script>

@@ -23,12 +23,12 @@ import AeLogo from '@/components/ae-logo.vue'
 export default {
   name: 'app-footer',
   computed: {
-    year() {
+    year () {
       return new Date().getFullYear()
     }
   },
   components: {
-    AeLogo,
+    AeLogo
   }
 }
 </script>

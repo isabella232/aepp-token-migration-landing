@@ -33,6 +33,7 @@ export default {
   padding: $spacer-xl;
   text-align: left;
   margin-bottom: 75vh;
+
   @include only-phone {
     margin-bottom: 90vh;
     padding: $spacer-m;

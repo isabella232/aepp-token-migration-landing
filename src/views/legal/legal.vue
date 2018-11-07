@@ -35,8 +35,8 @@ import TextBody from '@/components/text-body.vue'
 export default {
   name: 'legal',
   components: {
-  AppFooter,
-  TextBody
+    AppFooter,
+    TextBody
   }
 }
 </script>

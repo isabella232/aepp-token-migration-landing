@@ -16,14 +16,14 @@
   </header>
 </template>
 <script>
-  import AeLogo from '@/components/ae-logo.vue'
+import AeLogo from '@/components/ae-logo.vue'
 
-  export  default {
-    name: 'app-header',
-    components: {
-      AeLogo
-    }
+export default {
+  name: 'app-header',
+  components: {
+    AeLogo
   }
+}
 </script>
 <style lang="scss">
   .app-header {

@@ -277,7 +277,6 @@
 <script>
 import AeButton from '@aeternity/aepp-components/dist/ae-button'
 import AeIcon from '@aeternity/aepp-components/dist/ae-icon'
-import AeSlider from '@aeternity/aepp-components/dist/ae-slider'
 
 import inViewport from 'in-viewport'
 import AppAccordion from '@/components/app-accordion.vue'
@@ -291,18 +290,18 @@ import Intro from '@/components/intro.vue'
 import Web3 from 'web3'
 let $web3
 const abi = [{
-  "constant": true,
-    "inputs": [],
-    "name": "burnCount",
-    "outputs": [
+  'constant': true,
+  'inputs': [],
+  'name': 'burnCount',
+  'outputs': [
     {
-      "name": "",
-      "type": "uint256"
+      'name': '',
+      'type': 'uint256'
     }
-    ],
-    "payable": false,
-    "stateMutability": "view",
-    "type": "function"
+  ],
+  'payable': false,
+  'stateMutability': 'view',
+  'type': 'function'
 }]
 
 if (window.ethereum) {
@@ -318,14 +317,6 @@ async function getBurnCount () {
   let burnContract = new $web3.eth.Contract(abi, '0x4ecd812b010d9db16b0fb7143a79786b65b89b09')
   return burnContract.methods.burnCount().call()
 }
-  let burnContract = new $web3.eth.Contract(abi, '0x4ecd812b010d9db16b0fb7143a79786b65b89b09')
-
-// isInWiew() {
-//       let el = document.getElementById('ctaBtn');
-//       this.cta = InView(el)
-//     }
-
-
 
 export default {
   name: 'index',
@@ -338,8 +329,7 @@ export default {
     AeIcon,
     AppHero,
     AppFooter,
-    AppHeader,
-    AeSlider
+    AppHeader
   },
   data: function () {
     return {
@@ -358,7 +348,7 @@ export default {
     isDesktop () {
       return this.windowWidth >= 1000
     },
-    burnCount() {
+    burnCount () {
       return getBurnCount()
     }
   },
@@ -366,7 +356,7 @@ export default {
     toggleMenu () {
       this.open = !this.open
     },
-    checkView() {
+    checkView () {
       var elem = document.getElementById('ctaBtn')
       window.addEventListener('scroll', () => {
         let check = inViewport(elem, { offset: 80 })
