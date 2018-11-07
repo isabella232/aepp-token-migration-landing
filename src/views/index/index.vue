@@ -369,7 +369,7 @@ export default {
     checkView() {
       var elem = document.getElementById('ctaBtn')
       window.addEventListener('scroll', () => {
-        let check = inViewport(elem, { offset: 150 })
+        let check = inViewport(elem, { offset: 80 })
         this.cta = check
       })
     }
