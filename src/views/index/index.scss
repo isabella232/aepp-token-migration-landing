@@ -1,0 +1,165 @@
+
+.home {
+  overflow: hidden;
+}
+
+.bottom-cta {
+  background-color: $white;
+  position: fixed;
+  bottom:  0;
+  left:  0;
+  width:  100%;
+  padding:  $spacer-m;
+  z-index: 3;
+  &__btn {
+    max-width: 15em;
+    margin:  0 auto;
+  }
+}
+.out-of-view.bottom-cta{
+  transform:  translateY(0%);
+  transition: transform .3s
+}
+
+.in-view.bottom-cta{
+  transform:  translateY(100%);
+  transition: transform .3s
+}
+.intro {
+  margin: $spacer-xxl auto;
+  max-width: 30rem;
+}
+
+.home {
+  background-color: $white;
+}
+
+section {
+
+
+  padding: 0 1rem;
+  margin-bottom: $spacer-xxl;
+}
+
+.migration-steps{
+  background-color: $bg-color;
+  & article {
+    @include content-max-width;
+    padding-top: $spacer-xl;
+  }
+}
+
+.roadmap {
+  width: 100%;
+  max-width: 100%;
+  background-color: $white;
+}
+
+.faq {
+  width: 100%;
+  max-width: 100%;
+  margin-bottom: 0;
+  background-color: $bg-color;
+  padding: $spacer-xl;
+  @include only-phone {
+    padding: $spacer-xl $spacer-m;
+  }
+  &__inner-wrapper {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    max-width: 85%;
+    margin: 0 auto;
+  }
+
+  &__info {
+    width: 100%;
+    margin-bottom: $spacer-l;
+    @include tablet-and-desktop {
+      width: 30%;
+      margin-right: $spacer-xl;
+    }
+  }
+
+  &__q-a {
+
+    @include tablet-and-desktop {
+      width: 60%;
+      max-width: 55rem;
+    }
+  }
+
+}
+
+.footer {
+  background-color: $bg-color;
+}
+
+.to-top {
+  display: flex;
+  width:  100%;
+  max-width: 85%;
+  margin:  0 auto;
+  padding: $spacer-xl 0;
+  justify-content: flex-end;
+  @include only-phone {
+      justify-content: center;
+    }
+
+  button > i {
+    transform: rotate(-90deg);
+  }
+}
+
+.steps-footer {
+  width: 100%;
+  display: flex;
+  flex-wrap: wrap;
+
+  &__cta {
+    display: flex;
+    align-items: center;
+    font-weight: bold;
+    margin-bottom: $spacer-m;
+
+    & img {
+      max-width: 2rem;
+      margin-right: $spacer-s;
+    }
+
+    &:not(:last-child) {
+      margin-right: $spacer-m;
+    }
+  }
+}
+.ae-brand {
+  color:  $magenta;
+}
+.hero-text {
+  margin-bottom: 1.5rem;
+  @include font-size(l);
+  line-height: 1.7em;
+  color:  $darkgrey;
+}
+.line {
+  height: 7rem;
+  width: 1px;
+  margin: $spacer-l auto;
+  background-color: $black;
+}
+
+.final-cta {
+  position: relative;
+  padding-bottom: 5%;
+
+  &__btn {
+    display: block;
+    max-width: 15em;
+    margin: 0 auto;
+  }
+}
+
+.button-wrapper {
+  display: block;
+  max-width: 15em;
+}

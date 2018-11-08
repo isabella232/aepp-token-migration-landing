@@ -33,9 +33,11 @@ export default {
 .app-accordion {
   margin-top: $spacer-m;
   padding-bottom: $spacer-m;
-  border-bottom: 2px solid $grey;
   width: 100%;
   text-align: left;
+  &:not(:last-child){
+    border-bottom: 2px solid $grey;
+  }
 
   &__subject {
     display: flex;
@@ -48,6 +50,9 @@ export default {
     height: 0;
     overflow: hidden;
     transition: height .3s ease;
+    & a {
+      text-decoration: underline;
+    }
   }
 }
 
