@@ -8,7 +8,7 @@
     </figure>
     <div class="app-hero__count">
       <div class="app-hero__count-wrapper">
-        <p class="token-count">1.576.125</p>
+        <p class="token-count">{{burnedBalance}}</p>
         <p>AE migrated until now</p>
       </div>
       <div class="app-hero__line"></div>
@@ -16,10 +16,56 @@
   </header>
 </template>
 <script>
+import Web3 from 'web3'
+let $web3
+const abi = [{
+  'constant': true,
+  'inputs': [
+    {
+      'name': '_owner',
+      'type': 'address'
+    }
+  ],
+  'name': 'balanceOf',
+  'outputs': [
+    {
+      'name': 'balance',
+      'type': 'uint256'
+    }
+  ],
+  'payable': false,
+  'type': 'function'
+}]
+
+if (window.ethereum) {
+  $web3 = new Web3(window.ethereum)
+} else if (window.web3) {
+  $web3 = new Web3(window.web3.currentProvider)
+} else {
+  $web3 = new Web3(new Web3.providers.HttpProvider('http://kovan.infura.com'))
+}
+
+let aeTokenContract = new $web3.eth.Contract(abi, process.env.VUE_APP_AE_TOKEN_CONTRACT)
+
+async function getBurnedBalance () {
+  let balance = await aeTokenContract
+    .methods
+    .balanceOf(process.env.VUE_APP_AE_TOKEN_BURNER)
+    .call()
+  return Web3.utils.fromWei(balance)
+}
 export default {
   name: 'app-hero',
   props: {
     title: String
+  },
+  data () {
+    return {
+      burnedBalance: null
+    }
+  },
+  async created () {
+    this.burnedBalance = await getBurnedBalance()
   }
 }
 </script>
