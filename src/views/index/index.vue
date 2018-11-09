@@ -11,9 +11,14 @@
         æternity Mainnet is almost here! The AE tokens you now own on Ethereum can soon be migrated to the æternity Mainnet! Here we will guide you securely through this migration process.
         </p>
         <div class="button-wrapper" id="ctaBtn">
-          <a href="/begin.html/">
+          <a href="//aepp-migrate.aeternity.com" target="_blank">
             <ae-button face="round" fill="primary" extend>
               Start Migration
+            </ae-button>
+          </a>
+          <a href="//aepp-migrate.aeternity.com/#/status/result" target="_blank">
+            <ae-button face="flat" fill="neutral" extend>
+              Check my Migration
             </ae-button>
           </a>
         </div>
@@ -116,7 +121,7 @@
             <div class="line"></div>
             <div class="bottom-cta" :class="cta ? 'in-view' : 'out-of-view'">
               <div class="bottom-cta__btn">
-                <a href="/begin.html/">
+                <a href="//aepp-migrate.aeternity.com" target="_blank">
                   <ae-button face="round" fill="primary" extend>
                     Start Migration
                   </ae-button>
@@ -287,37 +292,6 @@ import StepsList from '@/components/steps-list.vue'
 import StepListItem from '@/components/step-list-item.vue'
 import Intro from '@/components/intro.vue'
 
-import Web3 from 'web3'
-let $web3
-const abi = [{
-  'constant': true,
-  'inputs': [],
-  'name': 'burnCount',
-  'outputs': [
-    {
-      'name': '',
-      'type': 'uint256'
-    }
-  ],
-  'payable': false,
-  'stateMutability': 'view',
-  'type': 'function'
-}]
-
-if (window.ethereum) {
-  $web3 = new Web3(window.ethereum)
-} else if (window.web3) {
-  $web3 = new Web3(window.web3.currentProvider)
-} else {
-  $web3 = new Web3()
-}
-console.log($web3)
-
-async function getBurnCount () {
-  let burnContract = new $web3.eth.Contract(abi, '0x4ecd812b010d9db16b0fb7143a79786b65b89b09')
-  return burnContract.methods.burnCount().call()
-}
-
 export default {
   name: 'index',
   components: {
@@ -347,9 +321,6 @@ export default {
   computed: {
     isDesktop () {
       return this.windowWidth >= 1000
-    },
-    burnCount () {
-      return getBurnCount()
     }
   },
   methods: {
@@ -359,8 +330,7 @@ export default {
     checkView () {
       var elem = document.getElementById('ctaBtn')
       window.addEventListener('scroll', () => {
-        let check = inViewport(elem, { offset: 80 })
-        this.cta = check
+        this.cta = inViewport(elem, { offset: 80 })
       })
     }
   }
