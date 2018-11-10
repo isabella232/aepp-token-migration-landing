@@ -8,7 +8,7 @@
           to the Mainnet
         </h1>
         <p class="hero-text">
-        æternity Mainnet is almost here! The AE tokens you now own on Ethereum can soon be migrated to the æternity Mainnet! Here we will guide you securely through this migration process.
+        æternity mainnet is almost here! The AE tokens you now own on Ethereum can soon be migrated to the æternity mainnet! We will guide you securely through the migration process.
         </p>
         <div class="button-wrapper" id="ctaBtn">
           <a href="//aepp-migrate.aeternity.com" target="_blank">
@@ -38,36 +38,35 @@
           <step-list-item number="1">
             <template slot="info">
               <h4 class="title title-subcategory">
-                Create an æternity account with AirGap or with Ledger Nano S
+                Create an æternity account with AirGap Vault.
               </h4>
               <p>
-                This requires an installation of Airgap on a mobile device or a connection with the Ledger Nano S.
+               Install Airgap Vault on a mobile device, the secure way to create an æternity account. You can also use our webwallet Baseæpp (beta), if you migrate small amounts of AE tokens.
               </p>
               <footer class="steps-footer">
-                <a class="steps-footer__cta" href="#">
-                  <img :src="require('@/assets/graphics/airgap-logo.svg')" alt="airgap wallet logo">
+                <a class="steps-footer__cta" href="https://airgap.it/#download" target="_blank">
+                  <img :src="require('@/assets/graphics/airgap-logo.svg')" alt="airgap vault logo">
                 </a>
-                <a class="steps-footer__cta" href="#">
+                <!-- <a class="steps-footer__cta" href="#">
                   <img :src="require('@/assets/graphics/ledger-logo.svg')" alt="ledger logo">
-                </a>
+                </a> -->
               </footer>
             </template>
           </step-list-item>
           <step-list-item number="2">
             <template slot="info">
               <h4 class="title title-subcategory">
-                Transfer the desired amount tokens to the AE Migration Address
+                Access Ethereum AE Tokens
               </h4>
               <p>
-                We advice you to transfer your AE tokens to the AE Token Contract with MetaMask or MyEtherWallet.
+                We advice you to transfer your Ethereum AE tokens with MetaMask or MyEtherWallet. You will need some ETH on the same account as your Ethereum AE tokens to cover the transaction fee.
               </p>
               <footer class="steps-footer">
-                <a class="steps-footer__cta" href="#">
-                  <img :src="require('@/assets/graphics/metamask-fox.svg')" alt="airgap wallet logo"> install Meta Mask
+                <a class="steps-footer__cta" href="https://metamask.io/" target="_blank">
+                  <img :src="require('@/assets/graphics/metamask-fox.svg')" alt="airgap wallet logo"> Install MetaMask
                 </a>
-                <a class="steps-footer__cta" href="#">
-                  <img :src="require('@/assets/graphics/myetherwallet.svg')" alt="ledger logo"> Register at My Ether
-                  Wallet
+                <a class="steps-footer__cta" href="https://myetherwallet.com/" target="_blank">
+                  <img :src="require('@/assets/graphics/myetherwallet.svg')" alt="ledger logo"> MyEtherWallet
                 </a>
               </footer>
             </template>
@@ -75,18 +74,18 @@
           <step-list-item number="3">
             <template slot="info">
               <h4 class="title title-subcategory">
-                The AE Migration Address burns the AE tokens
+                Transfer the desired amount of tokens to the Migration Contract
               </h4>
               <p>
-                The AE Migration Contract burns all your tokens, and ensures that they will be available on the correct address on the Mainnet.
+                The AE Migration Contract migrates your Ethereum AE tokens and ensures that they will be available on your on the æternity mainnet account.
               </p>
               <footer class="steps-footer">
-                <a class="steps-footer__cta" href="#">
+                <!-- <a class="steps-footer__cta" href="#">
                   <img :src="require('@/assets/graphics/airgap-logo.svg')" alt="airgap wallet logo">
                 </a>
                 <a class="steps-footer__cta" href="#">
                   <img :src="require('@/assets/graphics/ledger-logo.svg')" alt="ledger logo">
-                </a>
+                </a> -->
               </footer>
             </template>
           </step-list-item>
@@ -96,15 +95,15 @@
                 Your tokens are now available on the æternity Mainnet
               </h4>
               <p>
-                We will take care of this step. Your tokens will be available in the Mainnet following the Migration Roadmap below.
+                Your tokens will be accessible in the Mainnet following the Migration Roadmap below.
               </p>
               <footer class="steps-footer">
-                <a class="steps-footer__cta" href="#">
+                <!-- <a class="steps-footer__cta" href="#">
                   <img :src="require('@/assets/graphics/airgap-logo.svg')" alt="airgap wallet logo">
                 </a>
                 <a class="steps-footer__cta" href="#">
                   <img :src="require('@/assets/graphics/ledger-logo.svg')" alt="ledger logo">
-                </a>
+                </a> -->
               </footer>
             </template>
           </step-list-item>
@@ -138,7 +137,7 @@
             Migration Roadmap
           </h2>
           <p>
-            All tokens will not migrated immediately, but will be done in phases. The AE Migration Address ‘collects’ the received tokens and migrates them in the Mainnet, in the following three phases.
+            All tokens will not migrated immediately, but will be done in phases. The AE Migration Contract ‘collects’ the received tokens and migrates them in the Mainnet, in the following three phases.
           </p>
         </intro>
         <steps-list :secondary="true">
