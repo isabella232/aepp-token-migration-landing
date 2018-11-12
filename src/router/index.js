@@ -22,7 +22,7 @@ export default new Router({
   },
   {
     name: 'Terms & Services',
-    path: '/terms-and-services',
+    path: '/tos',
     component: require('@/views/terms/terms.vue').default
   }
   ]
