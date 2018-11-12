@@ -9,7 +9,7 @@
     <div class="app-hero__count">
       <div class="app-hero__count-wrapper">
         <p class="token-count">{{burnedBalance}}</p>
-        <p>AE migrated until now</p>
+        <p>AE migrated so far</p>
       </div>
       <div class="app-hero__line"></div>
     </div>
