@@ -8,7 +8,7 @@
     </figure>
     <div class="app-hero__count">
       <div class="app-hero__count-wrapper">
-        <p class="token-count">{{burnedBalance}}</p>
+        <p class="token-count">{{burnedBalance | reduceDecimals}}</p>
         <p>AE migrated so far</p>
       </div>
       <div class="app-hero__line"></div>
@@ -66,6 +66,13 @@ export default {
   },
   async created () {
     this.burnedBalance = await getBurnedBalance()
+  },
+  filters: {
+    reduceDecimals: function (value) {
+      if (!value) return ''
+      value = parseFloat(value)
+      return value.toFixed(2)
+    }
   }
 }
 </script>
