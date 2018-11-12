@@ -180,9 +180,14 @@
           <p>
             The User agrees that if any portion of these Terms is found illegal or unenforceable, in whole or in part, such provision shall, as to such jurisdiction, be ineffective solely to the extent of such determination of invalidity or unenforceability without affecting the validity or enforceability thereof in any other manner or jurisdiction and without affecting the remaining provisions of the Terms, which shall continue to be in full force and effect.
             <br>
-            The Terms govern the Migration Process, and the allocation, use and holding of Æ tokens on æternity blockchain and supersede any public statements about the launch of ÆTERNITY Blockchain and the Migration Process, the Æ tokens on æternity blockchain made by anyone in the past, present and future.
+            In this case, the contracting Parties shall replace the invalid or unenforceable provision by another provision that comes closest to the economically intended purpose if feasible. The same applies in the case of a regulatory gap.
             <br>
-            The applicable law is Liechtenstein law. Any dispute arising out of or in connection with the Migration Process, the creation, allocation or use of the Æ tokens on æternity blockchain and the development and execution of the ÆTERNITY Blockchain shall be finally settled by the courts in Vaduz, Liechtenstein.
+            The Terms govern the Migration Process, and the allocation, use and holding of Æ tokens on æternity blockchain and supersede any public statements about the launch of ÆTERNITY Blockchain and the Migration Process, the Æ tokens on æternity blockchain made by anyone in the past, present and future.
+            Æternity may amend the Terms if and when necessary as decided in its discretion in written form and acknowledges that it shall notify the User via a public blog post on https://blog.aeternity.com about any amendment to the Terms.
+            <br>
+            These Terms shall be governed by, and construed in accordance with the statutes and laws of the Principality of Liechtenstein, without regard to the conflict of laws and the United Nations Convention on the International Sales of Goods.
+            <br>
+            Any dispute arising out of or in connection with the Migration Process, the creation, allocation or use of the Æ tokens on æternity blockchain and the development and execution of the ÆTERNITY Blockchain and all other matters related to this agreement shall exclusively and  finally be settled by the competent courts in Vaduz, Liechtenstein.
           </p>
         </li>
       </ol>
