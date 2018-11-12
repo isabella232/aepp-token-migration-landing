@@ -11,14 +11,19 @@ export default new Router({
     component: require('@/views/index/index.vue').default
   },
   {
-    name: 'legal',
+    name: 'Legal',
     path: '/legal',
     component: require('@/views/legal/legal.vue').default
   },
   {
-    name: 'imprint',
+    name: 'Imprint',
     path: '/imprint',
     component: require('@/views/imprint/imprint.vue').default
+  },
+  {
+    name: 'Terms & Services',
+    path: '/tos',
+    component: require('@/views/terms/terms.vue').default
   }
   ]
 })
