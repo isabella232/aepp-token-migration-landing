@@ -1,5 +1,6 @@
 <template>
   <main class="home">
+    <app-header/>
     <text-body>
       <h1>Imprint</h1>
       <p>
@@ -31,11 +32,13 @@
 </template>
 <script>
 import AppFooter from '@/components/app-footer.vue'
+import AppHeader from '@/components/app-header.vue'
 import TextBody from '@/components/text-body.vue'
 export default {
   name: 'legal',
   components: {
     AppFooter,
+    AppHeader,
     TextBody
   }
 }

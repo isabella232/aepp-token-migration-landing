@@ -10,9 +10,15 @@
     <div class="app-footer__details">
       <small>&#xa9; aeternity <time>{{ year }}</time></small>
       <nav class="footer-nav">
-        <router-link :to="{ name:'imprint' }" class="footer-nav__link">Imprint</router-link>
-        <router-link to="/legal" class="footer-nav__link">Legal</router-link>
-        <a href="https://forum.aeternity.com/t/ae-token-migration-questions" target="_blank" class="footer-nav__link footer-nav__link_last">Visit our forum</a>
+        <div class="footer-nav__internal">
+          <router-link :to="{ name:'Imprint' }" class="footer-nav__link">Imprint</router-link>
+          <router-link :to="{ name:'Legal' }" class="footer-nav__link">Legal</router-link>
+          <router-link :to="{ name:'Terms & Services' }" class="footer-nav__link">Terms</router-link>
+        </div>
+        <div class="footer-nav__external">
+          <a href="https://forum.aeternity.com/t/token-migration-phase-0-support-and-faq/1275" target="_blank" class="footer-nav__link footer-nav__link">Visit our forum</a>
+          <a href="https://aeternity.com/" target="_blank" class="footer-nav__link footer-nav__link_last">aeternity.com</a>
+        </div>
       </nav>
     </div>
   </footer>
@@ -52,17 +58,16 @@ export default {
   @include only-phone {
     flex-direction: column;
   }
-  &__link{
-     color: $white;
-     display: inline-block;
-     margin-right: $spacer-l;
-
-     &_last {
+  &__external {
       margin-right: 0;
       @include tablet-and-desktop {
         margin-left: auto;
       }
      }
+  &__link{
+     color: $white;
+     display: inline-block;
+     margin-right: $spacer-l;
   }
 }
 small {
