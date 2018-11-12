@@ -35,8 +35,6 @@
 }
 
 section {
-
-
   padding: 0 1rem;
   margin-bottom: $spacer-xxl;
 }
@@ -44,7 +42,9 @@ section {
 .migration-steps{
   background-color: $bg-color;
   & article {
-    @include content-max-width;
+    @include tablet-and-desktop {
+      @include content-max-width;
+    }
     padding-top: $spacer-xl;
   }
 }
@@ -115,6 +115,7 @@ section {
   width: 100%;
   display: flex;
   flex-wrap: wrap;
+  justify-content: flex-end;
 
   &__cta {
     display: flex;

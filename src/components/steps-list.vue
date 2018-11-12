@@ -1,5 +1,5 @@
 <template>
-  <ol class="list-steps" :class="{ 'is-primary': primary, 'is-secondary': secondary}">
+  <ol class="list-steps" :class="{ 'is-wide': wide, 'is-tall': tall}">
     <slot/>
   </ol>
 </template>
@@ -8,8 +8,8 @@
 export default {
   name: 'steps-list',
   props: {
-    primary: Boolean,
-    secondary: Boolean
+    wide: Boolean,
+    tall: Boolean
   }
 }
 </script>
@@ -26,11 +26,11 @@ export default {
   }
 }
 
-.is-primary {
+.is-wide {
   flex-direction: column;
 }
 
-.is-secondary {
+.is-tall {
   flex-direction: row;
   flex-wrap: wrap;
 }

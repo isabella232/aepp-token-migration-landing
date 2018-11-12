@@ -33,79 +33,68 @@
               All AE Tokens migrated with this tool prior to the Mainnet launch will be available on the Mainnet. Token migration takes place in four steps.
             </p>
           </intro>
-          <steps-list :primary="true" >
-          <step-list-item number="1">
-            <template slot="info">
-              <h4 class="title title-subcategory">
-                Create an æternity account with AirGap Vault.
-              </h4>
-              <p>
-               Airgap Vault is the secure way to create an æternity account. Install the Vault app on a mobile device and create a new æternity account. Alternatively, you can use our webwallet Baseæpp (beta) for migrating small amounts of AE tokens.
-              </p>
-              <footer class="steps-footer">
-                <a class="steps-footer__cta" href="https://airgap.it/#download" target="_blank">
-                  <img :src="require('@/assets/graphics/airgap-logo.svg')" alt="airgap vault logo">
-                </a>
-                <!-- <a class="steps-footer__cta" href="#">
-                  <img :src="require('@/assets/graphics/ledger-logo.svg')" alt="ledger logo">
-                </a> -->
-              </footer>
-            </template>
-          </step-list-item>
-          <step-list-item number="2">
-            <template slot="info">
-              <h4 class="title title-subcategory">
-                Transfer your Ethereum AE Tokens
-              </h4>
-              <p>
-                We advice you to transfer your Ethereum AE tokens to our Migration Contract, using MetaMask or MyEtherWallet. You will need a small amount of ETH on the same account as your Ethereum AE tokens to cover the transaction fee.
-              </p>
-              <footer class="steps-footer">
-                <a class="steps-footer__cta" href="https://metamask.io/" target="_blank">
-                  <img :src="require('@/assets/graphics/metamask-fox.svg')" alt="airgap wallet logo">MetaMask
-                </a>
-                <a class="steps-footer__cta" href="https://myetherwallet.com/" target="_blank">
-                  <img :src="require('@/assets/graphics/myetherwallet.svg')" alt="ledger logo"> MyEtherWallet
-                </a>
-              </footer>
-            </template>
-          </step-list-item>
-          <step-list-item number="3">
-            <template slot="info">
-              <h4 class="title title-subcategory">
-                The Migration Contract receives your Ethereum AE Tokens
-              </h4>
-              <p>
-                The AE Migration Contract receives your Ethereum AE tokens and ensures that they will be available on your on the æternity mainnet account.
-              </p>
-              <footer class="steps-footer">
-                <!-- <a class="steps-footer__cta" href="#">
-                  <img :src="require('@/assets/graphics/airgap-logo.svg')" alt="airgap wallet logo">
-                </a>
-                <a class="steps-footer__cta" href="#">
-                  <img :src="require('@/assets/graphics/ledger-logo.svg')" alt="ledger logo">
-                </a> -->
-              </footer>
-            </template>
-          </step-list-item>
-          <step-list-item number="4">
-            <template slot="info">
-              <h4 class="title title-subcategory">
-                Your AE tokens become available on the æternity Mainnet
-              </h4>
-              <p>
-                Your tokens become accessible in the Mainnet according to the Migration Roadmap below.
-              </p>
-              <footer class="steps-footer">
-                <!-- <a class="steps-footer__cta" href="#">
-                  <img :src="require('@/assets/graphics/airgap-logo.svg')" alt="airgap wallet logo">
-                </a>
-                <a class="steps-footer__cta" href="#">
-                  <img :src="require('@/assets/graphics/ledger-logo.svg')" alt="ledger logo">
-                </a> -->
-              </footer>
-            </template>
-          </step-list-item>
+          <steps-list :wide="true" >
+            <step-list-item
+              :src="require('@/assets/graphics/step-01.svg')"
+              alt="Create an æternity account with AirGap Vault">
+              <template slot="info">
+                <h4 class="title title-subcategory">
+                  Create an æternity account with AirGap Vault.
+                </h4>
+                <p>
+                 Airgap Vault is the secure way to create an æternity account. Install the Vault app on a mobile device and create a new æternity account. Alternatively, you can use our webwallet Baseæpp (beta) for migrating small amounts of AE tokens.
+                </p>
+                <footer class="steps-footer">
+                  <a class="steps-footer__cta" href="https://airgap.it/#download" target="_blank">
+                    <img :src="require('@/assets/graphics/airgap-logo.svg')" alt="airgap vault logo">
+                  </a>
+                </footer>
+              </template>
+            </step-list-item>
+            <step-list-item
+              :src="require('@/assets/graphics/step-02.svg')"
+              alt="Create an æternity account with AirGap Vault">
+              <template slot="info">
+                <h4 class="title title-subcategory">
+                  Transfer your Ethereum AE Tokens
+                </h4>
+                <p>
+                  We advice you to transfer your Ethereum AE tokens to our Migration Contract, using MetaMask or MyEtherWallet. You will need a small amount of ETH on the same account as your Ethereum AE tokens to cover the transaction fee.
+                </p>
+                <footer class="steps-footer">
+                  <a class="steps-footer__cta" href="https://metamask.io/" target="_blank">
+                    <img :src="require('@/assets/graphics/metamask-fox.svg')" alt="MetaMask">
+                  </a>
+                  <a class="steps-footer__cta" href="https://myetherwallet.com/" target="_blank">
+                    <img :src="require('@/assets/graphics/myetherwallet.svg')" alt="MyEtherWallet">
+                  </a>
+                </footer>
+              </template>
+            </step-list-item>
+            <step-list-item
+              :src="require('@/assets/graphics/step-03.svg')"
+              alt="Create an æternity account with AirGap Vault">
+              <template slot="info">
+                <h4 class="title title-subcategory">
+                  The Migration Contract receives your Ethereum AE Tokens
+                </h4>
+                <p>
+                  The AE Migration Contract receives your Ethereum AE tokens and ensures that they will be available on your on the æternity mainnet account.
+                </p>
+              </template>
+            </step-list-item>
+            <step-list-item
+              :src="require('@/assets/graphics/step-04.svg')"
+              alt="Create an æternity account with AirGap Vault">
+              <template slot="info">
+                <h4 class="title title-subcategory">
+                  Your AE tokens become available on the æternity Mainnet
+                </h4>
+                <p>
+                  Your tokens become accessible in the Mainnet according to the Migration Roadmap below.
+                </p>
+              </template>
+            </step-list-item>
           </steps-list>
           <footer>
             <div class="bottom-cta" :class="cta ? 'in-view' : 'out-of-view'">
@@ -129,60 +118,64 @@
             The migration of AE tokens will take place according to the phases outlined below. The AE Migration Contract ‘collects’ the received tokens and ensures they are migrated to the Mainnet.
           </p>
         </intro>
-        <steps-list :secondary="true">
-          <step-list-item name="Current Phase" number="0" :isActive="true" class="phase-one">
-            <template slot="number">
-              Ends November ‘18
-            </template>
-            <template slot="info">
-              <h3 class="title title-small">
-                Mainnet Launch
-              </h3>
-              <p>
-                All tokens migrated prior to the Mainnet launch will be available on the Mainnet.
-              </p>
-            </template>
-          </step-list-item>
-          <step-list-item name="Phase" number="1" class="phase-two">
-            <template slot="number">
-              Ends February ‘19
-            </template>
-            <template slot="info">
-              <h3 class="title title-small">
-                1st Hardfork
-              </h3>
-              <p>
-               Will include all tokens migrated between the Mainnet launch and the 1st Hardfork.
-              </p>
-            </template>
-          </step-list-item>
-          <step-list-item name="Phase" number="2" class="phase-three">
-            <template slot="number">
-              Ends May ‘19
-            </template>
-            <template slot="info">
-              <h3 class="title title-small">
-                2nd Hardfork
-              </h3>
-              <p>
-                Will include all tokens migrated between the 1st and 2nd Hardforks.
-              </p>
-            </template>
-          </step-list-item>
-          <step-list-item name="Phase" number="3" class="phase-four">
-            <template slot="number">
-              Ends September ‘19
-            </template>
-            <template slot="info">
-              <h3 class="title title-small">
-                3rd Hardfork
-              </h3>
-              <p>
-                Will include all tokens migrated between the 2nd and 3rd Hardforks.
-              </p>
-            </template>
-          </step-list-item>
-        </steps-list>
+        <phases>
+          <phase-item
+            number="0"
+            :isCurrent="true"
+            :src="require('@/assets/graphics/phase-1.png')"
+            alt="Mainnet Launch"
+            ends="Ends November ‘18"
+            >
+            <h3 class="title title-small">
+              Mainnet Launch
+            </h3>
+            <p>
+              All tokens migrated prior to the Mainnet launch will be available on the Mainnet.
+            </p>
+          </phase-item>
+          <phase-item
+            number="1"
+            :isCurrent="false"
+            :src="require('@/assets/graphics/phase-2.png')"
+            alt="1st Hardfork"
+            ends="Ends February ‘19"
+            >
+            <h3 class="title title-small">
+              1st Hardfork
+            </h3>
+            <p>
+              Will include all tokens migrated between the Mainnet launch and the 1st Hardfork.
+            </p>
+          </phase-item>
+          <phase-item
+            number="2"
+            :isCurrent="false"
+            :src="require('@/assets/graphics/phase-3.png')"
+            alt="2nd Hardfork"
+            ends="Ends May ‘19"
+            >
+            <h3 class="title title-small">
+              2nd Hardfork
+            </h3>
+            <p>
+              Will include all tokens migrated between the 1st and 2nd Hardforks.
+            </p>
+          </phase-item>
+          <phase-item
+            number="3"
+            :isCurrent="false"
+            :src="require('@/assets/graphics/phase-4.png')"
+            alt="3rd Hardfork"
+            ends="Ends September ‘19"
+            >
+            <h3 class="title title-small">
+              3rd Hardfork
+            </h3>
+            <p>
+              Will include all tokens migrated between the 2nd and 3rd Hardforks.
+            </p>
+          </phase-item>
+        </phases>
       </section>
       <section class="faq" id="faq">
         <article class="faq__inner-wrapper">
@@ -292,6 +285,8 @@ import AppHeader from '@/components/app-header.vue'
 import AppHero from '@/components/app-hero.vue'
 import StepsList from '@/components/steps-list.vue'
 import StepListItem from '@/components/step-list-item.vue'
+import Phases from '@/components/phases.vue'
+import PhaseItem from '@/components/phase-item.vue'
 import Intro from '@/components/intro.vue'
 
 export default {
@@ -299,6 +294,8 @@ export default {
   components: {
     StepsList,
     StepListItem,
+    Phases,
+    PhaseItem,
     AppAccordion,
     Intro,
     AeButton,
@@ -311,7 +308,7 @@ export default {
     return {
       open: false,
       windowWidth: window.innerWidth,
-      cta: false
+      cta: true
     }
   },
   mounted () {
