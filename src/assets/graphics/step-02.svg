@@ -1,0 +1,65 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="280px" height="304px" viewBox="0 0 280 304" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <!-- Generator: Sketch 52.3 (67297) - http://www.bohemiancoding.com/sketch -->
+    <title>Artboard Copy</title>
+    <desc>Created with Sketch.</desc>
+    <defs>
+        <rect id="path-1" x="0" y="0" width="282" height="282"></rect>
+        <linearGradient x1="28.4663915%" y1="50%" x2="91.1166668%" y2="50%" id="linearGradient-3">
+            <stop stop-color="#D3DCE6" offset="0%"></stop>
+            <stop stop-color="#D3DCE6" stop-opacity="0" offset="100%"></stop>
+        </linearGradient>
+        <filter x="-16.7%" y="-55.4%" width="133.3%" height="210.7%" filterUnits="objectBoundingBox" id="filter-4">
+            <feOffset dx="0" dy="0" in="SourceAlpha" result="shadowOffsetOuter1"></feOffset>
+            <feGaussianBlur stdDeviation="8" in="shadowOffsetOuter1" result="shadowBlurOuter1"></feGaussianBlur>
+            <feColorMatrix values="0 0 0 0 0.105882353   0 0 0 0 0.266666667   0 0 0 0 0.474509804  0 0 0 0.15 0" type="matrix" in="shadowBlurOuter1" result="shadowMatrixOuter1"></feColorMatrix>
+            <feMerge>
+                <feMergeNode in="shadowMatrixOuter1"></feMergeNode>
+                <feMergeNode in="SourceGraphic"></feMergeNode>
+            </feMerge>
+        </filter>
+        <path d="M28,0 L158,3.55271368e-15 C173.463973,7.12027924e-16 186,12.536027 186,28 L186,28 C186,43.463973 173.463973,56 158,56 L28,56 C12.536027,56 1.8937905e-15,43.463973 0,28 L0,28 C-1.8937905e-15,12.536027 12.536027,2.84068575e-15 28,0 Z" id="path-5"></path>
+        <path d="M117.336388,323 C116.230132,323 114.861224,322.240001 114.274374,321.295296 L82.3841903,269.958727 C79.5454208,265.059421 81.203445,258.810021 86.1642051,255.95617 C91.0906191,253.122077 97.3902856,254.804446 100.224314,259.695569 L108.466667,273.920678 L108.466667,220.368421 L108.466667,203.200882 C108.466667,197.56709 113.038474,193 118.766667,193 C124.4552,193 129.066667,197.626769 129.066667,203.200882 L129.066667,244.315789 L173.7,251.157895 C173.7,251.157895 184,254.578947 184,268.304136 L184,275.105263 L184,278.526316 L184,285.368421 C184,291.293606 181.472795,301.117587 178.586602,306.644445 C174.744684,314.001447 167.487558,322.24018 167.487558,322.24018 C167.12624,322.659817 166.388113,323 165.827693,323 L117.336388,323 Z" id="path-7"></path>
+        <filter x="-23.3%" y="-18.5%" width="146.6%" height="136.9%" filterUnits="objectBoundingBox" id="filter-8">
+            <feOffset dx="0" dy="0" in="SourceAlpha" result="shadowOffsetOuter1"></feOffset>
+            <feGaussianBlur stdDeviation="8" in="shadowOffsetOuter1" result="shadowBlurOuter1"></feGaussianBlur>
+            <feColorMatrix values="0 0 0 0 0.105882353   0 0 0 0 0.266666667   0 0 0 0 0.474509804  0 0 0 0.15 0" type="matrix" in="shadowBlurOuter1"></feColorMatrix>
+        </filter>
+    </defs>
+    <g id="Artboard-Copy" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+        <rect fill="#FFFFFF" x="0" y="0" width="280" height="304"></rect>
+        <circle id="Oval" fill="#EDF3F7" cx="213.5" cy="186" r="16"></circle>
+        <path d="M0,47.0901284 L0,0 L117.990271,0 C117.995068,0.332760311 117.997475,0.666099111 117.997475,1 C117.997475,38.555363 87.5528377,69 49.9974747,69 C30.2258382,69 12.4250594,60.5617555 -3.37507799e-14,47.0901284 Z" id="Oval-3" fill="#EDF3F7"></path>
+        <rect id="Rectangle" fill="#EDF3F7" transform="translate(67.583261, 143.916739) rotate(45.000000) translate(-67.583261, -143.916739) " x="26.5832611" y="102.916739" width="82" height="82"></rect>
+        <rect id="Rectangle-Copy" fill="#EDF3F7" transform="translate(192.248737, 42.748737) rotate(22.000000) translate(-192.248737, -42.748737) " x="167.748737" y="18.2487373" width="49" height="49"></rect>
+        <g id="Group-15" transform="translate(-1.000000, 29.000000)">
+            <mask id="mask-2" fill="white">
+                <use xlink:href="#path-1"></use>
+            </mask>
+            <g id="Rectangle"></g>
+            <g id="Group-14" mask="url(#mask-2)">
+                <g transform="translate(-28.000000, 60.000000)">
+                    <path d="M104.521786,64.5572105 C104.171058,63.6530912 103.997683,62.6976766 104.000023,61.7436288 L104.000023,15.4276975 C104.000023,11.1628152 107.457394,7.70544499 111.722276,7.70544499 C115.987158,7.70544499 119.444528,11.1628152 119.444528,15.4276975 L119.444528,43.9103147 L142.091702,22.6330953 C160.835832,3.87957487 187.890612,-3.94604544 213.751745,1.90536052 C239.612878,7.75676648 260.663614,26.4668633 269.508868,51.4628281 C270.931616,55.4833997 268.825664,59.8960823 264.805091,61.3188305 C260.784518,62.7415787 256.371834,60.6356267 254.949085,56.6150551 C247.872882,36.6182832 231.032293,21.6502058 210.343387,16.969081 C189.65448,12.2879562 168.010657,18.5484525 152.841545,33.7197953 L131.217473,54.0389598 L158.055791,54.0389598 C162.320673,54.0389598 165.778043,57.49633 165.778043,61.7612122 C165.778043,66.0260945 162.320673,69.4834647 158.055791,69.4834647 L111.722276,69.4834647 C108.480421,69.4834647 105.705143,67.4858174 104.560249,64.6543327 L104.521786,64.5572105 Z" id="Combined-Shape" fill="url(#linearGradient-3)" fill-rule="evenodd" transform="translate(186.976667, 34.741732) scale(-1, 1) translate(-186.976667, -34.741732) "></path>
+                    <g id="atoms/button/active" fill="none" transform="translate(0.000000, 81.000000)">
+                        <g id="color-+-CONFIRM-Mask" filter="url(#filter-4)" stroke-width="1" fill-rule="evenodd">
+                            <mask id="mask-6" fill="white">
+                                <use xlink:href="#path-5"></use>
+                            </mask>
+                            <use id="Mask" fill="#6948A1" xlink:href="#path-5"></use>
+                            <g id="fill/primary/0" mask="url(#mask-6)" fill="#FF0D6A">
+                                <rect id="Rectangle-Copy-20" x="0" y="0" width="191" height="56"></rect>
+                            </g>
+                        </g>
+                        <text id="CONFIRM" font-family="InterUI-Bold, Inter UI" font-size="13" font-weight="bold" line-spacing="16" letter-spacing="1.29999995" fill="#FFFFFF">
+                            <tspan x="72.6565697" y="33">SEND</tspan>
+                        </text>
+                    </g>
+                </g>
+            </g>
+        </g>
+        <g id="Rectangle-46">
+            <use fill="black" fill-opacity="1" filter="url(#filter-8)" xlink:href="#path-7"></use>
+            <use fill="#FFFFFF" fill-rule="evenodd" xlink:href="#path-7"></use>
+        </g>
+    </g>
+</svg>
