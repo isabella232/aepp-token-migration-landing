@@ -8,7 +8,7 @@
           to the Mainnet
         </h1>
         <p class="hero-text">
-        æternity mainnet is almost here! The AE tokens you now own on Ethereum can soon be migrated to the æternity mainnet! We will guide you securely through the migration process.
+        The æternity mainnet is almost here! You can begin migrating the AE tokens you own on Ethereum to the æternity mainnet! We will guide you through our secure migration process.
         </p>
         <div class="button-wrapper" id="ctaBtn">
           <a href="//aepp-migrate.aeternity.com" target="_blank">
@@ -27,11 +27,10 @@
         <article>
           <intro id="how-to-migrate">
             <h2 class="title title-sub">
-              How to migrate
+              Migration Steps
             </h2>
             <p>
-              All the AE Tokens that are going to be migrated with this tool, will be available in the Mainnet after a
-              certain period of time.
+              All AE Tokens migrated with this tool prior to the Mainnet launch will be available on the Mainnet. Token migration takes place in four steps.
             </p>
           </intro>
           <steps-list :primary="true" >
@@ -41,7 +40,7 @@
                 Create an æternity account with AirGap Vault.
               </h4>
               <p>
-               Install Airgap Vault on a mobile device, the secure way to create an æternity account. You can also use our webwallet Baseæpp (beta), if you migrate small amounts of AE tokens.
+               Airgap Vault is the secure way to create an æternity account. Install the Vault app on a mobile device and create a new æternity account. Alternatively, you can use our webwallet Baseæpp (beta) for migrating small amounts of AE tokens.
               </p>
               <footer class="steps-footer">
                 <a class="steps-footer__cta" href="https://airgap.it/#download" target="_blank">
@@ -56,14 +55,14 @@
           <step-list-item number="2">
             <template slot="info">
               <h4 class="title title-subcategory">
-                Access Ethereum AE Tokens
+                Transfer your Ethereum AE Tokens
               </h4>
               <p>
-                We advice you to transfer your Ethereum AE tokens with MetaMask or MyEtherWallet. You will need some ETH on the same account as your Ethereum AE tokens to cover the transaction fee.
+                We advice you to transfer your Ethereum AE tokens to our Migration Contract, using MetaMask or MyEtherWallet. You will need a small amount of ETH on the same account as your Ethereum AE tokens to cover the transaction fee.
               </p>
               <footer class="steps-footer">
                 <a class="steps-footer__cta" href="https://metamask.io/" target="_blank">
-                  <img :src="require('@/assets/graphics/metamask-fox.svg')" alt="airgap wallet logo"> Install MetaMask
+                  <img :src="require('@/assets/graphics/metamask-fox.svg')" alt="airgap wallet logo">MetaMask
                 </a>
                 <a class="steps-footer__cta" href="https://myetherwallet.com/" target="_blank">
                   <img :src="require('@/assets/graphics/myetherwallet.svg')" alt="ledger logo"> MyEtherWallet
@@ -74,10 +73,10 @@
           <step-list-item number="3">
             <template slot="info">
               <h4 class="title title-subcategory">
-                Transfer the desired amount of tokens to the Migration Contract
+                The Migration Contract receives your Ethereum AE Tokens
               </h4>
               <p>
-                The AE Migration Contract migrates your Ethereum AE tokens and ensures that they will be available on your on the æternity mainnet account.
+                The AE Migration Contract receives your Ethereum AE tokens and ensures that they will be available on your on the æternity mainnet account.
               </p>
               <footer class="steps-footer">
                 <!-- <a class="steps-footer__cta" href="#">
@@ -92,10 +91,10 @@
           <step-list-item number="4">
             <template slot="info">
               <h4 class="title title-subcategory">
-                Your tokens are now available on the æternity Mainnet
+                Your AE tokens become available on the æternity Mainnet
               </h4>
               <p>
-                Your tokens will be accessible in the Mainnet following the Migration Roadmap below.
+                Your tokens become accessible in the Mainnet according to the Migration Roadmap below.
               </p>
               <footer class="steps-footer">
                 <!-- <a class="steps-footer__cta" href="#">
@@ -114,8 +113,7 @@
               Start Migrating
             </h3>
             <p>
-              All the AE Tokens that are going to be migrated with this tool, will be available in the Mainnet after a
-              certain period of time.
+              All the AE Tokens that are going to be migrated with this tool, will be available in the Mainnet after a certain period of time.
             </p>
             <div class="line"></div>
             <div class="bottom-cta" :class="cta ? 'in-view' : 'out-of-view'">
@@ -137,7 +135,7 @@
             Migration Roadmap
           </h2>
           <p>
-            All tokens will not migrated immediately, but will be done in phases. The AE Migration Contract ‘collects’ the received tokens and migrates them in the Mainnet, in the following three phases.
+            The migration of AE tokens will take place according to the phases outlined below. The AE Migration Contract ‘collects’ the received tokens and ensures they are migrated to the Mainnet.
           </p>
         </intro>
         <steps-list :secondary="true">
@@ -150,7 +148,7 @@
                 Mainnet Launch
               </h3>
               <p>
-                Will include all tokens migrated in phase 0 before Mainnet launch
+                All tokens migrated prior to the Mainnet launch will be available on the Mainnet.
               </p>
             </template>
           </step-list-item>
@@ -163,7 +161,7 @@
                 1st Hardfork
               </h3>
               <p>
-               Will include all tokens migrated between Mainnet launch and the 1st Hardfork
+               Will include all tokens migrated between the Mainnet launch and the 1st Hardfork.
               </p>
             </template>
           </step-list-item>
@@ -176,7 +174,7 @@
                 2nd Hardfork
               </h3>
               <p>
-                Will include all tokens migrated between the 1st and 2nd Hardfork
+                Will include all tokens migrated between the 1st and 2nd Hardforks.
               </p>
             </template>
           </step-list-item>
@@ -189,7 +187,7 @@
                 3rd Hardfork
               </h3>
               <p>
-                Will include all tokens migrated between the 2nd and 3rd Hardfork
+                Will include all tokens migrated between the 2nd and 3rd Hardforks.
               </p>
             </template>
           </step-list-item>
@@ -200,43 +198,43 @@
           <div class="faq__info">
             <h2 class="title title-category">F.A.Q.</h2>
             <p>
-              The frequenlty asked questions can be found here. For more information, visit our forum.
+              You can find the answers to the most frequently asked questions here. For more information, <a href="https://forum.aeternity.com/t/ae-token-migration-questions" target="_blank">visit our forum</a>.
             </p>
           </div>
           <div class="faq__q-a">
             <app-accordion>
               <template slot="title">
                 <h3 class="title title-tiny">
-                  What’s mainnet?
+                  What is a "mainnet"?
                 </h3>
               </template>
               <template slot="body">
                 <p>
-                  Mainnet is æternity’s Mainnet, which will launch soon. In order to get your tokens spawned there, you need to follow the Token Migration tutorial.
+                  Mainnet here refers to æternity's Mainnet: the network on which AE token transactions will take place. To get your tokens spawned there, to follow the Token Migration tutorial.
                 </p>
               </template>
             </app-accordion>
             <app-accordion>
               <template slot="title">
                 <h3 class="title title-tiny">
-                  What’s my ETH account?
+                  What is my ETH account?
                 </h3>
               </template>
               <template slot="body">
                 <p>
-                  Your ETH account is your Ethereum address where you are holding the AE ERC-20 Tokens, this is the address from which you need to transfer the tokens in order to receive them in the Mainnet.
+                  Your ETH account is the Ethereum account address, where you are holding your AE ERC-20 Tokens. This is the address you need to transfer your Ethereum AE tokens from, in order for the AE tokens to be available in the Mainnet.
                 </p>
               </template>
             </app-accordion>
             <app-accordion>
               <template slot="title">
                 <h3 class="title title-tiny">
-                  What’s my æternity account?
+                  What is my æternity account?
                 </h3>
               </template>
               <template slot="body">
                 <p>
-                  Your æternity account is the account you create with the AirGap Vault or the Ledger. This is your address on the Mainnet
+                  Your æternity account is the account you will create with the AirGap Vault app, a Ledger, our out Base æpp (beta). This is your address on the æternity Mainnet.
                 </p>
               </template>
             </app-accordion>
@@ -248,7 +246,7 @@
               </template>
               <template slot="body">
                 <p>
-                 Getting the tokens in the Mainnet, depends on when you do the migration process. The first phase ends at Mainnet launch. All the migrated tokens until then will be available in the Genesis block. Tokens migrated after that will be available in the Mainnet at the 1st Hardfork. Migrated tokens between the 1st and 2nd Hardfork will be available at the 2nd Hardfork. The tokens migrated between the 2nd and 3rd Hardfork will be in the Mainnet at the 3rd Hardfork.
+                 Getting the tokens in the Mainnet, depends on when you go through the migration process. The first phase ends at the Mainnet launch. All Ethereum AE tokens sent to the Migration Contract prior to the Mainnet launch will be available in the Genesis block. Tokens migrated after that point will be available in the Mainnet at the 1st Hardfork. Tokens migrated between the 1st and 2nd Hardforks will be available at the 2nd Hardfork. Tokens migrated between the 2nd and 3rd Hardforks will be in the Mainnet at the 3rd Hardfork.
                 </p>
               </template>
             </app-accordion>
@@ -260,7 +258,7 @@
               </template>
               <template slot="body">
                 <p>
-                 We have created a forum thread where you can ask questions about the Token Migration. We will be of assistance to help you there. <a href="https://forum.aeternity.com/t/ae-token-migration-questions" target="_blank">Visit our forum</a>
+                 We have created a forum thread where you can ask questions related to the Token Migration procedure. We will provide the help you need there. <a href="https://forum.aeternity.com/t/ae-token-migration-questions" target="_blank">Visit our forum</a>
                 </p>
               </template>
             </app-accordion>
