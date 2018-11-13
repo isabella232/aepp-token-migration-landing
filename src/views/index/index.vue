@@ -42,10 +42,10 @@
                   Create an æternity account with AirGap Vault.
                 </h4>
                 <p>
-                 Airgap Vault is the secure way to create an æternity account. Install the Vault app on a mobile device and create a new æternity account. Alternatively, you can use our webwallet Baseæpp (beta) for migrating small amounts of AE tokens.
+                 AirGap Vault is the secure way to create an æternity account. Install the Vault app on a mobile device and create a new æternity account. Alternatively, you can use our webwallet Baseæpp (beta) for migrating small amounts of AE tokens.
                 </p>
                 <footer class="steps-footer">
-                  <a class="steps-footer__cta" href="https://airgap.it/#download" target="_blank">
+                  <a class="steps-footer__cta" href="https://airgap.it/airgap-vault/" target="_blank">
                     <img :src="require('@/assets/graphics/airgap-logo.svg')" alt="airgap vault logo">
                   </a>
                 </footer>
@@ -189,12 +189,12 @@
             <app-accordion>
               <template slot="title">
                 <h3 class="title title-tiny">
-                  Where can I get support about the migration process?
+                  Why should I migrate my tokens before Mainnet launch (Phase 0)?
                 </h3>
               </template>
               <template slot="body">
                 <p>
-                  Please read the <a href="https://blog.aeternity.com/launched-first-phase-of-ae-token-migration-bafa68b12463">Token Migration announcement</a> in the blog. It includes useful links and important information related to the migration process, including two video guides, a <a href="">dedicated Forum topic</a>, a <a href="https://goo.gl/forms/ZucXJY6ZM926ANxv1">dedicated support form</a> and official communication channels to follow during the AE migration period. Please keep in mind that the fastest way to get support is by using the Forum, since it might take up to 2 days to get an answer submitted via the form.
+                  After Mainnet Launch (Phase 0), all consecutive phases will require a hard fork in order for migrated AE tokens to become available on the Mainnet. All hard forks are subject to the willingness of miners and users to update their node software in order to follow the updated rules of the æternity network. The æternity Establishment and Foundation will support the forks, but it is up to the miner and user communities to determine if a fork will be successful or not. In addition to recently migrated AE tokens, the scheduled hard forks will also include protocol improvements which introduce new functionalities, features and optimizations.
                 </p>
               </template>
             </app-accordion>
@@ -206,7 +206,7 @@
               </template>
               <template slot="body">
                 <p>
-                  The æternity Mainnet is the open, public network where the AE tokens, smart contracts, oracles, state channels, naming system and all other technological features will be available for use. You can say that the Mainnet is the alpha version of æternity's blockchain platform. The Mainnet will be improved through scheduled hard forks, which will introduce newly migrated coins, updated features and increased functionalities.
+                  The æternity Mainnet is the open, public network where the AE tokens, smart contracts, oracles, state channels, naming system and all other technological features will be available for use. The Mainnet will be improved through scheduled hard forks, which will introduce newly migrated tokens and updated features and increased functionalities.
                 </p>
               </template>
             </app-accordion>
@@ -218,19 +218,7 @@
               </template>
               <template slot="body">
                 <p>
-                  The Genesis Block is the first block mined on the æternity Mainnet. It will include all AE tokens migrated before Mainnet launch. It will also include the messages created by users during the first Phase of æternity's original campaign in 2017. The date and time of the genesis block is generally considered to be the official launch of any public blockchain platform.
-                </p>
-              </template>
-            </app-accordion>
-            <app-accordion>
-              <template slot="title">
-                <h3 class="title title-tiny">
-                  When will my tokens be on the Mainnet?
-                </h3>
-              </template>
-              <template slot="body">
-                <p>
-                  AE tokens tokens will not migrated immediately, but in <a href="https://blog.aeternity.com/launched-first-phase-of-ae-token-migration-bafa68b12463">phases</a>. The genesis block, the first block of the æternity blockchain, will include all tokens migrated by users during Phase 0 (before Mainnet launch). Each of the subsequent three phases, with a timeframe of around 3 months, will end with a scheduled hard fork of the æternity blockchain. The scheduled hard fork will introduce the migrated tokens in the current Phase to the Mainnet. All hard forks are subject to the willingness of miners and users to update their node software in order to follow the updated rules of the æternity network.
+                  The Genesis block is the first block mined on the æternity Mainnet. It will include all AE tokens migrated before Mainnet launch. It will also include the messages created by users during the first Phase of æternity’s original campaign in 2017. The date and time of the genesis block is generally considered to be the official launch of any public blockchain platform.
                 </p>
               </template>
             </app-accordion>
@@ -242,9 +230,19 @@
               </template>
               <template slot="body">
                 <p>
-                  A hard fork is a permanent divergence from the previous version of the blockchain, and nodes running previous versions will no longer be accepted by the newest version.
-                  <br>
-                  A hard fork is not backwards compatible. Each of our scheduled hard forks will migrate tokens and add or expand features of the æternity blockchain that can only be implemented via a hard fork such as the governance system or the new virtual machine.
+                  A hard fork is a permanent divergence from the previous version of the blockchain, and nodes running previous versions will no longer be accepted by the newest version. A hard fork is not backwards compatible. Each of our scheduled hard forks will migrate tokens and add or expand features of the æternity blockchain that can only be implemented via a hard fork such as the governance system or the new virtual machine.
+                </p>
+              </template>
+            </app-accordion>
+            <app-accordion>
+              <template slot="title">
+                <h3 class="title title-tiny">
+                  When will my AE tokens be on the Mainnet?
+                </h3>
+              </template>
+              <template slot="body">
+                <p>
+                  AE tokens tokens will not migrated immediately, but in phases. The genesis block, the first block of the æternity blockchain, will include all tokens migrated by users during Phase 0 (before Mainnet launch). Each of the subsequent three phases, with a timeframe of around 3 months, will end with a scheduled hard fork of the æternity blockchain. The scheduled hard fork will introduce the migrated tokens in the current Phase to the Mainnet.
                 </p>
               </template>
             </app-accordion>
@@ -256,7 +254,7 @@
               </template>
               <template slot="body">
                 <p>
-                 You will still be able to migrate your AE tokens as long as you don’t use a smart contract to manage them. More information about this will be forthcoming.
+                  You will still be able to migrate your AE tokens as long as you don’t use a smart contract to manage them. More information will follow in time.
                 </p>
               </template>
             </app-accordion>
