@@ -1,27 +1,31 @@
 <template>
   <header class="app-header" id="top">
-    <div class="app-header__inner-wrapper">
-      <figure class="app-header__logo">
-        <router-link to="/">
-          <div class="logo">
-            <ae-logo/>
-            <span class="logo-type">æternity
-              <span class="logo-type__txt">Blockchain</span>
-            </span>
-          </div>
-        </router-link>
-      </figure>
-      <slot name="menu"/>
-    </div>
+    <app-content container>
+      <div class="app-header__inner-wrapper">
+        <figure class="app-header__logo">
+          <router-link to="/">
+            <div class="logo">
+              <ae-logo/>
+              <span class="logo-type">æternity
+                <span class="logo-type__txt">Blockchain</span>
+              </span>
+            </div>
+          </router-link>
+        </figure>
+        <slot name="menu"/>
+      </div>
+    </app-content>
   </header>
 </template>
 <script>
 import AeLogo from '@/components/ae-logo.vue'
+import AppContent from '@/sections/app-content.vue'
 
 export default {
   name: 'app-header',
   components: {
-    AeLogo
+    AeLogo,
+    AppContent
   }
 }
 </script>
