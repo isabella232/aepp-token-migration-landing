@@ -3,12 +3,7 @@
     <div class="app-header__inner-wrapper">
       <figure class="app-header__logo">
         <router-link to="/">
-          <div class="logo">
-            <ae-logo/>
-            <span class="logo-type">æternity
-              <span class="logo-type__txt">Blockchain</span>
-            </span>
-          </div>
+            <ae-logo-type/>
         </router-link>
       </figure>
       <slot name="menu"/>
@@ -16,12 +11,12 @@
   </header>
 </template>
 <script>
-import AeLogo from '@/components/ae-logo.vue'
+import AeLogoType from '@/components/ae-logo-type.vue'
 
 export default {
   name: 'app-header',
   components: {
-    AeLogo
+    AeLogoType
   }
 }
 </script>
@@ -46,33 +41,8 @@ export default {
 
   &__logo {
     font-weight: 600;
-    @include font-size(s);
     & a {
       display: flex;
-      & img {
-        max-width: 3rem;
-        margin-right: $spacer-m;
-      }
-    }
-  }
-}
-
-.logo{
-  display: flex;
-  align-items: center;
-  &-type {
-    font-size: 1.2rem;
-    margin-left: .5rem;
-    position: relative;
-    &__txt {
-    font-size: .2em;
-    text-transform: uppercase;
-    letter-spacing: .5em;
-    display: block;
-    position: absolute;
-    top: .7rem;
-    left: 0;
-
     }
   }
 }
