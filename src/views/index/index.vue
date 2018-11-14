@@ -59,6 +59,9 @@
                       <a class="steps-footer__cta" href="https://airgap.it/airgap-vault/" target="_blank">
                         <img :src="require('@/assets/graphics/airgap-logo.svg')" alt="airgap vault logo">
                       </a>
+                       <a class="steps-footer__cta" href="https://airgap.it/airgap-vault/" target="_blank">
+                        <img :src="require('@/assets/graphics/base-aepp-logo.svg')" alt="airgap vault logo">
+                      </a>
                     </footer>
                   </template>
                 </step-list-item>
@@ -137,7 +140,7 @@
                 :isCurrent="true"
                 :src="require('@/assets/graphics/phase-1.png')"
                 alt="Mainnet Launch"
-                ends="Ends November ‘18"
+                ends="Ends November 2018"
                 >
                 <h3 class="title title-small">
                   Mainnet Launch
@@ -151,7 +154,7 @@
                 :isCurrent="false"
                 :src="require('@/assets/graphics/phase-2.png')"
                 alt="1st Hardfork"
-                ends="Ends February ‘19"
+                ends="Ends February 2019"
                 >
                 <h3 class="title title-small">
                   1st Hardfork
@@ -165,7 +168,7 @@
                 :isCurrent="false"
                 :src="require('@/assets/graphics/phase-3.png')"
                 alt="2nd Hardfork"
-                ends="Ends May ‘19"
+                ends="Ends May 2019"
                 >
                 <h3 class="title title-small">
                   2nd Hardfork
@@ -179,7 +182,7 @@
                 :isCurrent="false"
                 :src="require('@/assets/graphics/phase-4.png')"
                 alt="3rd Hardfork"
-                ends="Ends September ‘19"
+                ends="Ends September 2019"
                 >
                 <h3 class="title title-small">
                   3rd Hardfork
