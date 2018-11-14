@@ -1,22 +1,26 @@
 <template>
   <header class="app-header" id="top">
-    <div class="app-header__inner-wrapper">
-      <figure class="app-header__logo">
-        <router-link to="/">
-            <ae-logo-type/>
-        </router-link>
-      </figure>
-      <slot name="menu"/>
-    </div>
+    <app-content container>
+      <div class="app-header__inner-wrapper">
+        <figure class="app-header__logo">
+          <router-link to="/">
+              <ae-logo-type/>
+          </router-link>
+        </figure>
+        <slot name="menu"/>
+      </div>
+    </app-content>
   </header>
 </template>
 <script>
 import AeLogoType from '@/components/ae-logo-type.vue'
+import AppContent from '@/sections/app-content.vue'
 
 export default {
   name: 'app-header',
   components: {
-    AeLogoType
+    AeLogoType,
+    AppContent
   }
 }
 </script>
@@ -27,12 +31,7 @@ export default {
   left: 0;
   width: 100%;
   z-index: 1;
-  padding: $spacer-xl;
-  padding-bottom: 0;
-
-  @include phone-and-tablet {
-    padding: $spacer-m;
-  }
+  padding: 0 ;
 
   &__inner-wrapper {
     display: flex;

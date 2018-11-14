@@ -37,6 +37,7 @@ export default {
       padding: $spacer-l;
       padding-left: $spacer-xl;
       padding-bottom: 0;
+      width: 65%;
     }
   }
 }
@@ -52,34 +53,32 @@ export default {
       color: $darkgrey;
       position: relative;
       width: 100%;
+      //height: 300px;
+      min-height: 290px;
+      //padding-bottom: $spacer-l;
       @include tablet-and-desktop {
-        max-height: 19rem;
-        height: 100%;
-        max-width: 19rem;
+        width: 35%;
       }
-    &:after {
+    &:after { // line splitting info image
       content: '';
       position: absolute;
       background-color: $grey;
       display: block;
-      @include only-phone {
-        bottom: 0;
-        left: 50%;
-        transform: translateX(-50%);
-        width: 85%;
-        height: 1px;
-      }
 
-      @include tablet-and-desktop {
-        width: 1px;
-        top: 50%;
-        right: 0;
-        transform: translateY(-50%);
-        height: 85%;
-        }
+        @include tablet-and-desktop { // line vertical
+          width: 1px;
+          top: 50%;
+          right: - $spacer-m;
+          transform: translateY(-50%);
+          height: 85%;
+          }
       }
       & img {
         object-fit: cover;
+        height: 100%;
+        @include tablet-and-desktop {
+          object-fit: cover;
+        }
       }
     }
   }
