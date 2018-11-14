@@ -1,7 +1,18 @@
 <template>
   <main class="home">
     <app-view>
-      <app-header/>
+      <app-header>
+        <template slot="menu">
+          <app-menu>
+            <app-menu-item
+              src="//aepp-migrate.aeternity.com/#/status/result"
+              name="Check my Migration"/>
+            <app-menu-item
+              src="//verify-data.aeternity.com"
+              name="Check Payload"/>
+          </app-menu>
+        </template>
+      </app-header>
       <article id="content">
         <app-hero :class="cta ? 'out-of-view' : 'in-view'">
           <template slot="text">
@@ -17,13 +28,6 @@
               <a href="//aepp-migrate.aeternity.com" target="_blank">
                 <ae-button face="round" fill="primary" extend>
                   Start Migration
-                </ae-button>
-              </a>
-            </div>
-            <div class="button-wrapper" >
-              <a href="//aepp-migrate.aeternity.com/#/status/result" target="_blank">
-                <ae-button face="flat" fill="neutral" extend>
-                  Check my Migration
                 </ae-button>
               </a>
             </div>
@@ -293,6 +297,8 @@ import inViewport from 'in-viewport'
 import AppFaq from '@/components/app-faq.vue'
 import AppAccordion from '@/components/app-accordion.vue'
 
+import AppMenu from '@/sections/app-menu.vue'
+import AppMenuItem from '@/sections/app-menu-item.vue'
 import AppView from '@/sections/app-view.vue'
 import AppFooter from '@/sections/app-footer.vue'
 import AppHeader from '@/sections/app-header.vue'
@@ -313,6 +319,8 @@ export default {
     Phases,
     PhaseItem,
     AppFaq,
+    AppMenu,
+    AppMenuItem,
     AppAccordion,
     Intro,
     AeButton,

@@ -1,6 +1,6 @@
 <template>
   <div class="app-content" :class="{light, grey, dark}">
-    <div :class="{ container, flex}">
+    <div :class="{ container, flex, small}">
       <slot/>
     </div>
   </div>
@@ -14,7 +14,7 @@ export default {
     grey: Boolean,
     dark: Boolean,
     flex: Boolean,
-    left: Boolean
+    small: Boolean
   }
 }
 </script>
@@ -48,6 +48,14 @@ export default {
 .flex {
   display: flex;
   height: 100%;
+}
+
+.small {
+  padding: 2rem;
+  @include only-desktop {
+  padding: 2rem 0;
+  }
+
 }
 
 </style>
