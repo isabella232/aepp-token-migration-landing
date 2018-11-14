@@ -25,5 +25,12 @@ export default new Router({
     path: '/tos',
     component: require('@/views/terms/terms.vue').default
   }
-  ]
+  ],
+  scrollBehavior (to, from, savedPosition) {
+    if (savedPosition) {
+      return savedPosition
+    } else {
+      return { x: 0, y: 0 }
+    }
+  }
 })

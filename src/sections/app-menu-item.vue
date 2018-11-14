@@ -4,13 +4,13 @@
   </li>
 </template>
 <script>
-  export default {
-    name: 'app-menu-item',
-    props: {
-      src: String,
-      name: String
-    }
+export default {
+  name: 'app-menu-item',
+  props: {
+    src: String,
+    name: String
   }
+}
 </script>
 <style lang="scss" scoped>
 .app-menu-item {
