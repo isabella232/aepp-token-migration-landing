@@ -8,7 +8,12 @@
         </div>
       </section>
     </app-content>
-    <figure class="app-hero__img">
+    <figure class="app-hero__img"
+      data-aos="slide-up"
+      data-aos-duration="1500"
+      data-aos-easing="ease-in-out"
+      data-aos-anchor=".app-hero__count"
+    >
       <img :src="require('../assets/graphics/galaxy.png')" alt="mainnet launch  ">
     </figure>
     <div class="app-hero__count">
@@ -23,6 +28,9 @@
 <script>
 import Web3 from 'web3'
 import AppContent from '@/sections/app-content.vue'
+import AOS from 'aos'
+import 'aos/dist/aos.css'
+
 let $web3
 const abi = [{
   'constant': true,
@@ -66,6 +74,13 @@ export default {
   async created () {
     this.burnedBalance = await getBurnedBalance()
   },
+  mounted () {
+      document.addEventListener('scroll', () => {
+         AOS.init({
+          mirror: true
+         })
+      })
+  },
   filters: {
     reduceDecimals: function (value) {
       if (!value) return ''
@@ -79,6 +94,9 @@ export default {
 }
 </script>
 <style lang="scss" scoped>
+body[data-aos-duration='4000'] [data-aos], [data-aos][data-aos][data-aos-duration='4000']{
+    transition-duration: 4000ms;
+  }
 .app-hero {
   position: relative;
   height: 100%;
@@ -96,20 +114,21 @@ export default {
   &__img {
     z-index: 0;
     right: -10%;
-    top: 50%;
+    top: -86%;
     width: 40%;
     max-width: 30rem;
-    transform: translateY(-50%);
+    position: absolute;
+    @include only-tablet {
+      top: -60%;
+      width: 50%;
+      right: -20%;
 
-      @include only-phone {
-        right: -40%;
-        width: 80%;
-      }
-      @include only-tablet {
-        right: -20%;
-        width: 55%;
-      }
-  }
+    }
+    @include only-phone {
+      top: -60%;
+      width: 80%;
+      right: -40%;
+    }
 
   &__info {
     margin: auto 0;
@@ -173,14 +192,6 @@ export default {
   @include font-size(xxxxl);
   font-weight: bold;
   color: $magenta;
-
-}
-
-.out-of-view .app-hero__img{
-  position: fixed;
-}
-.in-view .app-hero__img{
-  position: absolute;
 
 }
 </style>
