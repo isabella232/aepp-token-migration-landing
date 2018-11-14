@@ -34,15 +34,15 @@ export default {
   }
 }
 .container {
-  padding: 2rem 0 4rem 0;
+  padding: $spacer-max 0;
   margin: 0 auto;
   width: 100%;
   max-width: 70rem;
   @include only-tablet {
-    padding: 4rem 2rem;
+    //padding: rem 2rem;
   }
   @include only-phone {
-    padding: 4rem 1.5rem;
+    padding: 6rem 1.5rem;
   }
 }
 .flex {

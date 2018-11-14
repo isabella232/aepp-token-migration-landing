@@ -123,7 +123,7 @@ export default {
 
     }
     @include only-phone {
-      top: -60%;
+      top: -50%;
       width: 80%;
       right: -40%;
     }
@@ -198,7 +198,7 @@ export default {
   color: $magenta;
     @include font-size(wow);
   @include only-phone {
-    @include font-size(xxxl);
+    @include font-size(xxl);
   }
 }
 

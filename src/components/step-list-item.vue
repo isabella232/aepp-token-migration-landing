@@ -38,6 +38,7 @@ export default {
   @include tablet-and-desktop {
     flex-direction: row;
     overflow: hidden;
+    max-height: 300px;
   }
   @include tablet-and-desktop {
     margin-bottom: $spacer-xxl;
@@ -81,11 +82,13 @@ export default {
         width: 30%;
       }
       & img {
-        // object-fit: fill;
-        // //height: 100%;
-        // @include tablet-and-desktop {
-        //   object-fit: fill;
-        // }
+        object-fit: fill;
+        //height: 100%;
+        @include tablet-and-desktop {
+          object-fit: scale-down;
+          width: 300px;
+          object-position: top center;
+        }
       }
     }
   }

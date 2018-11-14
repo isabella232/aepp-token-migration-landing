@@ -19,7 +19,7 @@ export default {
   display: flex;
   flex-wrap: wrap;
   justify-content: space-between;
-  padding: $spacer-max 0;
+  //padding: $spacer-max 0;
 
   &__info {
     width: 100%;

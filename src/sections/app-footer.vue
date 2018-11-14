@@ -47,10 +47,13 @@ export default {
 <style lang="scss" scoped>
   .app-footer {
     background-color: $darkblue;
-    padding: $spacer-max/2 0 $spacer-max ;
+    //padding: 0 0 $spacer-max ;
     color: $white;
     &__details {
       display: flex;
+      @include only-phone {
+        flex-wrap: wrap;
+      }
     }
     &__quote {
       margin-top: $spacer-m;
@@ -62,6 +65,7 @@ export default {
   width: 100%;
   @include only-phone {
     flex-direction: column;
+
   }
   &__external {
       margin-right: 0;
@@ -91,6 +95,9 @@ small {
   min-width: 8em;
   opacity: .7;
   margin-right: $spacer-l;
+  @include only-phone {
+    margin-bottom: $spacer-m;
+  }
 }
 time {
   display: inline;

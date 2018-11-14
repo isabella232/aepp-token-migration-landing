@@ -277,7 +277,7 @@
               </app-accordion>
             </template>
           </app-faq>
-          <app-content container>
+          <app-content container small>
             <div class="to-top">
               <a href="#top">
                 <ae-button face="icon" fill="primary">
