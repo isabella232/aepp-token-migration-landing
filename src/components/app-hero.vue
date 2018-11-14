@@ -103,16 +103,12 @@ body[data-aos-duration='4000'] [data-aos], [data-aos][data-aos][data-aos-duratio
   min-height: 90vh;
   background-color: $skyblue;
   display: flex;
-  padding: $spacer-xl;
   text-align: left;
   margin-bottom: 75vh;
 
     @include only-phone {
       margin-bottom: 90vh;
       min-height: 100vh;
-    }
-    @include phone-and-tablet {
-      padding: $spacer-m;
     }
 
   &__img {
@@ -133,7 +129,6 @@ body[data-aos-duration='4000'] [data-aos], [data-aos][data-aos][data-aos-duratio
       width: 80%;
       right: -40%;
     }
-  }
 
   &__info {
     margin: auto 0;
@@ -149,6 +144,7 @@ body[data-aos-duration='4000'] [data-aos], [data-aos][data-aos][data-aos-duratio
     &__buttons{
       display: flex;
       flex-direction: column;
+      flex-wrap: wrap;
       margin-top: $spacer-l;
         @include tablet-and-desktop {
           flex-direction: row;
@@ -198,12 +194,4 @@ body[data-aos-duration='4000'] [data-aos], [data-aos][data-aos][data-aos-duratio
   color: $magenta;
 
 }
-
-// .out-of-view .app-hero__img{
-//   position: fixed;
-// }
-// .in-view .app-hero__img{
-//
-
-// }
 </style>

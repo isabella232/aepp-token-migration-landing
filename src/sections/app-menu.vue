@@ -4,18 +4,7 @@
       <ae-icon :name="`${open ? 'close' : 'burger'}`"/>
     </div>
     <ul class="app-menu__nav" :class="[open || isDesktop ? 'is-open' : 'is-closed']">
-      <li class="app-menu__nav__item">
-        <a href="#how-to-migrate">How to migrate</a>
-      </li>
-      <li class="app-menu__nav__item">
-        <a href="#road-map"> Roadmap</a>
-      </li>
-      <li class="app-menu__nav__item">
-        <a href="#see-migration-status">See migration status</a>
-      </li>
-      <li class="app-menu__nav__item">
-        <a href="#faq">FAQ</a>
-      </li>
+      <slot/>
     </ul>
   </nav>
 </template>
@@ -26,14 +15,44 @@ export default {
   name: 'app-menu',
   components: {
     AeIcon
+  },
+  data: function () {
+    return {
+      open: false,
+      windowWidth: window.innerWidth,
+      cta: true
+    }
+  },
+  mounted () {
+    window.addEventListener('resize', () => {
+      this.windowWidth = window.innerWidth
+    })
+    window.addEventListener('scroll', this.checkView)
+  },
+  computed: {
+    isDesktop () {
+      return this.windowWidth >= 1000
+    }
+  },
+  methods: {
+    toggleMenu () {
+      this.open = !this.open
+    }
   }
 }
 </script>
-<style lang="scss">
+<style lang="scss" scoped>
 .app-menu{
 
   &__icon {
     font-size: 1.7rem;
+    position: relative;
+    // & > i {
+    //   position: absolute;
+    //   top: 0;
+    //   left: 0;
+    // }
+
   }
 
   &__nav {
@@ -43,54 +62,25 @@ export default {
   font-weight: 600;
   text-transform: uppercase;
 
-  @include phone-and-tablet {
-      @include font-size(s);
-    position: absolute;
-    flex-direction: column;
-    top: 3rem;
-    right: 0;
-    height: 100vh;
-    width: 0;
-    text-align: right;
-    background: $bg-color;
-    transition: transform .3s ease;
-    transform: translateX(+110%);
-    overflow: hidden;
-  }
-
-  &__item {
-    margin-right: $spacer-xl;
-    &:last-child {
-      margin-right: 0;
-    }
-
-      @include phone-and-tablet {
-        padding: $spacer-m;
-        margin: $spacer-m 0;
-
-        &:first-child {
-          margin-top: auto;
-
-          &::before {
-            content: '';
-            display: block;
-            margin-top: -3rem;
-          }
-        }
-
-        &:last-child {
-          margin-bottom: auto;
-        }
-
-        &:hover {
-          background-color: $grey;
-        }
-      }
+    @include phone-and-tablet {
+        @include font-size(s);
+      position: absolute;
+      flex-direction: column;
+      top: 0;
+      right: 0;
+      height: 100vh;
+      z-index: -1;
+      width: 0;
+      text-align: right;
+      background: $bg-color;
+      transition: transform .3s ease;
+      transform: translateX(+100%);
+      overflow: hidden;
     }
   }
 }
 
-.is-open.app-menu-nav {
+.is-open.app-menu__nav {
   transform: translateX(0);
   width: 100%;
 }
