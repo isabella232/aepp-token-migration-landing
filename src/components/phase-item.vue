@@ -76,6 +76,10 @@ export default {
     color: $white;
     opacity: .3;
 
+    &_name {
+      font-weight: bold;
+    }
+
     &_txt {
       @include font-size(s);
       font-weight: bold;
@@ -90,7 +94,7 @@ export default {
       @include tablet-and-desktop {
         line-height: .9em;
       }
-      font-size: 8.5rem;
+      @include font-size(wow);
       display: block;
     }
   }

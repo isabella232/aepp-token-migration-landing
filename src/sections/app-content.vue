@@ -42,7 +42,7 @@ export default {
     padding: 4rem 2rem;
   }
   @include only-phone {
-    padding: 4rem 1rem;
+    padding: 4rem 1.5rem;
   }
 }
 .flex {
@@ -51,7 +51,7 @@ export default {
 }
 
 .small {
-  padding: 2rem;
+  padding: 1.5rem;
   @include only-desktop {
   padding: 2rem 0;
   }

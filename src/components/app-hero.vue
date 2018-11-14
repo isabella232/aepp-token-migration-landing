@@ -19,7 +19,7 @@
     <div class="app-hero__count">
       <div class="app-hero__count-wrapper">
         <p class="token-count">{{burnedBalance | reduceDecimals}}</p>
-        <p>AE migrated so far</p>
+        <p class="token-count-info">AE migrated so far</p>
       </div>
       <div class="app-hero__line"></div>
     </div>
@@ -169,8 +169,10 @@ export default {
     &-wrapper {
       margin: auto;
       background-color: $white;
-      padding-top: 3em;
-      padding-bottom: 0;
+      padding: 8rem 0;
+      @include only-phone{
+        padding: 4rem 0 3.5rem;
+      }
       text-align: center;
     }
   }
@@ -189,6 +191,10 @@ export default {
 
 .token-count{
   font-weight: bold;
+  line-height: 1em;
+  &-info {
+    margin: 0;
+  }
   color: $magenta;
     @include font-size(wow);
   @include only-phone {

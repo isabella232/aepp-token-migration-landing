@@ -19,7 +19,7 @@ export default {
       margin-right: 0;
     }
       @include phone-and-tablet {
-        padding: $spacer-m;
+        padding: 0 1.5rem;
         margin: $spacer-m 0;
 
         &:first-child {

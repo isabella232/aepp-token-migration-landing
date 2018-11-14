@@ -1,5 +1,5 @@
 <template>
-  <svg width="204px" height="33px" viewBox="0 0 204 33" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+  <svg width="204" height="33" viewBox="0 0 204 33" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
     <title>aeternity logo</title>
     <defs>
         <polygon id="path-1" points="0.0225042652 0.115694118 31.7612649 0.115694118 31.7612649 18.3981988 0.0225042652 18.3981988"></polygon>

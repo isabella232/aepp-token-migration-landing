@@ -36,10 +36,14 @@ export default {
   &__inner-wrapper {
     display: flex;
     justify-content: space-between;
+    align-items: center;
   }
 
   &__logo {
     font-weight: 600;
+    @include only-phone {
+      width: 9rem;
+    }
     & a {
       display: flex;
     }

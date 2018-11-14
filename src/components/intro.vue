@@ -11,6 +11,10 @@ export default {
 <style lang="scss" scoped>
 .intro {
   text-align: center;
+  margin: $spacer-max auto;
+  @include only-phone {
+    padding: 0 $spacer-s;
+  }
 
   &__footer {
     margin-top: $spacer-l;

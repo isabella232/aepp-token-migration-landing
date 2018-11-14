@@ -47,7 +47,7 @@ export default {
 <style lang="scss" scoped>
   .app-footer {
     background-color: $darkblue;
-    padding-bottom: 8rem;
+    padding: $spacer-max/2 0 $spacer-max ;
     color: $white;
     &__details {
       display: flex;
@@ -73,6 +73,16 @@ export default {
      color: $white;
      display: inline-block;
      margin-right: $spacer-l;
+
+      @include only-phone {
+        display: block;
+        margin-right: 0;
+        margin-bottom: $spacer-m;
+      }
+
+     &_last {
+      margin: 0;
+     }
   }
 }
 small {
