@@ -1,10 +1,15 @@
 <template>
   <header class="app-hero">
-    <div class="app-hero__inner-wrapper">
-      <slot/>
-    </div>
+    <app-content container flex>
+      <section class="app-hero__info">
+        <slot name="text"/>
+        <div class="app-hero__info__buttons">
+          <slot name="buttons"/>
+        </div>
+      </section>
+    </app-content>
     <figure class="app-hero__img">
-      <img :src="require('../assets/graphics/galaxy.png')" alt="phase-1">
+      <img :src="require('../assets/graphics/galaxy.png')" alt="mainnet launch  ">
     </figure>
     <div class="app-hero__count">
       <div class="app-hero__count-wrapper">
@@ -17,6 +22,7 @@
 </template>
 <script>
 import Web3 from 'web3'
+import AppContent from '@/sections/app-content.vue'
 let $web3
 const abi = [{
   'constant': true,
@@ -66,6 +72,9 @@ export default {
       value = parseFloat(value)
       return value.toFixed(2)
     }
+  },
+  components: {
+    AppContent
   }
 }
 </script>
@@ -80,29 +89,51 @@ export default {
   text-align: left;
   margin-bottom: 75vh;
 
-  @include only-phone {
-    margin-bottom: 90vh;
-    padding: $spacer-m;
-  }
+    @include only-phone {
+      margin-bottom: 90vh;
+      min-height: 100vh;
+    }
+    @include phone-and-tablet {
+      padding: $spacer-m;
+    }
 
   &__img {
     z-index: 0;
     right: -10%;
-    top: -5%;
-    @include only-phone {
-      right: -40%;
-      width: 80%;
-    }
+    top: 50%;
+    width: 40%;
+    max-width: 30rem;
+    transform: translateY(-50%);
+
+      @include only-phone {
+        right: -40%;
+        width: 80%;
+      }
+      @include only-tablet {
+
+        right: -20%;
+        width: 55%;
+      }
   }
 
-  &__inner-wrapper {
-    max-width: 60em;
+  &__info {
     margin: auto 0;
+    width: 100%;
+    max-width: 60%;
     @include only-phone {
+      margin-top: $spacer-xxl;
       max-width: 70%;
-      & h1 {
-        width: 90%;
-      }
+    }
+    @include only-tablet {
+      max-width: 60%;
+    }
+    &__buttons{
+      display: flex;
+      flex-direction: column;
+      margin-top: $spacer-l;
+        @include tablet-and-desktop {
+          flex-direction: row;
+        }
     }
   }
 
@@ -112,13 +143,15 @@ export default {
     background-color: $white;
     z-index: 1;
     bottom: -75vh;
-     @include only-phone {
-      min-height: 90vh;
-      bottom: -90vh;
-    }
+
+       @include only-phone {
+        min-height: 90vh;
+        bottom: -90vh;
+      }
     left: 0;
     width: 100%;
     display: flex;
+
     &-wrapper {
       margin: auto;
       background-color: $white;
@@ -142,16 +175,15 @@ export default {
 
 .token-count{
   @include font-size(xxxxl);
-  //line-height: 1em;
   font-weight: bold;
   color: $magenta;
 
 }
 
-.in-view .app-hero__img{
+.out-of-view .app-hero__img{
   position: fixed;
 }
-.out-of-view .app-hero__img{
+.in-view .app-hero__img{
   position: absolute;
 
 }

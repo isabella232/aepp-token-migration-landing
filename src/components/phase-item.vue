@@ -39,7 +39,7 @@ export default {
   text-align: center;
   @include tablet-and-desktop {
     width: 100%;
-    max-width: 16rem;
+    max-width: 15rem;
   }
   @include only-desktop {
       margin-right: $spacer-l;
@@ -75,22 +75,26 @@ export default {
     padding: $spacer-m;
     color: $white;
     opacity: .3;
+
     &_txt {
       @include font-size(s);
       font-weight: bold;
       display: block;
       margin: auto;
     }
+
     &_number {
       font-weight: bold;
-      line-height: 1.2em;
       margin: 0;
-      padding: $spacer-m;
-      line-height: .9em;
+      line-height: 1.2em;
+      @include tablet-and-desktop {
+        line-height: .9em;
+      }
       font-size: 8.5rem;
       display: block;
     }
   }
+
 .is-current .media-txt {
   opacity: 1;
 }

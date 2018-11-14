@@ -16,11 +16,7 @@ export default {
 <style lang="scss">
   .text-body {
     max-width: 800px;
-    margin: $spacer-xl;
     margin-top: 7rem;
-    @include tablet-and-desktop{
-      margin-left: $spacer-xxl;
-    }
   }
   h1 {
     margin-top: 0;
