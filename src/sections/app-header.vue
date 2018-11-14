@@ -1,6 +1,6 @@
 <template>
   <header class="app-header" id="top">
-    <app-content container>
+    <app-content container small>
       <div class="app-header__inner-wrapper">
         <figure class="app-header__logo">
           <router-link to="/">
@@ -30,7 +30,7 @@ export default {
   top: 0;
   left: 0;
   width: 100%;
-  z-index: 1;
+  z-index: 3;
   padding: 0 ;
 
   &__inner-wrapper {

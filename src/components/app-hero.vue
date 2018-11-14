@@ -85,16 +85,12 @@ export default {
   min-height: 90vh;
   background-color: $skyblue;
   display: flex;
-  padding: $spacer-xl;
   text-align: left;
   margin-bottom: 75vh;
 
     @include only-phone {
       margin-bottom: 90vh;
       min-height: 100vh;
-    }
-    @include phone-and-tablet {
-      padding: $spacer-m;
     }
 
   &__img {
@@ -110,7 +106,6 @@ export default {
         width: 80%;
       }
       @include only-tablet {
-
         right: -20%;
         width: 55%;
       }
@@ -130,6 +125,7 @@ export default {
     &__buttons{
       display: flex;
       flex-direction: column;
+      flex-wrap: wrap;
       margin-top: $spacer-l;
         @include tablet-and-desktop {
           flex-direction: row;
