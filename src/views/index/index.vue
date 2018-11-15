@@ -20,7 +20,7 @@
               Migrate your <span class="ae-brand">AE tokens</span> to the Mainnet
             </h1>
             <p class="hero-text">
-              The æternity mainnet is almost here! You can begin migrating the AE tokens you own on Ethereum to the æternity mainnet! We will guide you through our secure migration process.
+              The æternity mainnet is almost here! You can begin migrating the AE tokens you own on Ethereum to the æternity mainnet! We will guide you through the secure migration process.
             </p>
           </template>
           <template slot="buttons" >
@@ -53,7 +53,7 @@
                       Create an æternity account with AirGap Vault.
                     </h4>
                     <p>
-                     AirGap Vault is the secure way to create an æternity account. Install the Vault app on a mobile device and create a new æternity account. Alternatively, you can use our webwallet Base æpp (beta) for migrating small amounts of AE tokens.
+                     AirGap Vault is the secure way to create an æternity account. Install the Vault app on a mobile device and create a new æternity account. Alternatively, you can use the webwallet Base æpp (beta) for migrating small amounts of AE tokens.
                     </p>
                   </template>
                   <template slot="buttons">
@@ -70,10 +70,10 @@
                   alt="Create an æternity account with AirGap Vault">
                   <template slot="info">
                     <h4 class="title title-subcategory">
-                      Transfer your Ethereum AE Tokens
+                      Migrate your Ethereum AE Tokens
                     </h4>
                     <p>
-                      We advice you to transfer your Ethereum AE tokens to our Migration Contract, using MetaMask or MyEtherWallet. You will need a small amount of ETH on the same account as your Ethereum AE tokens to cover the transaction fee. <p class="ae-brand"><strong>Do NOT send AE tokens directly to the Migration Contract!</strong></p>
+                      Use the migration aepp, that supports MetaMask or MyEtherWallet to migrate Ethereum AE tokens. You will need a small amount of ETH on the same account as your Ethereum AE tokens to cover the transaction fee. <p class="ae-brand"><strong>Do NOT send AE tokens directly to the Migration Contract!</strong></p>
                     </p>
                   </template>
                   <template slot="buttons">
@@ -199,7 +199,7 @@
             <template slot="info" class="faq__info">
               <h2 class="title title-category">F.A.Q.</h2>
               <p>
-                The frequenlty asked questions can be found here. For more information, visit our <a href="https://forum.aeternity.com/t/token-migration-phase-0-support-and-faq/1275" target="_blank">forum</a>.
+                The frequenlty asked questions can be found here. For more information, visit the <a href="https://forum.aeternity.com/t/token-migration-phase-0-support-and-faq/1275" target="_blank">forum</a>.
               </p>
             </template>
             <template slot="questions">
@@ -247,7 +247,7 @@
                 </template>
                 <template slot="body">
                   <p>
-                    A hard fork is a permanent divergence from the previous version of the blockchain, and nodes running previous versions will no longer be accepted by the newest version. A hard fork is not backwards compatible. Each of our scheduled hard forks will migrate tokens and add or expand features of the æternity blockchain that can only be implemented via a hard fork such as the governance system or the new virtual machine.
+                    A hard fork is a permanent divergence from the previous version of the blockchain, and nodes running previous versions will no longer be accepted by the newest version. A hard fork is not backwards compatible. Each of the scheduled hard forks will migrate tokens and add or expand features of the æternity blockchain that can only be implemented via a hard fork such as the governance system or the new virtual machine.
                   </p>
                 </template>
               </app-accordion>
