@@ -15,6 +15,7 @@ export default {
 <style lang="scss" scoped>
 .app-menu-item {
     margin-right: $spacer-xl;
+    letter-spacing: 0.08em;
     &:last-child {
       margin-right: 0;
     }

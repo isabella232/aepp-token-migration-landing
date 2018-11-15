@@ -53,15 +53,15 @@
                       Create an æternity account with AirGap Vault.
                     </h4>
                     <p>
-                     AirGap Vault is the secure way to create an æternity account. Install the Vault app on a mobile device and create a new æternity account. Alternatively, you can use our webwallet Baseæpp (beta) for migrating small amounts of AE tokens.
+                     AirGap Vault is the secure way to create an æternity account. Install the Vault app on a mobile device and create a new æternity account. Alternatively, you can use our webwallet Base æpp (beta) for migrating small amounts of AE tokens.
                     </p>
                   </template>
                   <template slot="buttons">
                     <a class="steps-footer__cta" href="https://airgap.it/airgap-vault/" target="_blank">
                       <img :src="require('@/assets/graphics/airgap-logo.svg')" alt="airgap vault logo">
                     </a>
-                     <a class="steps-footer__cta" href="https://airgap.it/airgap-vault/" target="_blank">
-                      <img :src="require('@/assets/graphics/base-aepp-logo.svg')" alt="airgap vault logo">
+                     <a class="steps-footer__cta" href="https://base.aepps.com/" target="_blank">
+                      <img :src="require('@/assets/graphics/base-aepp-logo.svg')" alt="base aepp logo">
                     </a>
                   </template>
                 </step-list-item>
@@ -73,7 +73,7 @@
                       Transfer your Ethereum AE Tokens
                     </h4>
                     <p>
-                      We advice you to transfer your Ethereum AE tokens to our Migration Contract, using MetaMask or MyEtherWallet. You will need a small amount of ETH on the same account as your Ethereum AE tokens to cover the transaction fee.
+                      We advice you to transfer your Ethereum AE tokens to our Migration Contract, using MetaMask or MyEtherWallet. You will need a small amount of ETH on the same account as your Ethereum AE tokens to cover the transaction fee. <p class="ae-brand"><strong>Do NOT send AE tokens from an exchange!</strong></p>
                     </p>
                   </template>
                   <template slot="buttons">
