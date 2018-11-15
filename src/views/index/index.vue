@@ -73,7 +73,7 @@
                       Transfer your Ethereum AE Tokens
                     </h4>
                     <p>
-                      We advice you to transfer your Ethereum AE tokens to our Migration Contract, using MetaMask or MyEtherWallet. You will need a small amount of ETH on the same account as your Ethereum AE tokens to cover the transaction fee. <p class="ae-brand"><strong>Do NOT send AE tokens from an exchange!</strong></p>
+                      We advice you to transfer your Ethereum AE tokens to our Migration Contract, using MetaMask or MyEtherWallet. You will need a small amount of ETH on the same account as your Ethereum AE tokens to cover the transaction fee. <p class="ae-brand"><strong>Do NOT send AE tokens directly to the Migration Contract!</strong></p>
                     </p>
                   </template>
                   <template slot="buttons">
