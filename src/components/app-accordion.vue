@@ -2,7 +2,7 @@
   <div class="app-accordion" :class="{ 'is-open': open }">
     <div class="app-accordion__subject" @click="toggle">
       <slot name="title"/>
-      <ae-icon :name="`${ open ? 'close' : 'plus'}`" fill="primary" size="2.5rem"/>
+      <ae-icon :name="`${ open ? 'close' : 'plus'}`" fill="primary" size="2rem"/>
     </div>
     <div class="app-accordion__content">
       <slot name="body"/>
@@ -58,5 +58,6 @@ export default {
 
 .is-open .app-accordion__content {
   height: auto;
+  margin-top: $spacer-m;
 }
 </style>

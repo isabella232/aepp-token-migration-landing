@@ -1,38 +1,27 @@
-<?xml version="1.0" encoding="UTF-8"?>
-<svg width="280px" height="304px" viewBox="0 0 280 304" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
-    <!-- Generator: Sketch 52.3 (67297) - http://www.bohemiancoding.com/sketch -->
-    <title>Artboard</title>
-    <desc>Created with Sketch.</desc>
-    <defs>
-        <rect id="path-1" x="0" y="0" width="112" height="228.301829" rx="16"></rect>
-        <filter x="-21.4%" y="-10.5%" width="142.9%" height="121.0%" filterUnits="objectBoundingBox" id="filter-2">
-            <feOffset dx="0" dy="0" in="SourceAlpha" result="shadowOffsetOuter1"></feOffset>
-            <feGaussianBlur stdDeviation="8" in="shadowOffsetOuter1" result="shadowBlurOuter1"></feGaussianBlur>
-            <feColorMatrix values="0 0 0 0 0.105882353   0 0 0 0 0.266666667   0 0 0 0 0.474509804  0 0 0 0.15 0" type="matrix" in="shadowBlurOuter1"></feColorMatrix>
-        </filter>
-    </defs>
-    <g id="Artboard" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
-        <rect fill="#FFFFFF" x="0" y="0" width="280" height="304"></rect>
-        <g id="Group-23" transform="translate(129.000000, 165.000000) rotate(-90.000000) translate(-129.000000, -165.000000) translate(-10.000000, 36.000000)" fill="#EDF3F7">
-            <circle id="Oval" cx="262" cy="233" r="16"></circle>
-            <path d="M2.06057393e-13,47.0901284 L2.06057393e-13,0 L117.990271,0 C117.995068,0.332760311 117.997475,0.666099111 117.997475,1 C117.997475,38.555363 87.5528377,69 49.9974747,69 C30.2258382,69 12.4250594,60.5617555 1.72306613e-13,47.0901284 Z" id="Oval-3"></path>
-            <rect id="Rectangle" transform="translate(67.610216, 200.000000) rotate(45.000000) translate(-67.610216, -200.000000) " x="26.6102158" y="159" width="82" height="82"></rect>
-            <rect id="Rectangle-Copy" transform="translate(192.748737, 40.748737) rotate(22.000000) translate(-192.748737, -40.748737) " x="168.248737" y="16.2487373" width="49" height="49"></rect>
-        </g>
-        <g id="Group-7" transform="translate(84.000000, 38.000000)">
-            <g id="Group-3">
-                <g id="Rectangle-10">
-                    <use fill="black" fill-opacity="1" filter="url(#filter-2)" xlink:href="#path-1"></use>
-                    <use fill="#FFFFFF" fill-rule="evenodd" xlink:href="#path-1"></use>
-                </g>
-                <path d="M9,27.5 C8.17157288,27.5 7.5,28.1715729 7.5,29 L7.5,199.542683 C7.5,200.37111 8.17157288,201.042683 9,201.042683 L103,201.042683 C103.828427,201.042683 104.5,200.37111 104.5,199.542683 L104.5,29 C104.5,28.1715729 103.828427,27.5 103,27.5 L9,27.5 Z" id="Rectangle-12" stroke="#FF0D6A" fill="#FF0D6A"></path>
-                <circle id="Oval" fill="#D12869" cx="28" cy="50" r="8"></circle>
-                <rect id="Rectangle" fill="#D12869" x="20" y="63" width="56" height="9"></rect>
-                <g id="iconmonstr-qr-code-2" transform="translate(20.000000, 116.000000)" fill="#D12869" fill-rule="nonzero">
-                    <path d="M31.5,18 L27,18 L27,9 L31.5,9 L31.5,13.5 L40.5,13.5 L40.5,18 L36,18 L36,22.5 L31.5,22.5 L31.5,18 Z M40.5,72 L40.5,67.5 L36,67.5 L36,72 L40.5,72 Z M36,4.5 L36,0 L27,0 L27,4.5 L31.5,4.5 L31.5,9 L36,9 L36,4.5 Z M72,0 L72,27 L67.5,27 L67.5,22.5 L49.5,22.5 L49.5,0 L72,0 Z M67.5,18 L67.5,4.5 L54,4.5 L54,18 L67.5,18 Z M4.5,27 L0,27 L0,31.5 L9,31.5 L9,27 L4.5,27 Z M4.5,40.5 L9,40.5 L9,45 L13.5,45 L13.5,31.5 L9,31.5 L9,36 L0,36 L0,45 L4.5,45 L4.5,40.5 Z M27,45 L27,54 L31.5,54 L31.5,45 L27,45 Z M45,0 L40.5,0 L40.5,13.5 L45,13.5 L45,0 Z M45,22.5 L45,18 L40.5,18 L40.5,22.5 L45,22.5 Z M58.5,13.5 L63,13.5 L63,9 L58.5,9 L58.5,13.5 Z M13.5,9 L9,9 L9,13.5 L13.5,13.5 L13.5,9 Z M22.5,0 L22.5,22.5 L0,22.5 L0,0 L22.5,0 Z M18,4.5 L4.5,4.5 L4.5,18 L18,18 L18,4.5 Z M58.5,27 L58.5,31.5 L54,31.5 L54,27 L45,27 L45,31.5 L40.5,31.5 L40.5,27 L27,27 L27,22.5 L22.5,22.5 L22.5,27 L18,27 L18,31.5 L22.5,31.5 L22.5,40.5 L27,40.5 L27,36 L31.5,36 L31.5,45 L36,45 L36,36 L49.5,36 L49.5,40.5 L40.5,40.5 L40.5,45 L49.5,45 L49.5,49.5 L54,49.5 L54,36 L58.5,36 L58.5,40.5 L63,40.5 L63,49.5 L67.5,49.5 L67.5,45 L72,45 L72,40.5 L67.5,40.5 L67.5,36 L63,36 L63,31.5 L67.5,31.5 L67.5,27 L58.5,27 Z M9,63 L13.5,63 L13.5,58.5 L9,58.5 L9,63 Z M0,49.5 L22.5,49.5 L22.5,72 L0,72 L0,49.5 Z M4.5,67.5 L18,67.5 L18,54 L4.5,54 L4.5,67.5 Z M58.5,54 L58.5,49.5 L54,49.5 L54,54 L58.5,54 Z M58.5,58.5 L54,58.5 L54,63 L49.5,63 L49.5,58.5 L45,58.5 L45,54 L49.5,54 L49.5,49.5 L40.5,49.5 L40.5,45 L36,45 L36,54 L31.5,54 L31.5,58.5 L27,58.5 L27,72 L31.5,72 L31.5,67.5 L36,67.5 L36,63 L45,63 L45,72 L49.5,72 L49.5,67.5 L54,67.5 L54,72 L63,72 L63,67.5 L67.5,67.5 L67.5,63 L58.5,63 L58.5,58.5 Z M18,45 L22.5,45 L22.5,40.5 L18,40.5 L18,45 Z M63,54 L63,58.5 L67.5,58.5 L67.5,63 L72,63 L72,49.5 L67.5,49.5 L67.5,54 L63,54 Z M72,72 L72,67.5 L67.5,67.5 L67.5,72 L72,72 Z M72,36 L72,31.5 L67.5,31.5 L67.5,36 L72,36 Z" id="Shape"></path>
-                </g>
-                <ellipse id="Oval-4" stroke="#EDF3F7" cx="55.662993" cy="214.700459" rx="8.76299304" ry="8.74009323"></ellipse>
-            </g>
-        </g>
+<svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="300" height="300" viewBox="0 0 300 300">
+  <defs>
+    <rect id="step-01-b" width="112" height="228.302" rx="16"/>
+    <filter id="step-01-a" width="142.9%" height="121%" x="-21.4%" y="-10.5%" filterUnits="objectBoundingBox">
+      <feOffset in="SourceAlpha" result="shadowOffsetOuter1"/>
+      <feGaussianBlur in="shadowOffsetOuter1" result="shadowBlurOuter1" stdDeviation="8"/>
+      <feColorMatrix in="shadowBlurOuter1" values="0 0 0 0 0.105882353   0 0 0 0 0.266666667   0 0 0 0 0.474509804  0 0 0 0.15 0"/>
+    </filter>
+  </defs>
+  <g fill="none" fill-rule="evenodd" transform="translate(0 26)">
+    <g fill="#EDF3F7" transform="rotate(-90 137 137)">
+      <circle cx="258" cy="243" r="16"/>
+      <path d="M0,47.0901284 L0,0 L117.990271,0 C117.995068,0.332760311 117.997475,0.666099111 117.997475,1 C117.997475,38.555363 87.5528377,69 49.9974747,69 C30.2258382,69 12.4250594,60.5617555 -3.37507799e-14,47.0901284 Z"/>
+      <rect width="82" height="82" x="22.61" y="169" transform="rotate(45 63.61 210)"/>
+      <rect width="49" height="49" x="164.249" y="26.249" transform="rotate(22 188.749 50.749)"/>
     </g>
+    <g transform="translate(94 12)">
+      <use fill="#000" filter="url(#step-01-a)" xlink:href="#step-01-b"/>
+      <use fill="#FFF" xlink:href="#step-01-b"/>
+      <path fill="#FF0D6A" stroke="#FF0D6A" d="M9,27.5 C8.17157288,27.5 7.5,28.1715729 7.5,29 L7.5,199.542683 C7.5,200.37111 8.17157288,201.042683 9,201.042683 L103,201.042683 C103.828427,201.042683 104.5,200.37111 104.5,199.542683 L104.5,29 C104.5,28.1715729 103.828427,27.5 103,27.5 L9,27.5 Z"/>
+      <circle cx="28" cy="50" r="8" fill="#D12869"/>
+      <rect width="56" height="9" x="20" y="63" fill="#D12869"/>
+      <path fill="#D12869" fill-rule="nonzero" d="M31.5,18 L27,18 L27,9 L31.5,9 L31.5,13.5 L40.5,13.5 L40.5,18 L36,18 L36,22.5 L31.5,22.5 L31.5,18 Z M40.5,72 L40.5,67.5 L36,67.5 L36,72 L40.5,72 Z M36,4.5 L36,0 L27,0 L27,4.5 L31.5,4.5 L31.5,9 L36,9 L36,4.5 Z M72,0 L72,27 L67.5,27 L67.5,22.5 L49.5,22.5 L49.5,0 L72,0 Z M67.5,18 L67.5,4.5 L54,4.5 L54,18 L67.5,18 Z M4.5,27 L0,27 L0,31.5 L9,31.5 L9,27 L4.5,27 Z M4.5,40.5 L9,40.5 L9,45 L13.5,45 L13.5,31.5 L9,31.5 L9,36 L0,36 L0,45 L4.5,45 L4.5,40.5 Z M27,45 L27,54 L31.5,54 L31.5,45 L27,45 Z M45,0 L40.5,0 L40.5,13.5 L45,13.5 L45,0 Z M45,22.5 L45,18 L40.5,18 L40.5,22.5 L45,22.5 Z M58.5,13.5 L63,13.5 L63,9 L58.5,9 L58.5,13.5 Z M13.5,9 L9,9 L9,13.5 L13.5,13.5 L13.5,9 Z M22.5,0 L22.5,22.5 L0,22.5 L0,0 L22.5,0 Z M18,4.5 L4.5,4.5 L4.5,18 L18,18 L18,4.5 Z M58.5,27 L58.5,31.5 L54,31.5 L54,27 L45,27 L45,31.5 L40.5,31.5 L40.5,27 L27,27 L27,22.5 L22.5,22.5 L22.5,27 L18,27 L18,31.5 L22.5,31.5 L22.5,40.5 L27,40.5 L27,36 L31.5,36 L31.5,45 L36,45 L36,36 L49.5,36 L49.5,40.5 L40.5,40.5 L40.5,45 L49.5,45 L49.5,49.5 L54,49.5 L54,36 L58.5,36 L58.5,40.5 L63,40.5 L63,49.5 L67.5,49.5 L67.5,45 L72,45 L72,40.5 L67.5,40.5 L67.5,36 L63,36 L63,31.5 L67.5,31.5 L67.5,27 L58.5,27 Z M9,63 L13.5,63 L13.5,58.5 L9,58.5 L9,63 Z M0,49.5 L22.5,49.5 L22.5,72 L0,72 L0,49.5 Z M4.5,67.5 L18,67.5 L18,54 L4.5,54 L4.5,67.5 Z M58.5,54 L58.5,49.5 L54,49.5 L54,54 L58.5,54 Z M58.5,58.5 L54,58.5 L54,63 L49.5,63 L49.5,58.5 L45,58.5 L45,54 L49.5,54 L49.5,49.5 L40.5,49.5 L40.5,45 L36,45 L36,54 L31.5,54 L31.5,58.5 L27,58.5 L27,72 L31.5,72 L31.5,67.5 L36,67.5 L36,63 L45,63 L45,72 L49.5,72 L49.5,67.5 L54,67.5 L54,72 L63,72 L63,67.5 L67.5,67.5 L67.5,63 L58.5,63 L58.5,58.5 Z M18,45 L22.5,45 L22.5,40.5 L18,40.5 L18,45 Z M63,54 L63,58.5 L67.5,58.5 L67.5,63 L72,63 L72,49.5 L67.5,49.5 L67.5,54 L63,54 Z M72,72 L72,67.5 L67.5,67.5 L67.5,72 L72,72 Z M72,36 L72,31.5 L67.5,31.5 L67.5,36 L72,36 Z" transform="translate(20 116)"/>
+      <ellipse cx="55.663" cy="214.7" stroke="#EDF3F7" rx="8.763" ry="8.74"/>
+    </g>
+  </g>
 </svg>

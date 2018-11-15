@@ -47,12 +47,7 @@ export default {
   &__icon {
     font-size: 1.7rem;
     position: relative;
-    // & > i {
-    //   position: absolute;
-    //   top: 0;
-    //   left: 0;
-    // }
-
+    z-index: 1;
   }
 
   &__nav {
@@ -69,7 +64,7 @@ export default {
       top: 0;
       right: 0;
       height: 100vh;
-      z-index: -1;
+      z-index: 0;
       width: 0;
       text-align: right;
       background: $bg-color;

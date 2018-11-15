@@ -19,6 +19,8 @@ export default {
   display: flex;
   flex-wrap: wrap;
   justify-content: space-between;
+  //padding: $spacer-max 0;
+
   &__info {
     width: 100%;
     margin-bottom: $spacer-l;
@@ -27,6 +29,7 @@ export default {
       margin-right: $spacer-xl;
     }
   }
+
   &__q-a {
 
     @include tablet-and-desktop {

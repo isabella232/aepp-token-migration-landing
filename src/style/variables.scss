@@ -11,6 +11,8 @@ $spacer-m: 1rem;
 $spacer-l: 2rem;
 $spacer-xl: 3rem;
 $spacer-xxl: 4rem;
+$spacer-med: 9vh;
+$spacer-max: 17vh;
 
 $aubergin: #311B58;
 $aubergineLight: #6F53A1;
@@ -37,7 +39,7 @@ $phone-width: 600px;
 $desktop-width: 1000px;
 
 ;
-$base-line-height: 1.75rem;
+$base-line-height: 1.55rem;
 $base-font-size: 16px;
 
 $font-sizes: (
@@ -50,4 +52,5 @@ $font-sizes: (
   xxl: (35px / $base-font-size) * 1rem, //1.6666666666666667em
   xxxl: (55px / $base-font-size) * 1rem, //2.7777777777777777em
   xxxxl: (65px / $base-font-size) * 1rem, //2.7777777777777777em
+  wow: (120px / $base-font-size) * 1rem, //2.7777777777777777em
 );

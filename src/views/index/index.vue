@@ -55,11 +55,14 @@
                     <p>
                      AirGap Vault is the secure way to create an æternity account. Install the Vault app on a mobile device and create a new æternity account. Alternatively, you can use our webwallet Baseæpp (beta) for migrating small amounts of AE tokens.
                     </p>
-                    <footer class="steps-footer">
-                      <a class="steps-footer__cta" href="https://airgap.it/airgap-vault/" target="_blank">
-                        <img :src="require('@/assets/graphics/airgap-logo.svg')" alt="airgap vault logo">
-                      </a>
-                    </footer>
+                  </template>
+                  <template slot="buttons">
+                    <a class="steps-footer__cta" href="https://airgap.it/airgap-vault/" target="_blank">
+                      <img :src="require('@/assets/graphics/airgap-logo.svg')" alt="airgap vault logo">
+                    </a>
+                     <a class="steps-footer__cta" href="https://airgap.it/airgap-vault/" target="_blank">
+                      <img :src="require('@/assets/graphics/base-aepp-logo.svg')" alt="airgap vault logo">
+                    </a>
                   </template>
                 </step-list-item>
                 <step-list-item
@@ -72,14 +75,14 @@
                     <p>
                       We advice you to transfer your Ethereum AE tokens to our Migration Contract, using MetaMask or MyEtherWallet. You will need a small amount of ETH on the same account as your Ethereum AE tokens to cover the transaction fee.
                     </p>
-                    <footer class="steps-footer">
-                      <a class="steps-footer__cta" href="https://metamask.io/" target="_blank">
-                        <img :src="require('@/assets/graphics/metamask-fox.svg')" alt="MetaMask">
-                      </a>
-                      <a class="steps-footer__cta" href="https://myetherwallet.com/" target="_blank">
-                        <img :src="require('@/assets/graphics/myetherwallet.svg')" alt="MyEtherWallet">
-                      </a>
-                    </footer>
+                  </template>
+                  <template slot="buttons">
+                    <a class="steps-footer__cta" href="https://metamask.io/" target="_blank">
+                      <img :src="require('@/assets/graphics/metamask-fox.svg')" alt="MetaMask">
+                    </a>
+                    <a class="steps-footer__cta" href="https://myetherwallet.com/" target="_blank">
+                      <img :src="require('@/assets/graphics/myetherwallet.svg')" alt="MyEtherWallet">
+                    </a>
                   </template>
                 </step-list-item>
                 <step-list-item
@@ -137,7 +140,7 @@
                 :isCurrent="true"
                 :src="require('@/assets/graphics/phase-1.png')"
                 alt="Mainnet Launch"
-                ends="Ends November ‘18"
+                ends="Ends November 2018"
                 >
                 <h3 class="title title-small">
                   Mainnet Launch
@@ -151,7 +154,7 @@
                 :isCurrent="false"
                 :src="require('@/assets/graphics/phase-2.png')"
                 alt="1st Hardfork"
-                ends="Ends February ‘19"
+                ends="Ends February 2019"
                 >
                 <h3 class="title title-small">
                   1st Hardfork
@@ -165,7 +168,7 @@
                 :isCurrent="false"
                 :src="require('@/assets/graphics/phase-3.png')"
                 alt="2nd Hardfork"
-                ends="Ends May ‘19"
+                ends="Ends May 2019"
                 >
                 <h3 class="title title-small">
                   2nd Hardfork
@@ -179,7 +182,7 @@
                 :isCurrent="false"
                 :src="require('@/assets/graphics/phase-4.png')"
                 alt="3rd Hardfork"
-                ends="Ends September ‘19"
+                ends="Ends September 2019"
                 >
                 <h3 class="title title-small">
                   3rd Hardfork
@@ -274,7 +277,7 @@
               </app-accordion>
             </template>
           </app-faq>
-          <app-content container>
+          <app-content container small>
             <div class="to-top">
               <a href="#top">
                 <ae-button face="icon" fill="primary">
