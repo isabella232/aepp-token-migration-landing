@@ -51,14 +51,15 @@ export default {
   }
 
   &__nav {
-    @include font-size(xs);
+  margin: 0;
+  font-size: 0.8125rem;
   list-style: none;
   display: flex;
-  font-weight: 600;
+  font-weight: bold;
   text-transform: uppercase;
+  letter-spacing: 0.08125em;
 
     @include phone-and-tablet {
-        @include font-size(s);
       position: absolute;
       flex-direction: column;
       top: 0;

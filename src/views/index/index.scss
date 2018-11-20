@@ -28,15 +28,6 @@
 }
 
 
-.intro {
-  margin: $spacer-xxl auto;
-  max-width: 30rem;
-}
-
-.home {
-  background-color: $white;
-}
-
 .to-top {
   display: flex;
   width:  100%;
@@ -77,12 +68,14 @@
 .ae-brand {
   color:  $magenta;
 }
+
 .hero-text {
-  margin-bottom: 1.5rem;
-  @include font-size(l);
+  @include font-size(l)
   line-height: 1.7em;
   color:  $darkgrey;
+  max-width: 40rem;
 }
+
 .line {
   height: 7rem;
   width: 1px;
@@ -93,7 +86,7 @@
 .button-wrapper {
   display: flex;
   width:  100%;
-  max-width: 350px;
+  max-width: 270px;
   @include only-phone {
    &:first-child {
       margin-top: $spacer-m;

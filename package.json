@@ -37,7 +37,7 @@
     "node-sass": "^4.9.0",
     "sass-loader": "^7.0.1",
     "vue-svg-loader": "^0.10.0",
-    "webpack": "^4.17.2"
+    "webpack": "^4.18.1"
   },
   "eslintConfig": {
     "root": true,
