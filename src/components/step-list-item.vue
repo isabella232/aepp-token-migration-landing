@@ -30,6 +30,7 @@ export default {
 .step-list-item {
   display: flex;
   box-shadow: $shadow_wide;
+  border-radius: 8px;
   margin-bottom: $spacer-xl;
   position: relative;
   width: 100%;
