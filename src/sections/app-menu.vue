@@ -31,7 +31,7 @@ export default {
   },
   computed: {
     isDesktop () {
-      return this.windowWidth >= 1000
+      return this.windowWidth >= 1025
     }
   },
   methods: {

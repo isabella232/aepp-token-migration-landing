@@ -49,6 +49,7 @@ export default {
   max-width: 70rem;
 
     @include only-tablet {
+      padding: 6rem 1.5rem;
     }
 
     @include only-phone {

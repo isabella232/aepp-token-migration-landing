@@ -41,7 +41,7 @@ export default {
 
   &__logo {
     font-weight: 600;
-    @include only-phone {
+    @include phone-and-tablet {
       width: 9rem;
     }
     & a {

@@ -39,12 +39,15 @@ export default {
   text-align: center;
   border-radius: 8px;
   overflow: hidden;
-  @include tablet-and-desktop {
-    width: 100%;
-    max-width: 22%;
-  }
   @include only-desktop {
-      margin-right: $spacer-l;
+    max-width: 22%;
+    margin-right: $spacer-l;
+      &:last-child {
+        margin-right: 0;
+      }
+  }
+  @include only-tablet {
+    max-width: 45%;
       &:last-child {
         margin-right: 0;
       }
