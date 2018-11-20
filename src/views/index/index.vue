@@ -280,7 +280,7 @@
           </app-faq>
           <app-content container small>
             <div class="to-top">
-              <a href="#top">
+              <a href="#top" v-smooth-scroll="{ duration: 1000, offset: -50 }">
                 <ae-button face="icon" fill="primary">
                   <ae-icon name="left-more" size="2rem"/>
                 </ae-button>
