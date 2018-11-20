@@ -48,6 +48,7 @@ export default {
   .app-footer {
     background-color: $darkblue;
     //padding: 0 0 $spacer-max ;
+  @include font-size(xs);
     color: $white;
     &__details {
       display: flex;
@@ -57,7 +58,10 @@ export default {
     }
     &__quote {
       margin-top: $spacer-m;
-      margin-bottom: $spacer-l;
+    }
+
+    &__branding {
+      margin-bottom: $spacer-xxl;
     }
   }
 .footer-nav{
@@ -77,6 +81,7 @@ export default {
      color: $white;
      display: inline-block;
      margin-right: $spacer-l;
+     font-weight: normal;
 
       @include only-phone {
         display: block;
@@ -91,7 +96,7 @@ export default {
 }
 small {
   display: block;
-  font-size: 1rem;
+  font-size: 1em;
   min-width: 8em;
   opacity: .7;
   margin-right: $spacer-l;

@@ -14,7 +14,7 @@
       data-aos-easing="ease-in-out"
       data-aos-anchor=".app-hero__count"
     >
-      <img :src="require('../assets/graphics/galaxy-phase-1.png')" alt="mainnet launch  ">
+      <img :src="require('../assets/graphics/galaxy-phase-1.png')" alt="mainnet launch">
     </figure>
     <div class="app-hero__count">
       <div class="app-hero__count-wrapper">
@@ -132,19 +132,17 @@ export default {
   &__info {
     margin: auto 0;
     width: 100%;
-    max-width: 60%;
+    max-width: 70%;
     @include only-phone {
       margin-top: $spacer-xxl;
-      max-width: 70%;
     }
     @include only-tablet {
-      max-width: 60%;
     }
     &__buttons{
       display: flex;
       flex-direction: column;
       flex-wrap: wrap;
-      margin-top: $spacer-l;
+      margin-top: $spacer-xl;
         @include tablet-and-desktop {
           flex-direction: row;
         }

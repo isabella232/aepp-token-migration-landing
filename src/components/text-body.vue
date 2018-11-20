@@ -1,6 +1,5 @@
 <template>
     <article class="text-body">
-      <h1 class="title title-sub">{{ title }}</h1>
       <slot/>
     </article>
 </template>
@@ -14,31 +13,44 @@ export default {
 }
 </script>
 <style lang="scss">
-  .text-body {
-    max-width: 800px;
-    margin-top: 7rem;
-  }
-  h1 {
-    margin-top: 0;
-    margin-bottom: 1.5rem;
-  }
-  ul, ol{
-    margin: 0;
-    padding: 0;
-    margin-bottom: 1.5rem;
-    & li{
+.text-body {
+  max-width: 800px;
+  margin-top: $spacer-xl;
+}
 
-    }
+h1, h2, h3, h4 {
+  @extend .title
+}
+
+h1 {
+  @extend .title-sub
+}
+
+ul, ol, dl{
+  margin: 0;
+  padding: 0;
+  margin-bottom: 1.5rem;
+  & li{
+    margin: .75rem 0;
   }
-  h2, h3, strong {
-    font-size: 1rem;
-    //font-weight: normal;
-    margin-bottom: 0;
-    margin-top: 1rem;
+  & dt {
+    font-weight: bold;
   }
-  p {
-    margin-top: 0;
-    margin-bottom: 1.5rem;
+  & dd {
+    margin-left: 0;
+    margin-bottom: 1rem;
   }
+}
+
+h2, h3, strong {
+  font-size: 1rem;
+  margin-bottom: 1rem;
+  margin-top: 1rem;
+}
+
+p {
+  margin-top: 0;
+  margin-bottom: 1.5rem;
+}
 
 </style>

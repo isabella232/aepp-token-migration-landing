@@ -12,6 +12,7 @@ export default {
 .intro {
   text-align: center;
   margin: 0  auto $spacer-med ;
+  max-width: 40rem;
   @include only-phone {
     padding: 0 $spacer-s;
     margin: 0  auto 4rem ;

@@ -4,14 +4,10 @@
 // *****************************
 //------------------------------
 
-p {
-  line-height: $base-line-height;
-  font-size: $base-font-size;
-}
-
 a {
   color: $color-black;
   text-decoration: none;
+  font-weight: bold;
 
   &:hover {
     color: $color-primary;
@@ -25,6 +21,8 @@ a {
   margin-bottom: .2em;
   &-hero {
     @include font-size(xxxxl);
+    line-height: 1.1em;
+    margin-bottom: .4em;
     @include only-phone {
       @include font-size(xl);
     }
@@ -36,21 +34,29 @@ a {
     }
   }
   &-sub {
-    @include font-size(xxxl);
-    @include only-phone {
-      @include font-size(xl);
-    }
-  }
-  &-category {
     @include font-size(xxl);
     @include only-phone {
       @include font-size(xl);
     }
   }
-  &-subcategory {
+  &-category {
     @include font-size(xl);
+    @include only-phone {
+      @include font-size(xl);
+    }
+  }
+  &-subcategory {
+    @include font-size(s);
     @include only-phone {
       @include font-size(l);
     }
+  }
+}
+
+.text {
+
+  &-small{
+    @include font-size(xs);
+    line-height: 2em;
   }
 }
