@@ -18,8 +18,8 @@
     </figure>
     <div class="app-hero__count">
       <div class="app-hero__count-wrapper">
-        <p class="token-count">{{burnedBalance | reduceDecimals}}</p>
-        <p class="token-count-info">AE migrated so far</p>
+        <p class="token-count">{{burnedBalance | reduceDecimals | formatBalance}}<span class="token-count__currency">AE</span></p>
+        <p class="token-count-info">migrated so far</p>
       </div>
       <div class="app-hero__line"></div>
     </div>
@@ -86,6 +86,11 @@ export default {
       if (!value) return ''
       value = parseFloat(value)
       return value.toFixed(2)
+    },
+    formatBalance: function (value) {
+      if (!value) return ''
+      value = parseFloat(value)
+      return value.toLocaleString('de-DE')
     }
   },
   components: {
@@ -105,7 +110,7 @@ export default {
   margin-bottom: 75vh;
 
     @include only-phone {
-      margin-bottom: 90vh;
+      margin-bottom: 30vh;
       min-height: 100vh;
     }
 
@@ -155,10 +160,9 @@ export default {
     background-color: $white;
     z-index: 1;
     bottom: -75vh;
-
        @include only-phone {
-        min-height: 90vh;
-        bottom: -90vh;
+        min-height: 30vh;
+        bottom: -30vh;
       }
     left: 0;
     width: 100%;
@@ -179,9 +183,9 @@ export default {
     width: 2px;
     background-color: $magenta;
     position: absolute;
-    top: -3rem;
-    bottom: -3rem;
-    z-index: -1;
+    top: -2.5rem;
+    height: 5rem;
+    z-index: 1;
     left: 50%;
     transform: translate(-50%);
   }
@@ -197,6 +201,11 @@ export default {
     @include font-size(wow);
   @include only-phone {
     @include font-size(xxl);
+  }
+
+  &__currency {
+     @include font-size(s);
+     margin-left: .2em;
   }
 }
 
