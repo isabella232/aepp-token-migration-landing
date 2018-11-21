@@ -1,6 +1,6 @@
 <template>
   <footer class="app-footer">
-    <app-content container dark>
+    <app-content container dark wide>
       <div class="app-footer__branding">
         <a href="https://aeternity.com/" target="_blank">
           <ae-logo/>

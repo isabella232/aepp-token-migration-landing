@@ -1,8 +1,10 @@
 <template>
   <header class="app-hero">
-    <app-content container flex>
+    <app-content container flex wide>
       <section class="app-hero__info">
-        <slot name="text"/>
+        <div class="app-hero__info__text">
+          <slot name="text"/>
+        </div>
         <div class="app-hero__info__buttons">
           <slot name="buttons"/>
         </div>
@@ -125,7 +127,7 @@ export default {
     @include only-phone {
       top: -50%;
       width: 80%;
-      right: -40%;
+      right: -50%;
     }
   }
 
@@ -135,14 +137,24 @@ export default {
     max-width: 70%;
     @include only-phone {
       margin-top: $spacer-xxl;
+      max-width: 100%;
     }
     @include only-tablet {
+    }
+    &__text {
+      @include only-phone {
+        max-width: 70%;
+      }
     }
     &__buttons{
       display: flex;
       flex-direction: column;
       flex-wrap: wrap;
       margin-top: $spacer-xl;
+        @include only-phone {
+          justify-content: center;
+          align-items: center;
+        }
         @include tablet-and-desktop {
           flex-direction: row;
         }

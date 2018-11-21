@@ -39,14 +39,14 @@ export default {
   @include tablet-and-desktop {
     flex-direction: row;
     overflow: hidden;
-    max-height: 300px;
+    min-height: 300px;
   }
   @include tablet-and-desktop {
     margin-bottom: $spacer-xxl;
   }
   &__info {
-    padding: $spacer-l;
-    text-align: center;
+    padding: $spacer-m;
+    text-align: left;
     @include tablet-and-desktop {
       text-align: left;
       display: flex;
@@ -57,7 +57,7 @@ export default {
     &-wrapper {
       @include tablet-and-desktop {
         margin: auto auto 0;
-        width: 80%;
+        //width: 80%;
       }
     }
     &-footer {
@@ -79,16 +79,22 @@ export default {
       color: $darkgrey;
       position: relative;
       width: 100%;
-      @include tablet-and-desktop {
-        width: 30%;
+      @include only-tablet {
+        width: 40%;
+        display: flex;
+        align-items: center;
+      }
+      @include only-desktop {
+        width: 40%;
       }
       & img {
         object-fit: fill;
-        //height: 100%;
-        @include tablet-and-desktop {
-          object-fit: scale-down;
-          width: 300px;
-          object-position: top center;
+
+        @include only-tablet {
+          object-fit: none;
+          width: 100%;
+          //height: 100%;
+          object-position: top;
         }
       }
     }

@@ -36,6 +36,9 @@
   @include only-phone {
       text-align: center;
     }
+  @include only-tablet {
+      text-align: center;
+    }
   a {
     margin-right:  -.6rem;
     display: inline-block;
@@ -74,13 +77,6 @@
 
 .ae-brand {
   color:  $magenta;
-}
-
-.hero-text {
-  @include font-size(l)
-  line-height: 1.7em;
-  color:  $darkgrey;
-  max-width: 40rem;
 }
 
 .line {
