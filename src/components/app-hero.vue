@@ -188,6 +188,10 @@ export default {
     z-index: 1;
     left: 50%;
     transform: translate(-50%);
+      @include tablet-and-desktop {
+        top: -3rem;
+        height: 9rem;
+      }
   }
 }
 
@@ -206,6 +210,10 @@ export default {
   &__currency {
      @include font-size(s);
      margin-left: .2em;
+     @include tablet-and-desktop {
+        @include font-size(l);
+        font-weight: 500;
+      }
   }
 }
 
