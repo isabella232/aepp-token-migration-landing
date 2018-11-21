@@ -8,13 +8,19 @@
         </div>
       </section>
     </app-content>
-    <figure class="app-hero__img"
-      data-aos="slide-up"
-      data-aos-duration="1500"
-      data-aos-easing="ease-in-out"
-      data-aos-anchor=".app-hero__count"
-    >
-      <img :src="require('../assets/graphics/galaxy-phase-1.png')" alt="mainnet launch">
+    <figure class="app-hero__media" >
+      <div class="wrapper" :style="{ top: '-' + moon + 'px' }">
+        <figure class="app-hero__media_galaxy">
+          <img
+            :style="{ top: '-' + galaxy + 'px'}"
+            :src="require('../assets/graphics/galaxy-phase-1.png')" alt="mainnet launch">
+        </figure>
+        <figure class="app-hero__media_moon">
+          <img
+          :style="{ top: '' + moon + 'px' }"
+          :src="require('../assets/graphics/moon-phase-1.png')" alt="phase 1">
+        </figure>
+      </div>
     </figure>
     <div class="app-hero__count">
       <div class="app-hero__count-wrapper">
@@ -23,14 +29,13 @@
       </div>
       <div class="app-hero__line"></div>
     </div>
+    <div class="number">{{ galaxy }} / {{ moon }}</div>
   </header>
 </template>
 <script>
 import Web3 from 'web3'
 import AppContent from '@/sections/app-content.vue'
-import AOS from 'aos'
-import 'aos/dist/aos.css'
-
+import _ from 'lodash'
 let $web3
 const abi = [{
   'constant': true,
@@ -53,7 +58,7 @@ const abi = [{
 
 $web3 = new Web3(new Web3.providers.HttpProvider(process.env.VUE_APP_WEB3_PROVIDER_URL))
 let aeTokenContract = new $web3.eth.Contract(abi, process.env.VUE_APP_AE_TOKEN_CONTRACT)
-
+let height = 0;
 async function getBurnedBalance () {
   let balance = await aeTokenContract
     .methods
@@ -68,24 +73,39 @@ export default {
   },
   data () {
     return {
-      burnedBalance: null
+      burnedBalance: null,
+      height: 0,
+      galaxy: 0,
+      moon: 0
     }
   },
   async created () {
     this.burnedBalance = await getBurnedBalance()
   },
   mounted () {
-    document.addEventListener('scroll', () => {
-      AOS.init({
-        mirror: true
-      })
-    })
+    window.addEventListener('scroll', _.throttle(this.animateGalaxy, 0))
+    window.addEventListener('scroll', _.throttle(this.animateMoon, 0), { passive: true })
+  },
+  destroy () {
+    window.removeEventlistener('scroll', () => this.animateMoon())
   },
   filters: {
     reduceDecimals: function (value) {
       if (!value) return ''
       value = parseFloat(value)
       return value.toFixed(2)
+    }
+  },
+  methods: {
+    animateGalaxy () {
+      let start = window.pageYOffset || document.documentElement.scrollTop
+      this.galaxy = start > height ? start += 1 : start += 1
+      height = start <= 0 ? 0 : start
+    },
+    animateMoon () {
+      let start = window.pageYOffset || document.documentElement.scrollTop
+      this.moon = start > this.height ? start += 1 : start += 1
+      this.height = start < 0 ? 0 : start
     }
   },
   components: {
@@ -109,23 +129,43 @@ export default {
       min-height: 100vh;
     }
 
-  &__img {
-    z-index: 0;
-    right: -10%;
-    top: -86%;
+  &__media {
     width: 40%;
-    max-width: 30rem;
-    position: absolute;
-    @include only-tablet {
-      top: -60%;
-      width: 50%;
-      right: -20%;
 
+    @include only-phone{
+      width: 30%;
     }
-    @include only-phone {
-      top: -50%;
-      width: 80%;
-      right: -40%;
+      &_galaxy {
+        position: absolute;
+        top: 25%;
+        width: 100%;
+        transform: translateY(-25%);
+        & > img {
+          position: absolute;
+          z-index: 0;
+          max-width: 30rem;
+        }
+      }
+    &_moon {
+      position: absolute;
+      top: 50%;
+      width: 100%;
+      transform: translateY(-50%);
+
+      @include only-phone {
+        width: 50%;
+      }
+       @include only-tablet {
+        width: 60%;
+      }
+
+      & > img {
+        z-index: 0;
+        width: 100%;
+        max-width: 30rem;
+        position: absolute;
+        left: -20%;
+      }
     }
   }
 
@@ -198,6 +238,16 @@ export default {
   @include only-phone {
     @include font-size(xxl);
   }
+}
+.wrapper {
+  position: absolute;
+  width: 100%;
+}
+.number {
+  position: fixed;
+  top: 1rem;
+  right: 1rem;
+  z-index: 1000;
 }
 
 </style>
