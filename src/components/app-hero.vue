@@ -9,7 +9,6 @@
           <slot name="buttons"/>
         </div>
       </section>
-    </app-content>
     <figure class="app-hero__media" >
       <figure class="app-hero__media_galaxy">
         <img
@@ -17,6 +16,7 @@
           :src="require('../assets/graphics/galaxy-phase-1.png')" alt="mainnet launch">
       </figure>
     </figure>
+    </app-content>
     <div class="app-hero__count">
       <div class="app-hero__count-wrapper">
         <p class="token-count">{{burnedBalance | reduceDecimals | formatBalance}}<span class="token-count__currency">AE</span></p>
@@ -95,7 +95,7 @@ export default {
   methods: {
     animateGalaxy () {
       let start = window.pageYOffset || document.documentElement.scrollTop
-      this.galaxy = start > height ? start += 1 : start += 1
+      this.galaxy = start > height ? start += 100 : start += 100
       height = start <= 0 ? 0 : start
     }
   },
@@ -109,7 +109,7 @@ export default {
 .app-hero {
   position: relative;
   height: 100%;
-  min-height: 90vh;
+  min-height: 100vh;
   background-color: $skyblue;
   display: flex;
   text-align: left;
@@ -122,6 +122,7 @@ export default {
 
   &__media {
     width: 40%;
+    margin-left: auto;
 
     @include only-phone{
       width: 30%;
@@ -130,28 +131,35 @@ export default {
         position: absolute;
         top: 25%;
         width: 100%;
+        right: -70%;
         transform: translateY(-25%);
+        @include only-phone{
+          top: 50%;
+          transform: translateY(-50%);
+          width: 100%;
+        }
         & > img {
           position: absolute;
           z-index: 0;
-          max-width: 30rem;
+          max-width: 50rem;
         }
       }
   }
 
   &__info {
     margin: auto 0;
-    width: 100%;
-    max-width: 70%;
+    width: 70%;
+    max-width: 50rem;
     @include only-phone {
-      margin-top: $spacer-xxl;
-      max-width: 100%;
+      width: 100%;
     }
     @include only-tablet {
+      width: 100%;
     }
     &__text {
       @include only-phone {
-        max-width: 70%;
+        max-width: 100%;
+        width: 100%;
       }
     }
     &__buttons{
@@ -162,6 +170,7 @@ export default {
         @include only-phone {
           justify-content: center;
           align-items: center;
+          margin-right: -25%;
         }
         @include tablet-and-desktop {
           flex-direction: row;
@@ -177,7 +186,7 @@ export default {
     bottom: -75vh;
        @include only-phone {
         min-height: 30vh;
-        bottom: -30vh;
+        bottom: -31vh;
       }
     left: 0;
     width: 100%;
