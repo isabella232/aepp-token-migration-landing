@@ -12,7 +12,6 @@
   "dependencies": {
     "@aeternity/aepp-components": "github:aeternity/aepp-components#develop",
     "in-viewport": "^3.6.0",
-    "lodash": "^4.17.11",
     "vue": "^2.5.17",
     "vue-router": "^3.0.1",
     "vue2-smooth-scroll": "^1.0.3",
