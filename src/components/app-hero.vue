@@ -11,18 +11,11 @@
       </section>
     </app-content>
     <figure class="app-hero__media" >
-      <div class="wrapper" :style="{ top: '-' + moon + 'px' }">
-        <figure class="app-hero__media_galaxy">
-          <img
-            :style="{ top: '-' + galaxy + 'px'}"
-            :src="require('../assets/graphics/galaxy-phase-1.png')" alt="mainnet launch">
-        </figure>
-        <figure class="app-hero__media_moon">
-          <img
-          :style="{ top: '' + moon + 'px' }"
-          :src="require('../assets/graphics/moon-phase-1.png')" alt="phase 1">
-        </figure>
-      </div>
+      <figure class="app-hero__media_galaxy">
+        <img
+          :style="{ top: '-' + galaxy + 'px'}"
+          :src="require('../assets/graphics/galaxy-phase-1.png')" alt="mainnet launch">
+      </figure>
     </figure>
     <div class="app-hero__count">
       <div class="app-hero__count-wrapper">
@@ -31,13 +24,11 @@
       </div>
       <div class="app-hero__line"></div>
     </div>
-    <div class="number">{{ galaxy }} / {{ moon }}</div>
   </header>
 </template>
 <script>
 import Web3 from 'web3'
 import AppContent from '@/sections/app-content.vue'
-import _ from 'lodash'
 let $web3
 const abi = [{
   'constant': true,
@@ -77,19 +68,17 @@ export default {
     return {
       burnedBalance: null,
       height: 0,
-      galaxy: 0,
-      moon: 0
+      galaxy: 0
     }
   },
   async created () {
     this.burnedBalance = await getBurnedBalance()
   },
   mounted () {
-    window.addEventListener('scroll', _.throttle(this.animateGalaxy, 0))
-    window.addEventListener('scroll', _.throttle(this.animateMoon, 0), { passive: true })
+    window.addEventListener('scroll', this.animateGalaxy, { passive: true })
   },
   destroy () {
-    window.removeEventlistener('scroll', () => this.animateMoon())
+    window.removeEventlistener('scroll', () => this.animateGalaxy)
   },
   filters: {
     reduceDecimals: function (value) {
@@ -108,11 +97,6 @@ export default {
       let start = window.pageYOffset || document.documentElement.scrollTop
       this.galaxy = start > height ? start += 1 : start += 1
       height = start <= 0 ? 0 : start
-    },
-    animateMoon () {
-      let start = window.pageYOffset || document.documentElement.scrollTop
-      this.moon = start > this.height ? start += 1 : start += 1
-      this.height = start < 0 ? 0 : start
     }
   },
   components: {
@@ -153,27 +137,6 @@ export default {
           max-width: 30rem;
         }
       }
-    &_moon {
-      position: absolute;
-      top: 50%;
-      width: 100%;
-      transform: translateY(-50%);
-
-      @include only-phone {
-        width: 50%;
-      }
-       @include only-tablet {
-        width: 60%;
-      }
-
-      & > img {
-        z-index: 0;
-        width: 100%;
-        max-width: 30rem;
-        position: absolute;
-        left: -20%;
-      }
-    }
   }
 
   &__info {
