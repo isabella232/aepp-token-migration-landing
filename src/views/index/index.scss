@@ -29,16 +29,26 @@
 
 
 .to-top {
-  display: flex;
+  display: block;
   width:  100%;
   padding: $spacer-xl 0;
-  justify-content: flex-end;
+  text-align: right;
   @include only-phone {
-      justify-content: center;
+      text-align: center;
     }
-
+  @include only-tablet {
+      text-align: center;
+    }
+  a {
+    margin-right:  -.6rem;
+    display: inline-block;
+    @include only-phone {
+      margin:  0;
+    }
+  }
   button > i {
     transform: rotate(-90deg);
+
   }
 }
 
@@ -67,13 +77,6 @@
 
 .ae-brand {
   color:  $magenta;
-}
-
-.hero-text {
-  @include font-size(l)
-  line-height: 1.7em;
-  color:  $darkgrey;
-  max-width: 40rem;
 }
 
 .line {

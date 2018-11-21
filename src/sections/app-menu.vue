@@ -31,7 +31,7 @@ export default {
   },
   computed: {
     isDesktop () {
-      return this.windowWidth >= 1000
+      return this.windowWidth >= 1025
     }
   },
   methods: {
@@ -45,8 +45,11 @@ export default {
 .app-menu{
 
   &__icon {
-    font-size: 1.7rem;
+    font-size: 1.5rem;
     position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
     z-index: 1;
   }
 

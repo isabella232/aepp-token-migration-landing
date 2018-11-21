@@ -1,12 +1,16 @@
 <template>
   <div class="app-accordion" :class="{ 'is-open': open }">
-    <div class="app-accordion__subject" @click="toggle">
+    <div class="app-accordion__subject" @click="open = !open">
       <slot name="title"/>
-      <ae-icon :name="`${ open ? 'close' : 'plus'}`" fill="primary" size="2rem"/>
+      <transition name="slide-fade">
+        <ae-icon :name="`${ open ? 'close' : 'plus'}`" fill="primary" size="2rem"/>
+      </transition>
     </div>
-    <div class="app-accordion__content">
-      <slot name="body"/>
-    </div>
+    <transition name="slide-fade">
+      <div v-show="open" class="app-accordion__content">
+        <slot name="body"/>
+      </div>
+    </transition>
   </div>
 </template>
 
@@ -47,17 +51,23 @@ export default {
   }
 
   &__content {
-    height: 0;
-    overflow: hidden;
-    transition: height .3s ease;
+    height: auto;
     & a {
       text-decoration: underline;
     }
   }
 }
 
-.is-open .app-accordion__content {
-  height: auto;
-  margin-top: $spacer-m;
+.slide-fade-enter-active,
+.slide-fade-leave-active {
+  transition: all .3s ease-in-out;
+  @include only-phone {
+      transition: all .2s ease-in-out;
+  }
+  max-height: 300px;
+}
+.slide-fade-enter, .slide-fade-leave-to {
+  max-height: 0;
+  opacity: 0;
 }
 </style>
