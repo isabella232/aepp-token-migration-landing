@@ -15,7 +15,7 @@ export default {
   padding: 0;
   margin: 0;
   display: flex;
-  justify-content: space-between;
+  justify-content: center;
   flex-wrap: wrap;
   @include phone-and-tablet {
     justify-content: space-around;

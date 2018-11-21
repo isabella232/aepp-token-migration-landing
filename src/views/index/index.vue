@@ -125,7 +125,7 @@
             </article>
           </section>
         </app-content>
-        <app-content container light>
+        <app-content container light wide>
           <section class="roadmap" id="road-map">
             <intro>
               <h2 class="title title-category">

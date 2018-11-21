@@ -37,12 +37,17 @@ export default {
   width: 100%;
   flex-direction: column;
   text-align: center;
-  @include tablet-and-desktop {
-    width: 100%;
-    max-width: 15rem;
-  }
+  border-radius: 8px;
+  overflow: hidden;
   @include only-desktop {
-      margin-right: $spacer-l;
+    max-width: 22%;
+    margin-right: $spacer-l;
+      &:last-child {
+        margin-right: 0;
+      }
+  }
+  @include only-tablet {
+    max-width: 45%;
       &:last-child {
         margin-right: 0;
       }
@@ -90,10 +95,7 @@ export default {
     &_number {
       font-weight: bold;
       margin: 0;
-      line-height: 1.2em;
-      @include tablet-and-desktop {
-        line-height: .9em;
-      }
+      line-height: 1.3em;
       @include font-size(wow);
       display: block;
     }
