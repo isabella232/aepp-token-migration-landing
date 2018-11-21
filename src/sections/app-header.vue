@@ -1,6 +1,6 @@
 <template>
   <header class="app-header" id="top">
-    <app-content container small>
+    <app-content container small wide>
       <div class="app-header__inner-wrapper">
         <figure class="app-header__logo">
           <router-link to="/">
@@ -41,7 +41,10 @@ export default {
 
   &__logo {
     font-weight: 600;
-    @include phone-and-tablet {
+     @include only-phone {
+      width: 154px;
+    }
+    @include only-tablet {
       width: 9rem;
     }
     & a {

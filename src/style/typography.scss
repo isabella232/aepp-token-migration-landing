@@ -18,13 +18,14 @@ a {
   font-weight: 600;
   line-height: 1.2em;
   margin: 0;
-  margin-bottom: .2em;
+  margin-bottom: .5em;
+  //text-align:  center;
   &-hero {
     @include font-size(xxxxl);
     line-height: 1.1em;
-    margin-bottom: .4em;
+
     @include only-phone {
-      @include font-size(xl);
+      @include font-size(xxl);
     }
   }
   &-main {
@@ -34,7 +35,7 @@ a {
     }
   }
   &-sub {
-    @include font-size(xxl);
+    @include font-size(xxxl);
     @include only-phone {
       @include font-size(xl);
     }
@@ -42,21 +43,30 @@ a {
   &-category {
     @include font-size(xl);
     @include only-phone {
-      @include font-size(xl);
+      @include font-size(s);
     }
   }
   &-subcategory {
     @include font-size(s);
-    @include only-phone {
-      @include font-size(l);
-    }
   }
 }
 
 .text {
 
+
   &-small{
     @include font-size(xs);
     line-height: 2em;
+    @include only-phone {
+      line-height: 1.5em;
+    }
+  }
+
+  &-intro {
+    @include font-size(l);
+    line-height: 1.5em;
+    @include only-phone {
+      @include font-size(s);
+    }
   }
 }

@@ -45,14 +45,16 @@ export default {
   &__container {
   padding: $spacer-max 0;
   margin: 0 auto;
-  width: 100%;
-  max-width: 70rem;
+  width: 85%;
+  max-width: 60rem;
 
     @include only-tablet {
+      width: 100%;
       padding: 6rem 1.5rem;
     }
 
     @include only-phone {
+      width: 100%;
       padding: 6rem 1.5rem;
     }
 
@@ -69,7 +71,10 @@ export default {
     }
 
     &_wide {
+      width: 100%;
       max-width: 80rem;
+      padding-left: 1.5rem;
+      padding-right: 1.5rem;
     }
   }
 }

@@ -40,14 +40,14 @@ export default {
   border-radius: 8px;
   overflow: hidden;
   @include only-desktop {
-    max-width: 22%;
+    max-width: 23%;
     margin-right: $spacer-l;
       &:last-child {
         margin-right: 0;
       }
   }
   @include only-tablet {
-    max-width: 45%;
+    max-width: 48%;
       &:last-child {
         margin-right: 0;
       }
@@ -73,6 +73,9 @@ export default {
 
   &__info {
     padding: $spacer-l;
+    @include only-phone {
+      padding: $spacer-m;
+    }
   }
 }
 

@@ -15,10 +15,10 @@ export default {
   padding: 0;
   margin: 0;
   display: flex;
-  justify-content: center;
-  flex-wrap: wrap;
+  flex-wrap: nowrap;
   @include phone-and-tablet {
-    justify-content: space-around;
+    justify-content: space-between;
+    flex-wrap: wrap;
   }
 }
 </style>

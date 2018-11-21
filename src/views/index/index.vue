@@ -19,7 +19,7 @@
             <h1 class="title title-hero">
               Migrate your <span class="ae-brand">AE tokens</span> to the Mainnet
             </h1>
-            <p class="hero-text">
+            <p class="text text-intro text-intro_light">
               The æternity mainnet is almost here! You can begin migrating the AE tokens you own on Ethereum to the æternity mainnet! We will guide you through the secure migration process.
             </p>
           </template>
@@ -40,7 +40,7 @@
                 <h2 class="title title-sub">
                   Migration Steps
                 </h2>
-                <p>
+                <p class="text text-intro">
                   All AE Tokens migrated with this tool prior to the Mainnet launch will be available on the Mainnet. Token migration takes place in four steps.
                 </p>
               </intro>
@@ -131,7 +131,7 @@
               <h2 class="title title-category">
                 Migration Roadmap
               </h2>
-              <p>
+              <p class="text text-intro">
                 The migration of AE tokens will take place according to the phases outlined below. The AE Migration Contract ‘collects’ the received tokens and ensures they are migrated to the Mainnet.
               </p>
             </intro>
@@ -195,7 +195,7 @@
             </phases>
           </section>
         </app-content>
-        <app-content container grey>
+        <app-content container grey wide>
           <app-faq>
             <template slot="info" class="faq__info">
               <h2 class="title title-category">F.A.Q.</h2>

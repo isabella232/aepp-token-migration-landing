@@ -61,6 +61,9 @@ export default {
 .slide-fade-enter-active,
 .slide-fade-leave-active {
   transition: all .3s ease-in-out;
+  @include only-phone {
+      transition: all .2s ease-in-out;
+  }
   max-height: 300px;
 }
 .slide-fade-enter, .slide-fade-leave-to {
