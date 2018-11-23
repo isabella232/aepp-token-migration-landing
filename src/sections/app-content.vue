@@ -8,7 +8,9 @@
       'app-content__container' : container,
       'app-content__container_flex' : flex,
       'app-content__container_small' : small,
-      'app-content__container_wide' : wide}">
+      'app-content__container_wide' : wide,
+      'app-content__container_none' : none
+      }">
       <slot/>
     </div>
   </div>
@@ -23,7 +25,8 @@ export default {
     dark: Boolean,
     flex: Boolean,
     small: Boolean,
-    wide: Boolean
+    wide: Boolean,
+    none: Boolean
   }
 }
 </script>
@@ -69,11 +72,14 @@ export default {
           padding: 2rem 0;
         }
     }
+    &_none {
+      padding: 0;
+    }
 
     &_wide {
       width: 100%;
       @include only-desktop {
-        max-width: 80%;
+        max-width: 80rem;
       }
       padding-left: 1.5rem;
       padding-right: 1.5rem;

@@ -1,21 +1,23 @@
 <template>
   <header class="app-hero">
-    <app-content container flex wide>
-      <section class="app-hero__info">
-        <div class="app-hero__info__text">
-          <slot name="text"/>
-        </div>
-        <div class="app-hero__info__buttons">
-          <slot name="buttons"/>
-        </div>
-      </section>
-    <figure class="app-hero__media" >
-      <figure class="app-hero__media_galaxy">
-        <img
-          :style="{ top: '-' + galaxy + 'px'}"
-          :src="require('../assets/graphics/galaxy-phase-1.png')" alt="mainnet launch">
-      </figure>
-    </figure>
+    <app-content container wide none>
+      <div class="app-hero__inner-wrapper">
+        <section class="app-hero__info">
+          <div class="app-hero__info__text">
+            <slot name="text"/>
+          </div>
+          <div class="app-hero__info__buttons">
+            <slot name="buttons"/>
+          </div>
+        </section>
+        <figure class="app-hero__media" >
+          <figure class="app-hero__media_galaxy">
+            <img
+              :style="{ top: '-' + galaxy + 'px'}"
+              :src="require('../assets/graphics/galaxy-phase-1.png')" alt="mainnet launch">
+          </figure>
+        </figure>
+      </div>
     </app-content>
     <div class="app-hero__count">
       <div class="app-hero__count-wrapper">
@@ -109,17 +111,20 @@ export default {
 .app-hero {
   position: relative;
   height: 100%;
-  min-height: 100vh;
   background-color: $skyblue;
   display: flex;
   text-align: left;
-  margin-bottom: 75vh;
+  display: flex;
+  flex-direction: column;
 
-    @include only-phone {
-      margin-bottom: 30vh;
-      min-height: 100vh;
+  &__inner-wrapper {
+  min-height: 100vh;
+  display: flex;
+  @include only-phone{
+      padding-top: 6rem;
+      padding-bottom: 4rem;
     }
-
+  }
   &__media {
     width: 40%;
     margin-left: auto;
@@ -137,6 +142,7 @@ export default {
           top: 50%;
           transform: translateY(-50%);
           width: 100%;
+          right: -75%;
         }
         & > img {
           position: absolute;
@@ -180,14 +186,9 @@ export default {
 
   &__count {
     min-height: 75vh;
-    position: absolute;
+    position: relative;
     background-color: $white;
     z-index: 1;
-    bottom: -75vh;
-       @include only-phone {
-        min-height: 30vh;
-        bottom: -31vh;
-      }
     left: 0;
     width: 100%;
     display: flex;
@@ -222,8 +223,13 @@ export default {
 .token-count{
   font-weight: bold;
   line-height: 1em;
+  margin: 0;
   &-info {
     margin: 0;
+    @include font-size(s);
+    @include tablet-and-desktop {
+      @include font-size(l);
+    }
   }
   color: $magenta;
     @include font-size(wow);

@@ -193,13 +193,6 @@
                 </p>
               </li>
             </ol>
-            <form action="">
-              <time>12. November, 2018</time>
-              <label for="accept">
-                I accept all the terms and conditions above.
-              </label>
-              <input id="accept" name="accept" type="checkbox">
-            </form>
           </text-body>
         </app-content>
       <app-footer/>

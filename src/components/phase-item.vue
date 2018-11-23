@@ -82,7 +82,7 @@ export default {
 .media-txt {
     padding: $spacer-m;
     color: $white;
-    opacity: .3;
+    opacity: 1;
 
     &_name {
       font-weight: bold;
