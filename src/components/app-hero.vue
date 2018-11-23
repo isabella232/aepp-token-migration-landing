@@ -148,6 +148,7 @@ export default {
           position: absolute;
           z-index: 0;
           max-width: 50rem;
+          border-radius: 50%;
         }
       }
   }

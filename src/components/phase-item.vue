@@ -2,6 +2,9 @@
   <li class="phase-item" :class="{ 'is-current': isCurrent }">
     <figure class="phase-item__media">
       <img class="phase-item__media-img" :src="src" :alt="alt">
+      <span v-if="isFinished" class="phase-item__media__finished-icon">
+        <ae-icon name="check"/>
+      </span>
       <div class="phase-item__media-txt media-txt">
         <span class="media-txt_name">{{ isCurrent ? 'Current Phase' : 'Phase' }}</span>
         <span class="media-txt_number">{{ number }}</span>
@@ -15,15 +18,21 @@
 </template>
 
 <script>
+import AeIcon from '@aeternity/aepp-components/dist/ae-icon'
+
 export default {
   name: 'phase-item',
   props: {
     isCurrent: Boolean,
+    isFinished: Boolean,
     name: String,
     number: String,
     src: String,
     alt: String,
     ends: String
+  },
+  components: {
+    AeIcon
   }
 }
 </script>
@@ -58,6 +67,24 @@ export default {
 
   &__media {
     position: relative;
+
+    &__finished-icon {
+      position: absolute;
+      color: $white;
+      top: 0;
+      width: 4rem;
+      height: 4rem;
+      right: 0;
+      background: linear-gradient(to top right, transparent calc(50%), $mint calc(50%) );
+      font-size: 1.4rem;
+
+      & i {
+        position: absolute;
+        top: $spacer-s;
+        right: $spacer-s;
+      }
+
+      }
     &-txt {
         position: absolute;
         top: 0;
@@ -98,7 +125,7 @@ export default {
     &_number {
       font-weight: bold;
       margin: 0;
-      line-height: 1.3em;
+      line-height: 1.1em;
       @include font-size(wow);
       display: block;
     }

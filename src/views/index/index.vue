@@ -150,7 +150,8 @@
               <phase-item
                 number="0"
                 :isCurrent="false"
-                :src="require('@/assets/graphics/phase-1.png')"
+                :isFinished="true"
+                :src="require('@/assets/graphics/phase-1.jpg')"
                 alt="Mainnet Launch"
                 ends="Ends November 2018"
                 >
@@ -164,7 +165,7 @@
               <phase-item
                 number="1"
                 :isCurrent="true"
-                :src="require('@/assets/graphics/phase-2.png')"
+                :src="require('@/assets/graphics/phase-2.jpg')"
                 alt="1st Hardfork"
                 ends="Ends February 2019"
                 >
@@ -178,7 +179,7 @@
               <phase-item
                 number="2"
                 :isCurrent="false"
-                :src="require('@/assets/graphics/phase-3.png')"
+                :src="require('@/assets/graphics/phase-3.jpg')"
                 alt="2nd Hardfork"
                 ends="Ends May 2019"
                 >
@@ -192,7 +193,7 @@
               <phase-item
                 number="3"
                 :isCurrent="false"
-                :src="require('@/assets/graphics/phase-4.png')"
+                :src="require('@/assets/graphics/phase-4.jpg')"
                 alt="3rd Hardfork"
                 ends="Ends September 2019"
                 >
