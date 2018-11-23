@@ -53,7 +53,7 @@ const abi = [{
 
 $web3 = new Web3(new Web3.providers.HttpProvider(process.env.VUE_APP_WEB3_PROVIDER_URL))
 let aeTokenContract = new $web3.eth.Contract(abi, process.env.VUE_APP_AE_TOKEN_CONTRACT)
-let height = 0;
+let height = 0
 async function getBurnedBalance () {
   let balance = await aeTokenContract
     .methods
