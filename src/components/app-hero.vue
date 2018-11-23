@@ -14,7 +14,7 @@
           <figure class="app-hero__media_galaxy">
             <img
               :style="{ top: '-' + galaxy + 'px'}"
-              :src="require('../assets/graphics/galaxy-phase-1.png')" alt="mainnet launch">
+              :src="require('../assets/graphics/galaxy-phase-1.jpg')" alt="mainnet launch">
           </figure>
         </figure>
       </div>
