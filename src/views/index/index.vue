@@ -23,7 +23,7 @@
               The æternity mainnet is here! The AE tokens you now own on Ethereum can soon be migrated to the æternity mainnet! Here we will guide you through the secure migration process.
             </p>
             <p>
-              <strong class="ae-brand">Phase 0 ends <time>25th november 23:59 UTC</time></strong>
+              <strong class="ae-brand">Phase 0 ends <time>25th november 23:59 UTC</time>, when Phase 1 starts</strong>
             </p>
 
           </template>
