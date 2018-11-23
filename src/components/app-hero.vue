@@ -9,15 +9,14 @@
           <slot name="buttons"/>
         </div>
       </section>
-    </app-content>
-    <figure class="app-hero__img"
-      data-aos="slide-up"
-      data-aos-duration="1500"
-      data-aos-easing="ease-in-out"
-      data-aos-anchor=".app-hero__count"
-    >
-      <img :src="require('../assets/graphics/galaxy-phase-1.png')" alt="mainnet launch">
+    <figure class="app-hero__media" >
+      <figure class="app-hero__media_galaxy">
+        <img
+          :style="{ top: '-' + galaxy + 'px'}"
+          :src="require('../assets/graphics/galaxy-phase-1.png')" alt="mainnet launch">
+      </figure>
     </figure>
+    </app-content>
     <div class="app-hero__count">
       <div class="app-hero__count-wrapper">
         <p class="token-count">{{burnedBalance | reduceDecimals | formatBalance}}<span class="token-count__currency">AE</span></p>
@@ -30,9 +29,6 @@
 <script>
 import Web3 from 'web3'
 import AppContent from '@/sections/app-content.vue'
-import AOS from 'aos'
-import 'aos/dist/aos.css'
-
 let $web3
 const abi = [{
   'constant': true,
@@ -55,7 +51,7 @@ const abi = [{
 
 $web3 = new Web3(new Web3.providers.HttpProvider(process.env.VUE_APP_WEB3_PROVIDER_URL))
 let aeTokenContract = new $web3.eth.Contract(abi, process.env.VUE_APP_AE_TOKEN_CONTRACT)
-
+let height = 0;
 async function getBurnedBalance () {
   let balance = await aeTokenContract
     .methods
@@ -70,18 +66,19 @@ export default {
   },
   data () {
     return {
-      burnedBalance: null
+      burnedBalance: null,
+      height: 0,
+      galaxy: 0
     }
   },
   async created () {
     this.burnedBalance = await getBurnedBalance()
   },
   mounted () {
-    document.addEventListener('scroll', () => {
-      AOS.init({
-        mirror: true
-      })
-    })
+    window.addEventListener('scroll', this.animateGalaxy, { passive: true })
+  },
+  destroy () {
+    window.removeEventlistener('scroll', () => this.animateGalaxy)
   },
   filters: {
     reduceDecimals: function (value) {
@@ -95,6 +92,13 @@ export default {
       return value.toLocaleString('de-DE')
     }
   },
+  methods: {
+    animateGalaxy () {
+      let start = window.pageYOffset || document.documentElement.scrollTop
+      this.galaxy = start > height ? start += 100 : start += 100
+      height = start <= 0 ? 0 : start
+    }
+  },
   components: {
     AppContent
   }
@@ -105,7 +109,7 @@ export default {
 .app-hero {
   position: relative;
   height: 100%;
-  min-height: 90vh;
+  min-height: 100vh;
   background-color: $skyblue;
   display: flex;
   text-align: left;
@@ -116,39 +120,46 @@ export default {
       min-height: 100vh;
     }
 
-  &__img {
-    z-index: 0;
-    right: -10%;
-    top: -86%;
+  &__media {
     width: 40%;
-    max-width: 30rem;
-    position: absolute;
-    @include only-tablet {
-      top: -60%;
-      width: 50%;
-      right: -20%;
+    margin-left: auto;
 
+    @include only-phone{
+      width: 30%;
     }
-    @include only-phone {
-      top: -50%;
-      width: 80%;
-      right: -50%;
-    }
+      &_galaxy {
+        position: absolute;
+        top: 25%;
+        width: 100%;
+        right: -70%;
+        transform: translateY(-25%);
+        @include only-phone{
+          top: 50%;
+          transform: translateY(-50%);
+          width: 100%;
+        }
+        & > img {
+          position: absolute;
+          z-index: 0;
+          max-width: 50rem;
+        }
+      }
   }
 
   &__info {
     margin: auto 0;
-    width: 100%;
-    max-width: 70%;
+    width: 70%;
+    max-width: 50rem;
     @include only-phone {
-      margin-top: $spacer-xxl;
-      max-width: 100%;
+      width: 100%;
     }
     @include only-tablet {
+      width: 100%;
     }
     &__text {
       @include only-phone {
-        max-width: 70%;
+        max-width: 100%;
+        width: 100%;
       }
     }
     &__buttons{
@@ -159,6 +170,7 @@ export default {
         @include only-phone {
           justify-content: center;
           align-items: center;
+          margin-right: -25%;
         }
         @include tablet-and-desktop {
           flex-direction: row;
@@ -174,7 +186,7 @@ export default {
     bottom: -75vh;
        @include only-phone {
         min-height: 30vh;
-        bottom: -30vh;
+        bottom: -31vh;
       }
     left: 0;
     width: 100%;
@@ -227,6 +239,16 @@ export default {
         font-weight: 500;
       }
   }
+}
+.wrapper {
+  position: absolute;
+  width: 100%;
+}
+.number {
+  position: fixed;
+  top: 1rem;
+  right: 1rem;
+  z-index: 1000;
 }
 
 </style>

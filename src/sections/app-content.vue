@@ -72,7 +72,9 @@ export default {
 
     &_wide {
       width: 100%;
-      max-width: 80rem;
+      @include only-desktop {
+        max-width: 80%;
+      }
       padding-left: 1.5rem;
       padding-right: 1.5rem;
     }
