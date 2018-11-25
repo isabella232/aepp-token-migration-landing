@@ -153,7 +153,7 @@
                 :isFinished="true"
                 :src="require('@/assets/graphics/phase-1.jpg')"
                 alt="Mainnet Launch"
-                ends="Ends November 2018"
+                ends="Ended 25th November 2018"
                 >
                 <h3 class="title title-subcategory">
                   Mainnet Launch
