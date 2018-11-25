@@ -12,7 +12,7 @@ export default {
 
 }
 </script>
-<style lang="scss">
+<style lang="scss" scoped>
 .text-body {
   max-width: 800px;
   margin-top: $spacer-xl;
@@ -32,6 +32,7 @@ ul, ol, dl{
   margin-bottom: 1.5rem;
   & li{
     margin: .75rem 0;
+    margin-left: 2.5rem
   }
   & dt {
     font-weight: bold;

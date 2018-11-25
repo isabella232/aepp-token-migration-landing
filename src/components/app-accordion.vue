@@ -53,7 +53,11 @@ export default {
   &__content {
     height: auto;
     & a {
-      text-decoration: underline;
+      font-weight: bold;
+    }
+    & ul > li{
+      margin: .75rem 0;
+      margin-left: 2.5rem
     }
   }
 }
