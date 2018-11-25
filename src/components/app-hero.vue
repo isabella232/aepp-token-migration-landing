@@ -91,7 +91,7 @@ export default {
     formatBalance: function (value) {
       if (!value) return ''
       value = parseFloat(value)
-      return value.toLocaleString('de-DE')
+      return value.toLocaleString('en-US')
     }
   },
   methods: {
