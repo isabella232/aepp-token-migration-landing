@@ -17,13 +17,13 @@
         <app-hero :class="cta ? 'out-of-view' : 'in-view'">
           <template slot="text">
             <h1 class="title title-hero">
-              Migrate your <span class="ae-brand">AE tokens</span> to the Mainnet
+              Migrate your <span class="ae-brand">AE Tokens</span> to the Mainnet
             </h1>
             <p class="text text-intro text-intro_light">
-              Phase 0 is over! The AE tokens you now own on Ethereum can soon be migrated to the æternity mainnet! Here we will guide you through the secure migration process.
+              AE token migration to the æternity Mainnet is ongoing. If you still haven't transfered your Ethereum AE tokens, you can do it by following the instructions below.
             </p>
             <p>
-              <strong class="ae-brand">Phase 0 ends <time>25th november 23:59 UTC</time>, when Phase 1 starts</strong>
+              <strong class="ae-brand">The current migration phase is Phase 1.</strong>
             </p>
 
           </template>
@@ -38,7 +38,7 @@
             <div class="button-wrapper">
               <a href="#phases" v-smooth-scroll="{ duration: 1000, offset: -50 }">
                 <ae-button face="flat"  extend>
-                  What are phases?
+                  What are the Phases?
                 </ae-button>
               </a>
             </div>
@@ -49,10 +49,10 @@
             <article>
               <intro id="how-to-migrate">
                 <h2 class="title title-sub">
-                  Migration Steps
+                  Migration Overview
                 </h2>
                 <p class="text text-intro">
-                  All AE Tokens migrated with this tool prior to the Mainnet launch will be available on the Mainnet. Token migration takes place in four steps.
+                  The following four steps outline the token migration process with the migration æpp.
                 </p>
               </intro>
               <steps-list :wide="true" >
@@ -61,7 +61,7 @@
                   alt="Create an æternity account with AirGap Vault.">
                   <template slot="info">
                     <h3 class="title title-category">
-                      Create an æternity account with AirGap Vault.
+                      Create an æternity account with AirGap Vault
                     </h3>
                     <p>
                       AirGap Vault is the secure way to create an æternity account. Install the Vault app on a mobile device and create a new æternity account. Alternatively, you can use the webwallet Base æpp (beta) for migrating small amounts of AE tokens.
@@ -105,7 +105,7 @@
                       The Migration Contract receives your Ethereum AE Tokens
                     </h3>
                     <p>
-                      The AE Migration Contract receives your Ethereum AE tokens and ensures that they will be available on your on the æternity mainnet account.
+                     The AE Migration Contract receives your Ethereum AE tokens and prepares your tokens for migration.
                     </p>
                   </template>
                 </step-list-item>
@@ -114,10 +114,10 @@
                   alt="Create an æternity account with AirGap Vault">
                   <template slot="info">
                     <h3 class="title title-category">
-                      Your AE tokens become available on the æternity Mainnet
+                      Your AE Tokens will be in the next hardfork release
                     </h3>
                     <p>
-                      Your tokens become accessible in the Mainnet according to the Migration Roadmap below.
+                      Your AE tokens will be on the æternity Mainnet after the scheduled hardfork gets adopted.
                     </p>
                   </template>
                 </step-list-item>
@@ -143,7 +143,7 @@
                 Migration Roadmap
               </h2>
               <p class="text text-intro">
-                The migration of AE tokens will take place according to the phases outlined below. The AE Migration Contract ‘collects’ the received tokens and ensures they are migrated to the Mainnet.
+                The migration of AE tokens will take place according to the phases outlined below. The AE Migration Contract collects and prepares your tokens for migration.
               </p>
             </intro>
             <phases>
@@ -212,7 +212,7 @@
             <template slot="info" class="faq__info">
               <h2 class="title title-category">F.A.Q.</h2>
               <p>
-                The frequently asked questions can be found here. For more information, visit the <a href="https://forum.aeternity.com/t/token-migration-phase-0-support-and-faq/1275" target="_blank">forum</a>.
+                The frequently asked questions can be found here. For more information, visit the <a href="https://forum.aeternity.com/t/token-migration-phase-0-support-and-faq/1275" target="_blank">Forum</a>.
               </p>
             </template>
             <template slot="questions">
@@ -224,8 +224,8 @@
                 </template>
                 <template slot="body">
                   <p>
-                    Apart from Phase 0, all consecutive phases (the current phase included) will require a hard fork in order for migrated AE tokens to become available on the Mainnet. All hard forks are subject to the willingness of miners and users to update their node software in order to follow the updated rules of the æternity network. The æternity Establishment and Foundation will support the forks, but it is up to the miner and user communities to determine if a fork will be successful or not.
-                    In addition to recently migrated AE tokens, the scheduled hard forks will also include protocol improvements which introduce new functionalities, features and optimizations.
+                    Apart from Phase 0, all consecutive phases (the current phase included) will require a hardfork in order for migrated AE tokens to become available on the Mainnet. All hardforks are subject to the willingness of miners and users to update their node software in order to follow the updated rules of the æternity network. The æternity Establishment and Foundation will support the forks, but it is up to the miner and user communities to determine if a fork will be successful or not.
+                    In addition to recently migrated AE tokens, the scheduled hardforks will also include protocol improvements which introduce new functionalities, features and optimizations.
                     Here is the predicted AE token migration schedule:
                   </p>
                   <ul>
@@ -247,7 +247,7 @@
                 </template>
                 <template slot="body">
                   <p>
-                    The æternity Mainnet is the open, public network where the AE tokens, smart contracts, oracles, state channels, naming system and all other technological features will be available for use. The Mainnet will be improved through scheduled hard forks, which will introduce newly migrated tokens and updated features and increased functionalities.
+                    The æternity Mainnet is the open, public network where the AE tokens, smart contracts, oracles, state channels, naming system and all other technological features will be available for use. The Mainnet will be improved through scheduled hardforks, which will introduce newly migrated tokens and updated features and increased functionalities.
                   </p>
                 </template>
               </app-accordion>
@@ -259,7 +259,7 @@
                 </template>
                 <template slot="body">
                   <p>
-                    AE tokens will not be migrated immediately, but in phases. The Genesis Block, the first block of the æternity blockchain, will include all tokens migrated by users during Phase 0 (pre-Mainnet launch). Each of the subsequent three phases including the current one – Phase 1 – will end with a scheduled hard fork of the æternity blockchain. The scheduled hard fork will introduce the migrated tokens in the current Phase to the Mainnet. The current Phase is expected to end in February, 2019.
+                    AE tokens will not be migrated immediately, but in phases. The Genesis Block, the first block of the æternity blockchain, will include all tokens migrated by users during Phase 0 (pre-Mainnet launch). Each of the subsequent three phases including the current one – Phase 1 – will end with a scheduled hardfork of the æternity blockchain. The scheduled hardfork will introduce the migrated tokens in the current Phase to the Mainnet. The current Phase is expected to end in February, 2019.
                   </p>
                 </template>
               </app-accordion>
