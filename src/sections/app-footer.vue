@@ -19,7 +19,7 @@
             <router-link :to="{ name:'Terms & Services' }" class="footer-nav__link">Terms</router-link>
           </div>
           <div class="footer-nav__external">
-            <a href="https://forum.aeternity.com/t/token-migration-phase-0-support-and-faq/1275" target="_blank" class="footer-nav__link footer-nav__link">Visit our forum</a>
+            <a href="https://forum.aeternity.com/t/token-migration-phase-1-support-and-faq/1411" target="_blank" class="footer-nav__link footer-nav__link">Visit our forum</a>
             <a href="https://aeternity.com/" target="_blank" class="footer-nav__link footer-nav__link_last">aeternity.com</a>
           </div>
         </nav>

@@ -212,7 +212,7 @@
             <template slot="info" class="faq__info">
               <h2 class="title title-category">F.A.Q.</h2>
               <p>
-                The frequently asked questions can be found here. For more information, visit the <a href="https://forum.aeternity.com/t/token-migration-phase-0-support-and-faq/1275" target="_blank">Forum</a>.
+                The frequently asked questions can be found here. For more information, visit the <a href="https://forum.aeternity.com/t/token-migration-phase-1-support-and-faq/1411" target="_blank">Forum</a>.
               </p>
             </template>
             <template slot="questions">
