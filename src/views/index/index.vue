@@ -6,10 +6,10 @@
           <app-menu>
             <app-menu-item
               src="//aepp-migrate.aeternity.com/#/status/result"
-              name="Check my Migration"/>
+              name="Verify my migration"/>
             <app-menu-item
               src="//verify-data.aeternity.com"
-              name="Check Payload"/>
+              name="Check Dataload"/>
           </app-menu>
         </template>
       </app-header>
@@ -17,13 +17,13 @@
         <app-hero :class="cta ? 'out-of-view' : 'in-view'">
           <template slot="text">
             <h1 class="title title-hero">
-              Migrate your <span class="ae-brand">AE Tokens</span> to the Mainnet
+              Migrate your <span class="ae-brand">AE Tokens</span> to the Mainnet now
             </h1>
             <p class="text text-intro text-intro_light">
-              AE token migration to the æternity Mainnet is ongoing. If you still haven't transfered your Ethereum AE tokens, you can do it by following the instructions below.
+              It’s happening, æternity Mainnet is live. Time to migrate your AE tokens from the Ethereum net to æternity Mainnet. We’ll help you get it done in 6 steps.
             </p>
             <p>
-              <strong class="ae-brand">The current migration phase is Phase 1.</strong>
+              <strong class="ae-brand">The migration is now in Phase 1.</strong>
             </p>
 
           </template>
@@ -49,10 +49,10 @@
             <article>
               <intro id="how-to-migrate">
                 <h2 class="title title-sub">
-                  Migration Overview
+                  Migration Process
                 </h2>
                 <p class="text text-intro">
-                  The following four steps outline the token migration process with the migration æpp.
+                  This is what you can expect in the token migration process.
                 </p>
               </intro>
               <steps-list :wide="true" >
@@ -140,10 +140,10 @@
           <section class="roadmap" id="phases">
             <intro>
               <h2 class="title title-sub">
-                Migration Roadmap
+                Migration Phases
               </h2>
               <p class="text text-intro">
-                The migration of AE tokens will take place according to the phases outlined below. The AE Migration Contract collects and prepares your tokens for migration.
+                The Migration takes place in 3 phases. Each phase ends with a hardfork. The hardfork turns all migrated tokens in that phase into AE on the æternity Mainnet.
               </p>
             </intro>
             <phases>
@@ -159,7 +159,7 @@
                   Mainnet Launch
                 </h3>
                 <p class="text text-small">
-                  All tokens migrated prior to the Mainnet launch will be available on the Mainnet.
+                  Tokens migrated before the Mainnet launch (25th of November 2018) are available as AE on Mainnet now.
                 </p>
               </phase-item>
               <phase-item
@@ -173,7 +173,7 @@
                   1st Hardfork
                 </h3>
                 <p class="text text-small">
-                  Will include all tokens migrated between the Mainnet launch and the 1st Hardfork.
+                  includes Tokens migrated between 25th of November 2018 and February 2019.
                 </p>
               </phase-item>
               <phase-item
@@ -187,7 +187,7 @@
                   2nd Hardfork
                 </h3>
                 <p class="text text-small">
-                  Will include all tokens migrated between the 1st and 2nd Hardforks.
+                  includes Tokens migrated between March 2019 and May 2019.
                 </p>
               </phase-item>
               <phase-item
@@ -201,7 +201,7 @@
                   3rd Hardfork
                 </h3>
                 <p class="text text-small">
-                  Will include all tokens migrated between the 2nd and 3rd Hardforks.
+                  includes Tokens migrated between June 2019 and September 2019.
                 </p>
               </phase-item>
             </phases>
