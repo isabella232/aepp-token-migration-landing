@@ -20,7 +20,7 @@
               Migrate your <span class="ae-brand">AE Tokens</span> to the Mainnet now
             </h1>
             <p class="text text-intro text-intro_light">
-              It’s happening, æternity Mainnet is live. Time to migrate your AE tokens from the Ethereum net to æternity Mainnet. We’ll help you get it done in 6 steps.
+              It’s happening. The first æternity blockchain - called Roma - is live. Time to migrate your AE tokens from the Ethereum net to æternity Roma. We’ll help you get it done in 6 steps.
             </p>
             <p>
               <strong class="ae-brand">The migration is now in Phase 1.</strong>
@@ -105,7 +105,7 @@
                       The rest runs automatically
                     </h3>
                     <p>
-                     Your Ethereum AE tokens will automatically be migrated and turn into AE on the æternity Mainnet.
+                     Your Ethereum AE tokens will automatically be migrated and turn into AE on Roma net.
                     </p>
                   </template>
                 </step-list-item>
@@ -117,7 +117,7 @@
                       Your AE will be available soon
                     </h3>
                     <p>
-                      Your AE will be available on the æternity Mainnet after the next scheduled hardfork.
+                      Your AE will be available on Roma after the next scheduled hardfork.
                     </p>
                   </template>
                 </step-list-item>
