@@ -17,7 +17,7 @@
         <app-hero :class="cta ? 'out-of-view' : 'in-view'">
           <template slot="text">
             <h1 class="title title-hero">
-              Migrate your <span class="ae-brand">AE Tokens</span> to the Mainnet now
+              Migrate your <span class="ae-brand">AE Tokens</span> to Roma now
             </h1>
             <p class="text text-intro text-intro_light">
               It’s happening. The first æternity blockchain - called Roma - is live. Time to migrate your AE tokens from the Ethereum net to æternity Roma. We’ll help you get it done in 6 steps.
