@@ -17,10 +17,10 @@
         <app-hero :class="cta ? 'out-of-view' : 'in-view'">
           <template slot="text">
             <h1 class="title title-hero">
-              Migrate your <span class="ae-brand">AE Tokens</span> to the Mainnet now
+              Migrate your <span class="ae-brand">AE Tokens</span> to Roma now
             </h1>
             <p class="text text-intro text-intro_light">
-              It’s happening, æternity Mainnet is live. Time to migrate your AE tokens from the Ethereum net to æternity Mainnet. We’ll help you get it done in 6 steps.
+              It’s happening. The first æternity blockchain - called Roma - is live. Time to migrate your AE tokens from the Ethereum net to æternity Roma. We’ll help you get it done in 6 steps.
             </p>
             <p>
               <strong class="ae-brand">The migration is now in Phase 1.</strong>
@@ -61,19 +61,19 @@
                   alt="Create an æternity account with AirGap Vault.">
                   <template slot="info">
                     <h3 class="title title-category">
-                      Create an æternity account with AirGap Vault
+                      Create an æternity account
                     </h3>
                     <p>
-                      AirGap Vault is the secure way to create an æternity account. Install the Vault app on a mobile device and create a new æternity account. Alternatively, you can use the webwallet Base æpp (beta) for migrating small amounts of AE tokens.
+                      AirGap Vault is the most secure way to create an æternity account. You can also use Base æpp for migrating small amounts of AE tokens.
                     </p>
-                  </template>
+                  <!--</template>
                   <template slot="buttons">
                     <a class="steps-footer__cta" href="https://airgap.it/airgap-vault/" target="_blank">
                       <img :src="require('@/assets/graphics/airgap-logo.svg')" alt="airgap vault logo">
                     </a>
                      <a class="steps-footer__cta" href="https://base.aepps.com/" target="_blank">
                       <img :src="require('@/assets/graphics/base-aepp-logo.svg')" alt="base aepp logo">
-                    </a>
+                    </a>-->
                   </template>
                 </step-list-item>
                 <step-list-item
@@ -81,31 +81,31 @@
                   alt="Create an æternity account with AirGap Vault">
                   <template slot="info">
                     <h3 class="title title-category">
-                      Migrate your Ethereum AE Tokens
+                      Start migrating your Ethereum AE Tokens
                     </h3>
                     <p>
-                      Use the migration aepp, that supports MetaMask or MyEtherWallet to migrate Ethereum AE tokens. You will need a small amount of ETH on the same account as your Ethereum AE tokens to cover the transaction fee.<br>
-                      <strong class="ae-brand">Do NOT send AE tokens directly to the Migration Contract!</strong>
+                      Use MetaMask or MyEtherWallet for the migration.<br> Follow the instructions carefully.<br>
+                      <strong class="ae-brand">Do NOT send AE tokens directly to the Migration Contract.</strong>
                     </p>
                   </template>
-                  <template slot="buttons">
+                  <!--<template slot="buttons">
                     <a class="steps-footer__cta" href="https://metamask.io/" target="_blank">
                       <img :src="require('@/assets/graphics/metamask-fox.svg')" alt="MetaMask">
                     </a>
                     <a class="steps-footer__cta" href="https://myetherwallet.com/" target="_blank">
                       <img :src="require('@/assets/graphics/myetherwallet.svg')" alt="MyEtherWallet">
                     </a>
-                  </template>
+                  </template>-->
                 </step-list-item>
                 <step-list-item
                   :src="require('@/assets/graphics/step-03.svg')"
                   alt="Create an æternity account with AirGap Vault">
                   <template slot="info">
                     <h3 class="title title-category">
-                      The Migration Contract receives your Ethereum AE Tokens
+                      The rest runs automatically
                     </h3>
                     <p>
-                     The AE Migration Contract receives your Ethereum AE tokens and prepares your tokens for migration.
+                     Your Ethereum AE tokens will automatically be migrated and turn into AE on Roma net.
                     </p>
                   </template>
                 </step-list-item>
@@ -114,10 +114,10 @@
                   alt="Create an æternity account with AirGap Vault">
                   <template slot="info">
                     <h3 class="title title-category">
-                      Your AE Tokens will be in the next hardfork release
+                      Your AE will be available soon
                     </h3>
                     <p>
-                      Your AE tokens will be on the æternity Mainnet after the scheduled hardfork gets adopted.
+                      Your AE will be available on Roma after the next scheduled hardfork.
                     </p>
                   </template>
                 </step-list-item>
