@@ -219,47 +219,48 @@
               <app-accordion>
                 <template slot="title">
                   <h3 class="title title-subcategory">
-                    How are Phases 1, 2, 3 different from Phase 0?
+                    What is Roma?
                   </h3>
                 </template>
                 <template slot="body">
                   <p>
-                    Apart from Phase 0, all consecutive phases (the current phase included) will require a hardfork in order for migrated AE tokens to become available on the Mainnet. All hardforks are subject to the willingness of miners and users to update their node software in order to follow the updated rules of the æternity network. The æternity Establishment and Foundation will support the forks, but it is up to the miner and user communities to determine if a fork will be successful or not.
-                    In addition to recently migrated AE tokens, the scheduled hardforks will also include protocol improvements which introduce new functionalities, features and optimizations.
-                    Here is the predicted AE token migration schedule:
+                    The Roma net is the æternity’s first public blockchain. AE tokens, smart contracts, oracles, state channels, a naming system and other features are now ready for real-world use. Roma will be improved in three Phases, each one ending with a scheduled hardfork. Each Phase introduces updated features, optimizations and a batch of migrated tokens.
+                  </p>
+                </template>
+              </app-accordion>
+              <app-accordion>
+                <template slot="title">
+                  <h3 class="title title-subcategory">
+                    Why Phases 0, 1, 2 and 3?
+                  </h3>
+                </template>
+                <template slot="body">
+                  <p>
+                    Apart from Phase 0, all following phases require a hardfork for migrated AE tokens to become available on Roma. The æternity Establishment and Foundation supports the hardforks. But æternity is decentralized by nature, so hardforks depend on the willingness of miners and users to update their software and accept the updated network. A hardfork is necessary to introduce updated features, optimizations and migrated tokens.
+                  </p>
+                  <p>
+                    The predicted AE token migration schedule:
                   </p>
                   <ul>
-                    <li>End of Phase 0 (pre-Mainnet): November 25, 2018 [ENDED]</li>
-                    <li> End of Phase 1: February 2019 [CURRENT PHASE]</li>
+                    <li>End of Phase 0 (pre-Roma): November 25, 2018 [ENDED]</li>
+                    <li>End of Phase 1: February 2019 [CURRENT PHASE]</li>
                     <li>End of Phase 2: May 2019</li>
                     <li>End of Phase 3: After September 2, 2019 (Ethereum AE tokens become non-transferable)</li>
                   </ul>
                   <p>
-                    Users will still be able to migrate their AE tokens after the end of Phase 3 as long as they don’t use a smart contract to manage them. More information to come.
+                    Users will still be able to migrate their AE tokens after the end of Phase 3 as long as they don’t use a smart contract to manage them. More information will follow.
                   </p>
                 </template>
               </app-accordion>
               <app-accordion>
                 <template slot="title">
                   <h3 class="title title-subcategory">
-                    What is æternity Mainnet?
+                    When will my tokens be available on Roma?
                   </h3>
                 </template>
                 <template slot="body">
                   <p>
-                    The æternity Mainnet is the open, public network where the AE tokens, smart contracts, oracles, state channels, naming system and all other technological features will be available for use. The Mainnet will be improved through scheduled hardforks, which will introduce newly migrated tokens and updated features and increased functionalities.
-                  </p>
-                </template>
-              </app-accordion>
-              <app-accordion>
-                <template slot="title">
-                  <h3 class="title title-subcategory">
-                    When will my tokens be on the Mainnet?
-                  </h3>
-                </template>
-                <template slot="body">
-                  <p>
-                    AE tokens will not be migrated immediately, but in phases. The Genesis Block, the first block of the æternity blockchain, will include all tokens migrated by users during Phase 0 (pre-Mainnet launch). Each of the subsequent three phases including the current one – Phase 1 – will end with a scheduled hardfork of the æternity blockchain. The scheduled hardfork will introduce the migrated tokens in the current Phase to the Mainnet. The current Phase is expected to end in February, 2019.
+                    AE tokens will not immediately be available after you have migrated. The Genesis Block, the first block of the æternity blockchain, included all tokens migrated by users during Phase 0 (pre-Roma). The following three phases each end with a scheduled hardfork which makes all migrated tokens of that Phase available on Roma at once.
                   </p>
                 </template>
               </app-accordion>
@@ -271,7 +272,7 @@
                 </template>
                 <template slot="body">
                   <p>
-                    Users will still be able to migrate their AE tokens to the Mainnet after the end of the last phase of token migration – Phase 3 – as long as they don’t use a smart contract to manage them. However, the migration process will change after September 2, 2019. More information will be provided in time. It is strongly advisable to migrate your tokens before the end of Phase 3.
+                    You can still migrate your ERC-20 AE tokens to the Roma net after the end of Phase 3 – as long as they are not used to manage a smart contract. However, the migration process will change after September 2, 2019. More specific information will follow closer to that date. It is highly recommended to migrate your tokens before the end of Phase 3.
                   </p>
                 </template>
               </app-accordion>
