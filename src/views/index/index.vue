@@ -17,10 +17,10 @@
         <app-hero :class="cta ? 'out-of-view' : 'in-view'">
           <template slot="text">
             <h1 class="title title-hero">
-              Migrate your <span class="ae-brand">AE Tokens</span> to Roma now
+              Migrate your <span class="ae-brand">ERC-20 AE Tokens</span> to æternity now
             </h1>
             <p class="text text-intro text-intro_light">
-              It’s happening. The first æternity blockchain - called Roma - is live. Time to migrate your AE tokens from the Ethereum net to æternity Roma. We’ll help you get it done in 6 steps.
+              It’s happening. The first æternity blockchain - called Roma - is live. Time to migrate your ERC-20 AE tokens from the Ethereum net to the æternity blockchain. We’ll help you get it done in 6 steps.
             </p>
             <p>
               <strong class="ae-brand">The migration is now in Phase 1.</strong>
@@ -64,7 +64,7 @@
                       Create an æternity account
                     </h3>
                     <p>
-                      AirGap Vault is the most secure way to create an æternity account. You can also use Base æpp for migrating small amounts of AE tokens.
+                      Ledger or AirGap Vault are the most secure ways to create an æternity account. You can also use Base æpp for migrating small amounts of AE tokens.
                     </p>
                   <!--</template>
                   <template slot="buttons">
@@ -81,10 +81,10 @@
                   alt="Create an æternity account with AirGap Vault">
                   <template slot="info">
                     <h3 class="title title-category">
-                      Start migrating your Ethereum AE Tokens
+                      Start migrating your ERC-20 AE Tokens
                     </h3>
                     <p>
-                      Use MetaMask or MyEtherWallet for the migration.<br> Follow the instructions carefully.<br>
+                      All small steps are explained in detail<br> Please follow the instructions carefully.<br>
                       <strong class="ae-brand">Do NOT send AE tokens directly to the Migration Contract.</strong>
                     </p>
                   </template>
@@ -102,10 +102,10 @@
                   alt="Create an æternity account with AirGap Vault">
                   <template slot="info">
                     <h3 class="title title-category">
-                      The rest runs automatically
+                      Smart contracts take over from there
                     </h3>
                     <p>
-                     Your Ethereum AE tokens will automatically be migrated and turn into AE on Roma net.
+                     Your Ethereum AE tokens will automatically be migrated and turn into AE on æternity’s Roma net.
                     </p>
                   </template>
                 </step-list-item>
@@ -117,7 +117,7 @@
                       Your AE will be available soon
                     </h3>
                     <p>
-                      Your AE will be available on Roma after the next scheduled hardfork.
+                      After successful migration, your AE will be available as soon as the next scheduled hardfork has taken place.
                     </p>
                   </template>
                 </step-list-item>
@@ -212,7 +212,7 @@
             <template slot="info" class="faq__info">
               <h2 class="title title-category">F.A.Q.</h2>
               <p>
-                The frequently asked questions can be found here. For more information, visit the <a href="https://forum.aeternity.com/t/token-migration-phase-1-support-and-faq/1411" target="_blank">Forum</a>.
+                You can find some more background info on the Token Migration here. For technical support, visit the <a href="https://forum.aeternity.com/t/token-migration-phase-1-support-and-faq/1411" target="_blank">Forum</a>.
               </p>
             </template>
             <template slot="questions">
