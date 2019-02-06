@@ -153,7 +153,7 @@
                 :isFinished="true"
                 :src="require('@/assets/graphics/phase-1.jpg')"
                 alt="Mainnet Launch"
-                ends="Ended 25th November 2018"
+                ends="Ended 25th of November 2018"
                 >
                 <h3 class="title title-subcategory">
                   Pre-Roma Release
@@ -167,7 +167,7 @@
                 :isCurrent="true"
                 :src="require('@/assets/graphics/phase-2.jpg')"
                 alt="1st Hardfork"
-                ends="Ends February 2019"
+                ends="Ends 15th of February 2019"
                 >
                 <h3 class="title title-subcategory">
                   Roma Release
@@ -246,12 +246,12 @@
               <app-accordion>
                 <template slot="title">
                   <h3 class="title title-subcategory">
-                    When will my tokens be available?
+                    When will my tokens be available on æternity?
                   </h3>
                 </template>
                 <template slot="body">
                   <p>
-                    AE tokens will not be available immediately after you have completed migration. The three phases each end with a scheduled hardfork which makes all migrated ERC-20 tokens in that Phase available on the æternity’s blockchain at once. 
+                    AE tokens will not be available immediately after you have completed migration. The three phases each end with a scheduled hardfork which makes all migrated ERC-20 tokens in that Phase available on the æternity’s blockchain at once.
                   </p>
                 </template>
               </app-accordion>
@@ -263,7 +263,7 @@
                 </template>
                 <template slot="body">
                   <p>
-                    You can still migrate your ERC-20 AE tokens to the Roma net after the end of Phase 3 – as long as they are not used to manage a smart contract. However, the migration process will change after September 2, 2019. More specific information will follow closer to that date. It is highly recommended to migrate your tokens before the end of Phase 3.
+                    You can still migrate your ERC-20 AE tokens to the æternity blockchain after the end of Phase 3 – as long as they are not used to manage a smart contract. However, the process of migration will change after September 2, 2019. More specific information will follow closer to that date. It is highly recommended to migrate all ERC-20 tokens before the end of Phase 3.
                   </p>
                 </template>
               </app-accordion>
