@@ -20,7 +20,7 @@
               Migrate your <span class="ae-brand">ERC-20 AE Tokens</span> to æternity now
             </h1>
             <p class="text text-intro text-intro_light">
-              It’s happening. The first æternity blockchain - called Roma - is live. Time to migrate your ERC-20 AE tokens from the Ethereum net to the æternity blockchain. We’ll help you get it done in 6 steps.
+              It’s happening. The æternity blockchain is live. Time to migrate your ERC-20 AE tokens from the Ethereum net to the æternity blockchain. We’ll help you get it done in 6 steps.
             </p>
             <p>
               <strong class="ae-brand">The migration is now in Phase 1.</strong>
@@ -105,7 +105,7 @@
                       Smart contracts take over from there
                     </h3>
                     <p>
-                     Your Ethereum AE tokens will automatically be migrated and turn into AE on æternity’s Roma net.
+                     Your Ethereum AE tokens will automatically be migrated and turn into AE on the æternity blockchain.
                     </p>
                   </template>
                 </step-list-item>
@@ -117,7 +117,7 @@
                       Your AE will be available soon
                     </h3>
                     <p>
-                      After successful migration, your AE will be available as soon as the next scheduled hardfork has taken place.
+                      After successful migration, you can see your AE in Base æpp right after the next scheduled hardfork has taken place.
                     </p>
                   </template>
                 </step-list-item>
@@ -143,7 +143,7 @@
                 Migration Phases
               </h2>
               <p class="text text-intro">
-                The Migration takes place in 3 phases. Each phase ends with a hardfork. The hardfork turns all migrated tokens in that phase into AE on the æternity Mainnet.
+                The Migration is divided in 3 phases. Each phase ends with a hardfork. The hardfork turns all ERC-20 tokens migrated in that phase into AE on the æternity blockchain.
               </p>
             </intro>
             <phases>
@@ -156,10 +156,10 @@
                 ends="Ended 25th November 2018"
                 >
                 <h3 class="title title-subcategory">
-                  Mainnet Launch
+                  Pre-Roma Release
                 </h3>
                 <p class="text text-small">
-                  Tokens migrated before the Mainnet launch (25th of November 2018) are available as AE on Mainnet now.
+                  includes ERC-20 Tokens migrated before Roma Release (25th of November 2018).
                 </p>
               </phase-item>
               <phase-item
@@ -170,10 +170,10 @@
                 ends="Ends February 2019"
                 >
                 <h3 class="title title-subcategory">
-                  1st Hardfork
+                  Roma Release
                 </h3>
                 <p class="text text-small">
-                  includes Tokens migrated between 25th of November 2018 and February 2019.
+                  Hardfork includes ERC-20 Tokens migrated between 25th of November 2018 and February 2019.
                 </p>
               </phase-item>
               <phase-item
@@ -184,10 +184,10 @@
                 ends="Ends May 2019"
                 >
                 <h3 class="title title-subcategory">
-                  2nd Hardfork
+                  Minerva Release
                 </h3>
                 <p class="text text-small">
-                  includes Tokens migrated between March 2019 and May 2019.
+                  Hardfork includes Tokens migrated between March 2019 and May 2019.
                 </p>
               </phase-item>
               <phase-item
@@ -198,10 +198,10 @@
                 ends="Ends September 2019"
                 >
                 <h3 class="title title-subcategory">
-                  3rd Hardfork
+                  3rd Release
                 </h3>
                 <p class="text text-small">
-                  includes Tokens migrated between June 2019 and September 2019.
+                  Hardfork includes Tokens migrated between June 2019 and September 2019
                 </p>
               </phase-item>
             </phases>
@@ -212,55 +212,46 @@
             <template slot="info" class="faq__info">
               <h2 class="title title-category">F.A.Q.</h2>
               <p>
-                You can find some more background info on the Token Migration here. For technical support, visit the <a href="https://forum.aeternity.com/t/token-migration-phase-1-support-and-faq/1411" target="_blank">Forum</a>.
+                Some more background information on the Token Migration. For technical support, visit the <a href="https://forum.aeternity.com/t/token-migration-phase-1-support-and-faq/1411" target="_blank">Forum</a>.
               </p>
             </template>
             <template slot="questions">
               <app-accordion>
                 <template slot="title">
                   <h3 class="title title-subcategory">
-                    What is Roma?
+                    What are Roma and Minerva?
                   </h3>
                 </template>
                 <template slot="body">
                   <p>
-                    The Roma net is the æternity’s first public blockchain. AE tokens, smart contracts, oracles, state channels, a naming system and other features are now ready for real-world use. Roma will be improved in three Phases, each one ending with a scheduled hardfork. Each Phase introduces updated features, optimizations and a batch of migrated tokens.
+                    The Roma net is æternity’s first public blockchain. With Roma, AE tokens, smart contracts, oracles, state channels, a naming system and other features became available. æternity’s blockchain will be improved in three Phases, each one ending with a scheduled hardfork. Each Phase has its own name (Roma, Minerva) and introduces updated features, optimizations and a batch of migrated tokens.
                   </p>
                 </template>
               </app-accordion>
               <app-accordion>
                 <template slot="title">
                   <h3 class="title title-subcategory">
-                    Why Phases 0, 1, 2 and 3?
+                    How do the Phases work?
                   </h3>
                 </template>
                 <template slot="body">
                   <p>
-                    Apart from Phase 0, all following phases require a hardfork for migrated AE tokens to become available on Roma. The æternity Establishment and Foundation supports the hardforks. But æternity is decentralized by nature, so hardforks depend on the willingness of miners and users to update their software and accept the updated network. A hardfork is necessary to introduce updated features, optimizations and migrated tokens.
+                    Each phase ends with a hardfork, necessary to introduce new features, optimizations and migrated AE tokens. The æternity Establishment and Foundation support the hardforks. But since æternity is decentralized by nature, hardforks depend on the willingness of miners and users to update their software and accept the updated network.
                   </p>
                   <p>
-                    The predicted AE token migration schedule:
-                  </p>
-                  <ul>
-                    <li>End of Phase 0 (pre-Roma): November 25, 2018 [ENDED]</li>
-                    <li>End of Phase 1: February 2019 [CURRENT PHASE]</li>
-                    <li>End of Phase 2: May 2019</li>
-                    <li>End of Phase 3: After September 2, 2019 (Ethereum AE tokens become non-transferable)</li>
-                  </ul>
-                  <p>
-                    Users will still be able to migrate their AE tokens after the end of Phase 3 as long as they don’t use a smart contract to manage them. More information will follow.
+                    After September 2, 2019 Ethereum ERC-20 AE tokens become non-transferable. Users will still be able to migrate their AE tokens after the end of Phase 3 as long as they don’t use a smart contract to manage them. More information will follow.
                   </p>
                 </template>
               </app-accordion>
               <app-accordion>
                 <template slot="title">
                   <h3 class="title title-subcategory">
-                    When will my tokens be available on Roma?
+                    When will my tokens be available?
                   </h3>
                 </template>
                 <template slot="body">
                   <p>
-                    AE tokens will not immediately be available after you have migrated. The Genesis Block, the first block of the æternity blockchain, included all tokens migrated by users during Phase 0 (pre-Roma). The following three phases each end with a scheduled hardfork which makes all migrated tokens of that Phase available on Roma at once.
+                    AE tokens will not be available immediately after you have completed migration. The three phases each end with a scheduled hardfork which makes all migrated ERC-20 tokens in that Phase available on the æternity’s blockchain at once. 
                   </p>
                 </template>
               </app-accordion>
