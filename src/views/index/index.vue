@@ -143,7 +143,7 @@
                 Migration Phases
               </h2>
               <p class="text text-intro">
-                The Migration is divided in 3 phases. Each phase ends with a hardfork. The hardfork turns all Ethereum tokens migrated in that phase into AE on the æternity blockchain.
+                The Migration is divided in 4 phases. Each phase ends with a hardfork. The hardfork migrates all Ethereum tokens to the æternity blockchain.
               </p>
             </intro>
             <phases>
