@@ -117,7 +117,7 @@
                       Your AE will be available soon
                     </h3>
                     <p>
-                      After successful migration, you can see your AE in Base æpp right after the next scheduled hardfork has taken place.
+                      Your AE tokens will be on the æternity Mainnet after the scheduled hardfork gets adopted.
                     </p>
                   </template>
                 </step-list-item>
