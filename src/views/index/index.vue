@@ -17,10 +17,10 @@
         <app-hero :class="cta ? 'out-of-view' : 'in-view'">
           <template slot="text">
             <h1 class="title title-hero">
-              Migrate your <span class="ae-brand">ERC-20 AE Tokens</span> to æternity now
+              Migrate your <span class="ae-brand">Ethereum AE Tokens</span> to æternity now
             </h1>
             <p class="text text-intro text-intro_light">
-              It’s happening. The æternity blockchain is live. Time to migrate your ERC-20 AE tokens from the Ethereum net to the æternity blockchain. We’ll help you get it done in 6 steps.
+              It’s happening. The æternity blockchain is live. Time to migrate your Ethereum AE tokens from the Ethereum net to the æternity blockchain. We’ll help you get it done in 6 steps.
             </p>
             <p>
               <strong class="ae-brand">The migration is now in Phase 1.</strong>
@@ -81,7 +81,7 @@
                   alt="Create an æternity account with AirGap Vault">
                   <template slot="info">
                     <h3 class="title title-category">
-                      Start migrating your ERC-20 AE Tokens
+                      Start migrating your Ethereum AE Tokens
                     </h3>
                     <p>
                       All small steps are explained in detail<br> Please follow the instructions carefully.<br>
@@ -143,7 +143,7 @@
                 Migration Phases
               </h2>
               <p class="text text-intro">
-                The Migration is divided in 3 phases. Each phase ends with a hardfork. The hardfork turns all ERC-20 tokens migrated in that phase into AE on the æternity blockchain.
+                The Migration is divided in 3 phases. Each phase ends with a hardfork. The hardfork turns all Ethereum tokens migrated in that phase into AE on the æternity blockchain.
               </p>
             </intro>
             <phases>
@@ -159,7 +159,7 @@
                   Pre-Roma Release
                 </h3>
                 <p class="text text-small">
-                  includes ERC-20 Tokens migrated before Roma Release (25th of November 2018).
+                  includes Ethereum Tokens migrated before Roma Release (25th of November 2018).
                 </p>
               </phase-item>
               <phase-item
@@ -173,7 +173,7 @@
                   Roma Release
                 </h3>
                 <p class="text text-small">
-                  Hardfork includes ERC-20 Tokens migrated between 25th of November 2018 and February 2019.
+                  Hardfork includes Ethereum Tokens migrated between 25th of November 2018 and February 2019.
                 </p>
               </phase-item>
               <phase-item
@@ -239,7 +239,7 @@
                     Each phase ends with a hardfork, necessary to introduce new features, optimizations and migrated AE tokens. The æternity Establishment and Foundation support the hardforks. But since æternity is decentralized by nature, hardforks depend on the willingness of miners and users to update their software and accept the updated network.
                   </p>
                   <p>
-                    After September 2, 2019 Ethereum ERC-20 AE tokens become non-transferable. Users will still be able to migrate their AE tokens after the end of Phase 3 as long as they don’t use a smart contract to manage them. More information will follow.
+                    After September 2, 2019 Ethereum Ethereum AE tokens become non-transferable. Users will still be able to migrate their AE tokens after the end of Phase 3 as long as they don’t use a smart contract to manage them. More information will follow.
                   </p>
                 </template>
               </app-accordion>
@@ -251,7 +251,7 @@
                 </template>
                 <template slot="body">
                   <p>
-                    AE tokens will not be available immediately after you have completed migration. The three phases each end with a scheduled hardfork which makes all migrated ERC-20 tokens in that Phase available on the æternity’s blockchain at once.
+                    AE tokens will not be available immediately after you have completed migration. The three phases each end with a scheduled hardfork which makes all migrated Ethereum tokens in that Phase available on the æternity’s blockchain at once.
                   </p>
                 </template>
               </app-accordion>
@@ -263,7 +263,7 @@
                 </template>
                 <template slot="body">
                   <p>
-                    You can still migrate your ERC-20 AE tokens to the æternity blockchain after the end of Phase 3 – as long as they are not used to manage a smart contract. However, the process of migration will change after September 2, 2019. More specific information will follow closer to that date. It is highly recommended to migrate all ERC-20 tokens before the end of Phase 3.
+                    You can still migrate your Ethereum AE tokens to the æternity blockchain after the end of Phase 3 – as long as they are not used to manage a smart contract. However, the process of migration will change after September 2, 2019. More specific information will follow closer to that date. It is highly recommended to migrate all Ethereum tokens before the end of Phase 3.
                   </p>
                 </template>
               </app-accordion>
