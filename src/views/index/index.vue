@@ -23,7 +23,7 @@
               It’s happening. The æternity blockchain is live. Time to migrate your Ethereum AE tokens from the Ethereum net to the æternity blockchain. We’ll help you get it done in 6 steps.
             </p>
             <p>
-              <strong class="ae-brand">The migration is now in Phase 1.</strong>
+              <strong class="ae-brand">The migration is now in Phase 2.</strong>
             </p>
 
           </template>
@@ -164,7 +164,8 @@
               </phase-item>
               <phase-item
                 number="1"
-                :isCurrent="true"
+                :isCurrent="false"
+                :isFinished="true"
                 :src="require('@/assets/graphics/phase-2.jpg')"
                 alt="1st Hardfork"
                 ends="Ends 15th of February 2019"
@@ -178,7 +179,7 @@
               </phase-item>
               <phase-item
                 number="2"
-                :isCurrent="false"
+                :isCurrent="true"
                 :src="require('@/assets/graphics/phase-3.jpg')"
                 alt="2nd Hardfork"
                 ends="Ends May 2019"
@@ -201,7 +202,7 @@
                   3rd Release
                 </h3>
                 <p class="text text-small">
-                  Hardfork includes Tokens migrated between June 2019 and September 2019
+                  Hardfork includes Tokens migrated between June 2019 and September 2019.
                 </p>
               </phase-item>
             </phases>
