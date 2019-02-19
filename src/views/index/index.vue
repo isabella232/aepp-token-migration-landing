@@ -174,7 +174,7 @@
                   Roma Release
                 </h3>
                 <p class="text text-small">
-                  Hardfork includes Ethereum Tokens migrated between 25th of November 2018 and February 2019.
+                  Hardfork includes Ethereum Tokens migrated between 25th of November 2018 and February 15th 2019.
                 </p>
               </phase-item>
               <phase-item
@@ -188,7 +188,7 @@
                   Minerva Release
                 </h3>
                 <p class="text text-small">
-                  Hardfork includes Tokens migrated between March 2019 and May 2019.
+                  Hardfork includes Tokens migrated between February 15th and May 2019.
                 </p>
               </phase-item>
               <phase-item
