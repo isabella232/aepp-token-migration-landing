@@ -23,7 +23,7 @@
               It’s happening. The æternity blockchain is live. Time to migrate your Ethereum AE tokens from the Ethereum net to the æternity blockchain. We’ll help you get it done in 6 steps.
             </p>
             <p>
-              <strong class="ae-brand">The migration is now in Phase 2.</strong>
+              <strong class="ae-brand">The migration is now in Phase 3.</strong>
             </p>
 
           </template>
