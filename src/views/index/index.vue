@@ -179,7 +179,8 @@
               </phase-item>
               <phase-item
                 number="2"
-                :isCurrent="true"
+                :isCurrent="false"
+                :isFinished="true"
                 :src="require('@/assets/graphics/phase-3.jpg')"
                 alt="2nd Hardfork"
                 ends="Ends May 2019"
@@ -193,7 +194,7 @@
               </phase-item>
               <phase-item
                 number="3"
-                :isCurrent="false"
+                :isCurrent="true"
                 :src="require('@/assets/graphics/phase-4.jpg')"
                 alt="3rd Hardfork"
                 ends="Ends September 2019"
